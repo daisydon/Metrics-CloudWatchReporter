@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.0.0.xsd">
+	<!-- Configure the database connection here -->
+	<jdbc>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<url>jdbc:mysql://localhost:3306/rigel</url>
+		<user>root</user>
+		<password></password>
+	</jdbc>
+	<generator>
+		<!-- The default code generator. You can override this one, to generate 
+			your own code style Defaults to org.jooq.util.DefaultGenerator -->
+		<name>org.jooq.util.DefaultGenerator</name>
+
+		<!-- The naming strategy used for class and field names. You may override 
+			this with your custom naming strategy. Some examples follow Defaults to org.jooq.util.DefaultGeneratorStrategy -->
+		<strategy>
+			<name>org.jooq.util.DefaultGeneratorStrategy</name>
+		</strategy>
+
+
+		<database>
+			<!-- The database type. The format here is: org.util.[database].[database]Database -->
+			<name>org.jooq.util.mysql.MySQLDatabase</name>
+
+			<!-- The database schema (or in the absence of schema support, in your 
+				RDBMS this can be the owner, user, database name) to be generated -->
+			<inputSchema>rigel</inputSchema>
+
+			<!-- The schema that is used in generated source code. This will be the 
+				production schema. Use this to override your local development schema name 
+				for source code generation. If not specified, this will be the same as the 
+				input-schema. -->
+			<outputSchema>sirius</outputSchema>
+
+			<!-- All elements that are generated from your schema (A Java regular 
+				expression. Use the pipe to separate several expressions) Watch out for case-sensitivity. 
+				Depending on your database, this might be important! -->
+			<includes>.*</includes>
+
+			<!-- All elements that are excluded from your schema (A Java regular expression. 
+				Use the pipe to separate several expressions). Excludes match before includes -->
+			<excludes></excludes>
+
+			<!-- Generate java.sql.Timestamp fields for DATE columns. This is particularly 
+				useful for Oracle databases. Defaults to false -->
+			<dateAsTimestamp>false</dateAsTimestamp>
+		</database>
+
+		<generate>
+			<!-- Primary key / foreign key relations should be generated and used. 
+				This is a prerequisite for various advanced features. Defaults to true -->
+			<relations>true</relations>
+
+			<!-- Generate deprecated code for backwards compatibility Defaults to 
+				true -->
+			<deprecated>false</deprecated>
+
+			<!-- Generate instance fields in your tables, as opposed to static fields. 
+				This simplifies aliasing. Defaults to true -->
+			<instanceFields>true</instanceFields>
+
+			<!-- Generate the javax.annotation.Generated annotation to indicate jOOQ 
+				version used for source code. Defaults to true -->
+			<generatedAnnotation>false</generatedAnnotation>
+
+			<!-- Generate jOOQ Record classes for type-safe querying. You can turn 
+				this off, if you don't need "active records" for CRUD Defaults to true -->
+			<records>false</records>
+
+			<!-- Generate POJOs in addition to Record classes for usage of the ResultQuery.fetchInto(Class) 
+				API Defaults to false -->
+			<pojos>true</pojos>
+
+			<!-- Generate immutable POJOs for usage of the ResultQuery.fetchInto(Class) 
+				API This overrides any value set in <pojos/> Defaults to false -->
+			<immutablePojos>false</immutablePojos>
+
+			<!-- Generate interfaces that will be implemented by records and/or pojos. 
+				You can also use these interfaces in Record.into(Class<?>) and similar methods, 
+				to let jOOQ return proxy objects for them. Defaults to false -->
+			<interfaces>false</interfaces>
+
+			<!-- Generate DAOs in addition to POJO classes Defaults to false -->
+			<daos>true</daos>
+
+			<!-- Annotate POJOs and Records with JPA annotations for increased compatibility 
+				and better integration with JPA/Hibernate, etc Defaults to false -->
+			<jpaAnnotations>false</jpaAnnotations>
+
+			<!-- Annotate POJOs and Records with JSR-303 validation annotations Defaults 
+				to false -->
+			<validationAnnotations>false</validationAnnotations>
+
+			<!-- Allow to turn off the generation of global object references, which 
+				include - Tables.java - Sequences.java - UDTs.java Turning off the generation 
+				of the above files may be necessary for very large schemas, which exceed 
+				the amount of allowed constants in a class's constant pool (64k) or, whose 
+				static initialiser would exceed 64k of byte code Defaults to true -->
+			<globalObjectReferences>true</globalObjectReferences>
+		</generate>
+
+		<target>
+			<!-- The destination package of your generated classes (within the destination 
+				directory) -->
+			<packageName>com.petpace.db.jooq</packageName>
+
+			<!-- The destination directory of your generated classes -->
+			<directory>src/main/java</directory>
+		</target>
+	</generator>
+</configuration>
