@@ -9,129 +9,129 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AlertsRecord> implements org.jooq.Record9<java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String, java.lang.Integer, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -1760751412;
+	private static final long serialVersionUID = -738865788;
 
 	/**
-	 * Setter for <code>sirius.alerts.id</code>. 
+	 * Setter for <code>rigel.alerts.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.id</code>. 
+	 * Getter for <code>rigel.alerts.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.rule_id</code>. 
+	 * Setter for <code>rigel.alerts.rule_id</code>. 
 	 */
 	public void setRuleId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.rule_id</code>. 
+	 * Getter for <code>rigel.alerts.rule_id</code>. 
 	 */
 	public java.lang.Integer getRuleId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.collar_id</code>. 
+	 * Setter for <code>rigel.alerts.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.collar_id</code>. 
+	 * Getter for <code>rigel.alerts.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.pet_id</code>. 
+	 * Setter for <code>rigel.alerts.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.pet_id</code>. 
+	 * Getter for <code>rigel.alerts.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.sensor_id</code>. 
+	 * Setter for <code>rigel.alerts.sensor_id</code>. 
 	 */
 	public void setSensorId(java.lang.Integer value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.sensor_id</code>. 
+	 * Getter for <code>rigel.alerts.sensor_id</code>. 
 	 */
 	public java.lang.Integer getSensorId() {
 		return (java.lang.Integer) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.message</code>. 
+	 * Setter for <code>rigel.alerts.message</code>. 
 	 */
 	public void setMessage(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.message</code>. 
+	 * Getter for <code>rigel.alerts.message</code>. 
 	 */
 	public java.lang.String getMessage() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.data</code>. 
+	 * Setter for <code>rigel.alerts.data</code>. 
 	 */
 	public void setData(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.data</code>. 
+	 * Getter for <code>rigel.alerts.data</code>. 
 	 */
 	public java.lang.String getData() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.processed</code>. 
+	 * Setter for <code>rigel.alerts.processed</code>. 
 	 */
 	public void setProcessed(java.lang.Integer value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.processed</code>. 
+	 * Getter for <code>rigel.alerts.processed</code>. 
 	 */
 	public java.lang.Integer getProcessed() {
 		return (java.lang.Integer) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.alerts.created</code>. 
+	 * Setter for <code>rigel.alerts.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alerts.created</code>. 
+	 * Getter for <code>rigel.alerts.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(8);

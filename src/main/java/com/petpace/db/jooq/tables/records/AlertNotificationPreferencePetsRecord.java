@@ -9,45 +9,45 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotificationPreferencePetsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AlertNotificationPreferencePetsRecord> implements org.jooq.Record3<java.lang.Integer, java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = 782459897;
+	private static final long serialVersionUID = -1858824021;
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preference_pets.pet_id</code>. 
+	 * Setter for <code>rigel.alert_notification_preference_pets.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preference_pets.pet_id</code>. 
+	 * Getter for <code>rigel.alert_notification_preference_pets.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preference_pets.preference_id</code>. 
+	 * Setter for <code>rigel.alert_notification_preference_pets.preference_id</code>. 
 	 */
 	public void setPreferenceId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preference_pets.preference_id</code>. 
+	 * Getter for <code>rigel.alert_notification_preference_pets.preference_id</code>. 
 	 */
 	public java.lang.Integer getPreferenceId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preference_pets.businessUnit_id</code>. 
+	 * Setter for <code>rigel.alert_notification_preference_pets.businessUnit_id</code>. 
 	 */
 	public void setBusinessunitId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preference_pets.businessUnit_id</code>. 
+	 * Getter for <code>rigel.alert_notification_preference_pets.businessUnit_id</code>. 
 	 */
 	public java.lang.Integer getBusinessunitId() {
 		return (java.lang.Integer) getValue(2);

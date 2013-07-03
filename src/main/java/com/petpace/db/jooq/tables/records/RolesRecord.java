@@ -9,87 +9,87 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class RolesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.RolesRecord> implements org.jooq.Record6<java.lang.Integer, java.lang.Integer, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1051983024;
+	private static final long serialVersionUID = 1278300146;
 
 	/**
-	 * Setter for <code>sirius.roles.id</code>. 
+	 * Setter for <code>rigel.roles.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.roles.id</code>. 
+	 * Getter for <code>rigel.roles.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.roles.account_id</code>. 
+	 * Setter for <code>rigel.roles.account_id</code>. 
 	 */
 	public void setAccountId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.roles.account_id</code>. 
+	 * Getter for <code>rigel.roles.account_id</code>. 
 	 */
 	public java.lang.Integer getAccountId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.roles.name</code>. 
+	 * Setter for <code>rigel.roles.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.roles.name</code>. 
+	 * Getter for <code>rigel.roles.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.roles.dateCreated</code>. 
+	 * Setter for <code>rigel.roles.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.roles.dateCreated</code>. 
+	 * Getter for <code>rigel.roles.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.roles.dateUpdated</code>. 
+	 * Setter for <code>rigel.roles.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.roles.dateUpdated</code>. 
+	 * Getter for <code>rigel.roles.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.roles.status</code>. 
+	 * Setter for <code>rigel.roles.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.roles.status</code>. 
+	 * Getter for <code>rigel.roles.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(5);

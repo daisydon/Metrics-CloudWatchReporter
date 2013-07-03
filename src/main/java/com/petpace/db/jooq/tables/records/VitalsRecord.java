@@ -9,157 +9,157 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.VitalsRecord> implements org.jooq.Record11<java.lang.Integer, java.lang.String, java.lang.Integer, java.math.BigDecimal, java.math.BigDecimal, java.lang.Long, java.lang.Long, java.lang.Long, java.lang.Long, java.sql.Timestamp, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = 1697610358;
+	private static final long serialVersionUID = -1685049734;
 
 	/**
-	 * Setter for <code>sirius.vitals.id</code>. 
+	 * Setter for <code>rigel.vitals.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.id</code>. 
+	 * Getter for <code>rigel.vitals.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.collar_id</code>. 
+	 * Setter for <code>rigel.vitals.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.collar_id</code>. 
+	 * Getter for <code>rigel.vitals.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.pet_id</code>. 
+	 * Setter for <code>rigel.vitals.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.pet_id</code>. 
+	 * Getter for <code>rigel.vitals.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.ambientTemp</code>. 
+	 * Setter for <code>rigel.vitals.ambientTemp</code>. 
 	 */
 	public void setAmbienttemp(java.math.BigDecimal value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.ambientTemp</code>. 
+	 * Getter for <code>rigel.vitals.ambientTemp</code>. 
 	 */
 	public java.math.BigDecimal getAmbienttemp() {
 		return (java.math.BigDecimal) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.bodyTemp</code>. 
+	 * Setter for <code>rigel.vitals.bodyTemp</code>. 
 	 */
 	public void setBodytemp(java.math.BigDecimal value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.bodyTemp</code>. 
+	 * Getter for <code>rigel.vitals.bodyTemp</code>. 
 	 */
 	public java.math.BigDecimal getBodytemp() {
 		return (java.math.BigDecimal) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.pulse</code>. 
+	 * Setter for <code>rigel.vitals.pulse</code>. 
 	 */
 	public void setPulse(java.lang.Long value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.pulse</code>. 
+	 * Getter for <code>rigel.vitals.pulse</code>. 
 	 */
 	public java.lang.Long getPulse() {
 		return (java.lang.Long) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.respiratory</code>. 
+	 * Setter for <code>rigel.vitals.respiratory</code>. 
 	 */
 	public void setRespiratory(java.lang.Long value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.respiratory</code>. 
+	 * Getter for <code>rigel.vitals.respiratory</code>. 
 	 */
 	public java.lang.Long getRespiratory() {
 		return (java.lang.Long) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.activity</code>. 
+	 * Setter for <code>rigel.vitals.activity</code>. 
 	 */
 	public void setActivity(java.lang.Long value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.activity</code>. 
+	 * Getter for <code>rigel.vitals.activity</code>. 
 	 */
 	public java.lang.Long getActivity() {
 		return (java.lang.Long) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.position</code>. 
+	 * Setter for <code>rigel.vitals.position</code>. 
 	 */
 	public void setPosition(java.lang.Long value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.position</code>. 
+	 * Getter for <code>rigel.vitals.position</code>. 
 	 */
 	public java.lang.Long getPosition() {
 		return (java.lang.Long) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.time</code>. 
+	 * Setter for <code>rigel.vitals.time</code>. 
 	 */
 	public void setTime(java.sql.Timestamp value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.time</code>. 
+	 * Getter for <code>rigel.vitals.time</code>. 
 	 */
 	public java.sql.Timestamp getTime() {
 		return (java.sql.Timestamp) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.vitals.created</code>. 
+	 * Setter for <code>rigel.vitals.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vitals.created</code>. 
+	 * Getter for <code>rigel.vitals.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(10);

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Pets extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PetsRecord> {
 
-	private static final long serialVersionUID = 302804559;
+	private static final long serialVersionUID = 2122829809;
 
 	/**
-	 * The singleton instance of <code>sirius.pets</code>
+	 * The singleton instance of <code>rigel.pets</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Pets PETS = new com.petpace.db.jooq.tables.Pets();
 
@@ -25,77 +25,77 @@ public class Pets extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.rec
 	}
 
 	/**
-	 * The column <code>sirius.pets.id</code>. 
+	 * The column <code>rigel.pets.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pets.owner_id</code>. 
+	 * The column <code>rigel.pets.owner_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.Integer> OWNER_ID = createField("owner_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pets.name</code>. 
+	 * The column <code>rigel.pets.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.pets.pet_type</code>. 
+	 * The column <code>rigel.pets.pet_type</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.String> PET_TYPE = createField("pet_type", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.pets.breed</code>. 
+	 * The column <code>rigel.pets.breed</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.String> BREED = createField("breed", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.pets.imageUrl</code>. 
+	 * The column <code>rigel.pets.imageUrl</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.String> IMAGEURL = createField("imageUrl", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.pets.dob</code>. 
+	 * The column <code>rigel.pets.dob</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.sql.Timestamp> DOB = createField("dob", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pets.gender</code>. 
+	 * The column <code>rigel.pets.gender</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.Integer> GENDER = createField("gender", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pets.dateCreated</code>. 
+	 * The column <code>rigel.pets.dateCreated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.sql.Timestamp> DATECREATED = createField("dateCreated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pets.dateUpdated</code>. 
+	 * The column <code>rigel.pets.dateUpdated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.sql.Timestamp> DATEUPDATED = createField("dateUpdated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pets.status</code>. 
+	 * The column <code>rigel.pets.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pets.petType_id</code>. 
+	 * The column <code>rigel.pets.petType_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetsRecord, java.lang.String> PETTYPE_ID = createField("petType_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.pets</code> table reference
+	 * Create a <code>rigel.pets</code> table reference
 	 */
 	public Pets() {
-		super("pets", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("pets", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.pets</code> table reference
+	 * Create an aliased <code>rigel.pets</code> table reference
 	 */
 	public Pets(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Pets.PETS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Pets.PETS);
 	}
 
 	/**

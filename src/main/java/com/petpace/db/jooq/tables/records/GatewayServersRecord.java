@@ -9,73 +9,73 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayServersRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewayServersRecord> implements org.jooq.Record5<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -1420909806;
+	private static final long serialVersionUID = -2123168966;
 
 	/**
-	 * Setter for <code>sirius.gateway_servers.ServerID</code>. 
+	 * Setter for <code>rigel.gateway_servers.ServerID</code>. 
 	 */
 	public void setServerid(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_servers.ServerID</code>. 
+	 * Getter for <code>rigel.gateway_servers.ServerID</code>. 
 	 */
 	public java.lang.Integer getServerid() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_servers.name</code>. 
+	 * Setter for <code>rigel.gateway_servers.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_servers.name</code>. 
+	 * Getter for <code>rigel.gateway_servers.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_servers.HostAddr</code>. 
+	 * Setter for <code>rigel.gateway_servers.HostAddr</code>. 
 	 */
 	public void setHostaddr(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_servers.HostAddr</code>. 
+	 * Getter for <code>rigel.gateway_servers.HostAddr</code>. 
 	 */
 	public java.lang.String getHostaddr() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_servers.version</code>. 
+	 * Setter for <code>rigel.gateway_servers.version</code>. 
 	 */
 	public void setVersion(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_servers.version</code>. 
+	 * Getter for <code>rigel.gateway_servers.version</code>. 
 	 */
 	public java.lang.String getVersion() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_servers.updated</code>. 
+	 * Setter for <code>rigel.gateway_servers.updated</code>. 
 	 */
 	public void setUpdated(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_servers.updated</code>. 
+	 * Getter for <code>rigel.gateway_servers.updated</code>. 
 	 */
 	public java.sql.Timestamp getUpdated() {
 		return (java.sql.Timestamp) getValue(4);

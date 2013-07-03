@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetAttributeValues extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord> {
 
-	private static final long serialVersionUID = -51247102;
+	private static final long serialVersionUID = -1073332870;
 
 	/**
-	 * The singleton instance of <code>sirius.pet_attribute_values</code>
+	 * The singleton instance of <code>rigel.pet_attribute_values</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PetAttributeValues PET_ATTRIBUTE_VALUES = new com.petpace.db.jooq.tables.PetAttributeValues();
 
@@ -25,52 +25,52 @@ public class PetAttributeValues extends org.jooq.impl.TableImpl<com.petpace.db.j
 	}
 
 	/**
-	 * The column <code>sirius.pet_attribute_values.id</code>. 
+	 * The column <code>rigel.pet_attribute_values.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_values.pet_id</code>. 
+	 * The column <code>rigel.pet_attribute_values.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_values.val</code>. 
+	 * The column <code>rigel.pet_attribute_values.val</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord, java.sql.Timestamp> VAL = createField("val", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_values.dateCreated</code>. 
+	 * The column <code>rigel.pet_attribute_values.dateCreated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord, java.sql.Timestamp> DATECREATED = createField("dateCreated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_values.dateUpdated</code>. 
+	 * The column <code>rigel.pet_attribute_values.dateUpdated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord, java.sql.Timestamp> DATEUPDATED = createField("dateUpdated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_values.status</code>. 
+	 * The column <code>rigel.pet_attribute_values.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_values.petAttribute_id</code>. 
+	 * The column <code>rigel.pet_attribute_values.petAttribute_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeValuesRecord, java.lang.Integer> PETATTRIBUTE_ID = createField("petAttribute_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.pet_attribute_values</code> table reference
+	 * Create a <code>rigel.pet_attribute_values</code> table reference
 	 */
 	public PetAttributeValues() {
-		super("pet_attribute_values", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("pet_attribute_values", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.pet_attribute_values</code> table reference
+	 * Create an aliased <code>rigel.pet_attribute_values</code> table reference
 	 */
 	public PetAttributeValues(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PetAttributeValues.PET_ATTRIBUTE_VALUES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PetAttributeValues.PET_ATTRIBUTE_VALUES);
 	}
 
 	/**

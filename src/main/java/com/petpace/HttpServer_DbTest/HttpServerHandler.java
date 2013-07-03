@@ -1,8 +1,12 @@
 package com.petpace.HttpServer_DbTest;
 
+import static com.petpace.db.jooq.Tables.COLLARS;
+
+import java.io.CharArrayReader;
 import java.io.File;
 import java.io.IOException;
 import java.net.SocketAddress;
+import java.nio.charset.Charset;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
@@ -35,10 +39,8 @@ import org.jooq.DSLContext;
 import org.jooq.Record;
 import org.jooq.Result;
 import org.jooq.SQLDialect;
-
+import org.jooq.Table;
 import org.jooq.impl.DSL;
-import static org.jooq.impl.DSL.*;
-import static com.petpace.db.jooq.Tables.*;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
@@ -46,10 +48,9 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
-import com.petpace.db.CollarMessage;
 import com.petpace.db.DatasourceConnection;
 
-public class HttpServerHandler extends SimpleChannelHandler{
+public class HttpServerHandler extends SimpleChannelHandler {
 	private static final Logger logger = Logger
 			.getLogger(HttpServerHandler.class.getName());
 
@@ -105,12 +106,26 @@ public class HttpServerHandler extends SimpleChannelHandler{
 		buf.append("<p>URI: ").append(request.getUri()).append("</p>");
 		buf.append("<p>PATH: ").append(queryStringDecoder.getPath())
 				.append("</p><p>");
+		StringBuilder tableName = new StringBuilder();
+		char[] chars = queryStringDecoder.getPath().toCharArray();
+	    int i = chars.length;
+		if (i>0){
+			for (int j = 1; j<i;j++ ){
+				tableName.append(chars[j]);
+			}
+		}
+		buf.append("<p>Table Name: ").append(tableName.toString())
+		.append("</p><p>");
+
 		Map<String, List<String>> params = queryStringDecoder.getParameters();
 		if (!params.isEmpty()) {
 			for (Entry<String, List<String>> p : params.entrySet()) {
 				String key = p.getKey();
 				List<String> vals = p.getValue();
 				for (String val : vals) {
+					//parse the query in URL
+					
+					//getCollarMessage(key, val);
 					buf.append("PARA: " + key + "VAL: " + val + "<br/>");
 					System.out.println("PARA: " + key + " VAL: " + val);
 				}
@@ -128,28 +143,31 @@ public class HttpServerHandler extends SimpleChannelHandler{
 			buf.append(request.getContent().toString(CharsetUtil.UTF_8))
 					.append("</p>");
 		}
-		
-		CollarMessage message = null;
-		//message = getCollarMessage();
-		buf.append(message.toString());
-		
+
+		buf.append(getCollarMessage());
+
 		response.setContent(ChannelBuffers.copiedBuffer(buf.toString(),
 				CharsetUtil.UTF_8));
 		setCookie(request, response);
 		e.getChannel().write(response);
 	}
-	
-public void getCollarMessage() throws SQLException{
-	DSLContext create = DSL.using(DatasourceConnection.getDatasource(), SQLDialect.MYSQL);
-	Result<Record> result = create.select().from(COLLARS).fetch();
-	for (Record r : result) {
-        int id = r.getValue(COLLARS.field("id"));
-        String collar_id = r.getValue(COLLARS.field("collar_id"));
-        String name = r.getValue(COLLARS.field("name"));
 
-        System.out.println("ID: " + id + " title: " + title + " desciption: " + description);
-    }
+	public String getCollarMessage() throws SQLException {
+		DSLContext create = DSL.using(DatasourceConnection.getDatasource(),
+				SQLDialect.MYSQL);
+		Result<Record> result = create.select().from(COLLARS).fetch();
+		
+		String json = create.selectFrom(COLLARS).fetch().formatJSON();
+		
+		for(Record r: result){
+			
+			String id = r.getValue(COLLARS.ID);
+			 //int groupid = r.getValue(COLLARS.GROUPID);
 
+			System.out.println("ID: " + id);
+		}
+		return json;
+//		}
 	}
 
 	/**

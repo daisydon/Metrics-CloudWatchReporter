@@ -9,101 +9,101 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class CollarRegistrationsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.CollarRegistrationsRecord> implements org.jooq.Record7<java.lang.Integer, java.lang.String, java.lang.Integer, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer, java.lang.String> {
 
-	private static final long serialVersionUID = 661827240;
+	private static final long serialVersionUID = -1673905658;
 
 	/**
-	 * Setter for <code>sirius.collar_registrations.id</code>. 
+	 * Setter for <code>rigel.collar_registrations.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_registrations.id</code>. 
+	 * Getter for <code>rigel.collar_registrations.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_registrations.collar_id</code>. 
+	 * Setter for <code>rigel.collar_registrations.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_registrations.collar_id</code>. 
+	 * Getter for <code>rigel.collar_registrations.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_registrations.pet_id</code>. 
+	 * Setter for <code>rigel.collar_registrations.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_registrations.pet_id</code>. 
+	 * Getter for <code>rigel.collar_registrations.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_registrations.start</code>. 
+	 * Setter for <code>rigel.collar_registrations.start</code>. 
 	 */
 	public void setStart(java.sql.Timestamp value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_registrations.start</code>. 
+	 * Getter for <code>rigel.collar_registrations.start</code>. 
 	 */
 	public java.sql.Timestamp getStart() {
 		return (java.sql.Timestamp) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_registrations.end</code>. 
+	 * Setter for <code>rigel.collar_registrations.end</code>. 
 	 */
 	public void setEnd(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_registrations.end</code>. 
+	 * Getter for <code>rigel.collar_registrations.end</code>. 
 	 */
 	public java.sql.Timestamp getEnd() {
 		return (java.sql.Timestamp) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_registrations.status</code>. 
+	 * Setter for <code>rigel.collar_registrations.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_registrations.status</code>. 
+	 * Getter for <code>rigel.collar_registrations.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_registrations.notes</code>. 
+	 * Setter for <code>rigel.collar_registrations.notes</code>. 
 	 */
 	public void setNotes(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_registrations.notes</code>. 
+	 * Getter for <code>rigel.collar_registrations.notes</code>. 
 	 */
 	public java.lang.String getNotes() {
 		return (java.lang.String) getValue(6);

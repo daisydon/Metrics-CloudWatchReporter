@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessAdministrators extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BusinessAdministratorsRecord> {
 
-	private static final long serialVersionUID = 2014895780;
+	private static final long serialVersionUID = 2044717444;
 
 	/**
-	 * The singleton instance of <code>sirius.business_administrators</code>
+	 * The singleton instance of <code>rigel.business_administrators</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BusinessAdministrators BUSINESS_ADMINISTRATORS = new com.petpace.db.jooq.tables.BusinessAdministrators();
 
@@ -25,27 +25,27 @@ public class BusinessAdministrators extends org.jooq.impl.TableImpl<com.petpace.
 	}
 
 	/**
-	 * The column <code>sirius.business_administrators.business_id</code>. 
+	 * The column <code>rigel.business_administrators.business_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessAdministratorsRecord, java.lang.Integer> BUSINESS_ID = createField("business_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.business_administrators.account_id</code>. 
+	 * The column <code>rigel.business_administrators.account_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessAdministratorsRecord, java.lang.Integer> ACCOUNT_ID = createField("account_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.business_administrators</code> table reference
+	 * Create a <code>rigel.business_administrators</code> table reference
 	 */
 	public BusinessAdministrators() {
-		super("business_administrators", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("business_administrators", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.business_administrators</code> table reference
+	 * Create an aliased <code>rigel.business_administrators</code> table reference
 	 */
 	public BusinessAdministrators(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BusinessAdministrators.BUSINESS_ADMINISTRATORS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BusinessAdministrators.BUSINESS_ADMINISTRATORS);
 	}
 
 	/**

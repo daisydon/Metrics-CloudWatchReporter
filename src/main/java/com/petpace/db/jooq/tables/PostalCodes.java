@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PostalCodes extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PostalCodesRecord> {
 
-	private static final long serialVersionUID = 1528925980;
+	private static final long serialVersionUID = 1778235142;
 
 	/**
-	 * The singleton instance of <code>sirius.postal_codes</code>
+	 * The singleton instance of <code>rigel.postal_codes</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PostalCodes POSTAL_CODES = new com.petpace.db.jooq.tables.PostalCodes();
 
@@ -25,77 +25,77 @@ public class PostalCodes extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tab
 	}
 
 	/**
-	 * The column <code>sirius.postal_codes.zipcode</code>. 
+	 * The column <code>rigel.postal_codes.zipcode</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> ZIPCODE = createField("zipcode", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.city</code>. 
+	 * The column <code>rigel.postal_codes.city</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> CITY = createField("city", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.countyName</code>. 
+	 * The column <code>rigel.postal_codes.countyName</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> COUNTYNAME = createField("countyName", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.regionCode</code>. 
+	 * The column <code>rigel.postal_codes.regionCode</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> REGIONCODE = createField("regionCode", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.regionFullname</code>. 
+	 * The column <code>rigel.postal_codes.regionFullname</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> REGIONFULLNAME = createField("regionFullname", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.countryCode</code>. 
+	 * The column <code>rigel.postal_codes.countryCode</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> COUNTRYCODE = createField("countryCode", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.countryFullname</code>. 
+	 * The column <code>rigel.postal_codes.countryFullname</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> COUNTRYFULLNAME = createField("countryFullname", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.latitude</code>. 
+	 * The column <code>rigel.postal_codes.latitude</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.Double> LATITUDE = createField("latitude", org.jooq.impl.SQLDataType.DOUBLE, this);
 
 	/**
-	 * The column <code>sirius.postal_codes.longitude</code>. 
+	 * The column <code>rigel.postal_codes.longitude</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.Double> LONGITUDE = createField("longitude", org.jooq.impl.SQLDataType.DOUBLE, this);
 
 	/**
-	 * The column <code>sirius.postal_codes.areaCode</code>. 
+	 * The column <code>rigel.postal_codes.areaCode</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> AREACODE = createField("areaCode", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.timezone</code>. 
+	 * The column <code>rigel.postal_codes.timezone</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.String> TIMEZONE = createField("timezone", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.postal_codes.utc</code>. 
+	 * The column <code>rigel.postal_codes.utc</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PostalCodesRecord, java.lang.Double> UTC = createField("utc", org.jooq.impl.SQLDataType.DOUBLE, this);
 
 	/**
-	 * Create a <code>sirius.postal_codes</code> table reference
+	 * Create a <code>rigel.postal_codes</code> table reference
 	 */
 	public PostalCodes() {
-		super("postal_codes", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("postal_codes", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.postal_codes</code> table reference
+	 * Create an aliased <code>rigel.postal_codes</code> table reference
 	 */
 	public PostalCodes(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PostalCodes.POSTAL_CODES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PostalCodes.POSTAL_CODES);
 	}
 
 	/**

@@ -9,171 +9,171 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PostalCodesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PostalCodesRecord> implements org.jooq.Record12<java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.Double, java.lang.String, java.lang.String, java.lang.Double> {
 
-	private static final long serialVersionUID = -1867676551;
+	private static final long serialVersionUID = -1306009159;
 
 	/**
-	 * Setter for <code>sirius.postal_codes.zipcode</code>. 
+	 * Setter for <code>rigel.postal_codes.zipcode</code>. 
 	 */
 	public void setZipcode(java.lang.String value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.zipcode</code>. 
+	 * Getter for <code>rigel.postal_codes.zipcode</code>. 
 	 */
 	public java.lang.String getZipcode() {
 		return (java.lang.String) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.city</code>. 
+	 * Setter for <code>rigel.postal_codes.city</code>. 
 	 */
 	public void setCity(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.city</code>. 
+	 * Getter for <code>rigel.postal_codes.city</code>. 
 	 */
 	public java.lang.String getCity() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.countyName</code>. 
+	 * Setter for <code>rigel.postal_codes.countyName</code>. 
 	 */
 	public void setCountyname(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.countyName</code>. 
+	 * Getter for <code>rigel.postal_codes.countyName</code>. 
 	 */
 	public java.lang.String getCountyname() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.regionCode</code>. 
+	 * Setter for <code>rigel.postal_codes.regionCode</code>. 
 	 */
 	public void setRegioncode(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.regionCode</code>. 
+	 * Getter for <code>rigel.postal_codes.regionCode</code>. 
 	 */
 	public java.lang.String getRegioncode() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.regionFullname</code>. 
+	 * Setter for <code>rigel.postal_codes.regionFullname</code>. 
 	 */
 	public void setRegionfullname(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.regionFullname</code>. 
+	 * Getter for <code>rigel.postal_codes.regionFullname</code>. 
 	 */
 	public java.lang.String getRegionfullname() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.countryCode</code>. 
+	 * Setter for <code>rigel.postal_codes.countryCode</code>. 
 	 */
 	public void setCountrycode(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.countryCode</code>. 
+	 * Getter for <code>rigel.postal_codes.countryCode</code>. 
 	 */
 	public java.lang.String getCountrycode() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.countryFullname</code>. 
+	 * Setter for <code>rigel.postal_codes.countryFullname</code>. 
 	 */
 	public void setCountryfullname(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.countryFullname</code>. 
+	 * Getter for <code>rigel.postal_codes.countryFullname</code>. 
 	 */
 	public java.lang.String getCountryfullname() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.latitude</code>. 
+	 * Setter for <code>rigel.postal_codes.latitude</code>. 
 	 */
 	public void setLatitude(java.lang.Double value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.latitude</code>. 
+	 * Getter for <code>rigel.postal_codes.latitude</code>. 
 	 */
 	public java.lang.Double getLatitude() {
 		return (java.lang.Double) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.longitude</code>. 
+	 * Setter for <code>rigel.postal_codes.longitude</code>. 
 	 */
 	public void setLongitude(java.lang.Double value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.longitude</code>. 
+	 * Getter for <code>rigel.postal_codes.longitude</code>. 
 	 */
 	public java.lang.Double getLongitude() {
 		return (java.lang.Double) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.areaCode</code>. 
+	 * Setter for <code>rigel.postal_codes.areaCode</code>. 
 	 */
 	public void setAreacode(java.lang.String value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.areaCode</code>. 
+	 * Getter for <code>rigel.postal_codes.areaCode</code>. 
 	 */
 	public java.lang.String getAreacode() {
 		return (java.lang.String) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.timezone</code>. 
+	 * Setter for <code>rigel.postal_codes.timezone</code>. 
 	 */
 	public void setTimezone(java.lang.String value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.timezone</code>. 
+	 * Getter for <code>rigel.postal_codes.timezone</code>. 
 	 */
 	public java.lang.String getTimezone() {
 		return (java.lang.String) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.postal_codes.utc</code>. 
+	 * Setter for <code>rigel.postal_codes.utc</code>. 
 	 */
 	public void setUtc(java.lang.Double value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.postal_codes.utc</code>. 
+	 * Getter for <code>rigel.postal_codes.utc</code>. 
 	 */
 	public java.lang.Double getUtc() {
 		return (java.lang.Double) getValue(11);

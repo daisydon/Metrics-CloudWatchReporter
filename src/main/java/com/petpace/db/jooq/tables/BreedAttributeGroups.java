@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BreedAttributeGroups extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BreedAttributeGroupsRecord> {
 
-	private static final long serialVersionUID = -705627434;
+	private static final long serialVersionUID = -1036723294;
 
 	/**
-	 * The singleton instance of <code>sirius.breed_attribute_groups</code>
+	 * The singleton instance of <code>rigel.breed_attribute_groups</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BreedAttributeGroups BREED_ATTRIBUTE_GROUPS = new com.petpace.db.jooq.tables.BreedAttributeGroups();
 
@@ -25,27 +25,27 @@ public class BreedAttributeGroups extends org.jooq.impl.TableImpl<com.petpace.db
 	}
 
 	/**
-	 * The column <code>sirius.breed_attribute_groups.id</code>. 
+	 * The column <code>rigel.breed_attribute_groups.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeGroupsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.breed_attribute_groups.name</code>. 
+	 * The column <code>rigel.breed_attribute_groups.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeGroupsRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.breed_attribute_groups</code> table reference
+	 * Create a <code>rigel.breed_attribute_groups</code> table reference
 	 */
 	public BreedAttributeGroups() {
-		super("breed_attribute_groups", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("breed_attribute_groups", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.breed_attribute_groups</code> table reference
+	 * Create an aliased <code>rigel.breed_attribute_groups</code> table reference
 	 */
 	public BreedAttributeGroups(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BreedAttributeGroups.BREED_ATTRIBUTE_GROUPS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BreedAttributeGroups.BREED_ATTRIBUTE_GROUPS);
 	}
 
 	/**

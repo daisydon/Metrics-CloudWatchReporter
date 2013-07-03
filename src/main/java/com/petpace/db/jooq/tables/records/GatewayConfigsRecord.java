@@ -9,73 +9,73 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayConfigsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewayConfigsRecord> implements org.jooq.Record5<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -539619166;
+	private static final long serialVersionUID = -1257221064;
 
 	/**
-	 * Setter for <code>sirius.gateway_configs.ConfigID</code>. 
+	 * Setter for <code>rigel.gateway_configs.ConfigID</code>. 
 	 */
 	public void setConfigid(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_configs.ConfigID</code>. 
+	 * Getter for <code>rigel.gateway_configs.ConfigID</code>. 
 	 */
 	public java.lang.Integer getConfigid() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_configs.Version</code>. 
+	 * Setter for <code>rigel.gateway_configs.Version</code>. 
 	 */
 	public void setVersion(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_configs.Version</code>. 
+	 * Getter for <code>rigel.gateway_configs.Version</code>. 
 	 */
 	public java.lang.String getVersion() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_configs.Comment</code>. 
+	 * Setter for <code>rigel.gateway_configs.Comment</code>. 
 	 */
 	public void setComment(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_configs.Comment</code>. 
+	 * Getter for <code>rigel.gateway_configs.Comment</code>. 
 	 */
 	public java.lang.String getComment() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_configs.S3</code>. 
+	 * Setter for <code>rigel.gateway_configs.S3</code>. 
 	 */
 	public void setS3(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_configs.S3</code>. 
+	 * Getter for <code>rigel.gateway_configs.S3</code>. 
 	 */
 	public java.lang.String getS3() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_configs.UploadDate</code>. 
+	 * Setter for <code>rigel.gateway_configs.UploadDate</code>. 
 	 */
 	public void setUploaddate(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_configs.UploadDate</code>. 
+	 * Getter for <code>rigel.gateway_configs.UploadDate</code>. 
 	 */
 	public java.sql.Timestamp getUploaddate() {
 		return (java.sql.Timestamp) getValue(4);

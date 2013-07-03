@@ -9,87 +9,87 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayLogsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewayLogsRecord> implements org.jooq.Record6<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -1447038470;
+	private static final long serialVersionUID = 1533511228;
 
 	/**
-	 * Setter for <code>sirius.gateway_logs.LogID</code>. 
+	 * Setter for <code>rigel.gateway_logs.LogID</code>. 
 	 */
 	public void setLogid(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_logs.LogID</code>. 
+	 * Getter for <code>rigel.gateway_logs.LogID</code>. 
 	 */
 	public java.lang.Integer getLogid() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_logs.DeviceType</code>. 
+	 * Setter for <code>rigel.gateway_logs.DeviceType</code>. 
 	 */
 	public void setDevicetype(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_logs.DeviceType</code>. 
+	 * Getter for <code>rigel.gateway_logs.DeviceType</code>. 
 	 */
 	public java.lang.String getDevicetype() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_logs.DeviceId</code>. 
+	 * Setter for <code>rigel.gateway_logs.DeviceId</code>. 
 	 */
 	public void setDeviceid(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_logs.DeviceId</code>. 
+	 * Getter for <code>rigel.gateway_logs.DeviceId</code>. 
 	 */
 	public java.lang.String getDeviceid() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_logs.Severity</code>. 
+	 * Setter for <code>rigel.gateway_logs.Severity</code>. 
 	 */
 	public void setSeverity(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_logs.Severity</code>. 
+	 * Getter for <code>rigel.gateway_logs.Severity</code>. 
 	 */
 	public java.lang.String getSeverity() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_logs.Message</code>. 
+	 * Setter for <code>rigel.gateway_logs.Message</code>. 
 	 */
 	public void setMessage(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_logs.Message</code>. 
+	 * Getter for <code>rigel.gateway_logs.Message</code>. 
 	 */
 	public java.lang.String getMessage() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_logs.logTime</code>. 
+	 * Setter for <code>rigel.gateway_logs.logTime</code>. 
 	 */
 	public void setLogtime(java.sql.Timestamp value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_logs.logTime</code>. 
+	 * Getter for <code>rigel.gateway_logs.logTime</code>. 
 	 */
 	public java.sql.Timestamp getLogtime() {
 		return (java.sql.Timestamp) getValue(5);

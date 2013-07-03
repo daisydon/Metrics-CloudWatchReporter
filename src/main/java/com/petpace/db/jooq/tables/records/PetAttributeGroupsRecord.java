@@ -9,101 +9,101 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetAttributeGroupsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetAttributeGroupsRecord> implements org.jooq.Record7<java.lang.Integer, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer, java.lang.String> {
 
-	private static final long serialVersionUID = 1894509639;
+	private static final long serialVersionUID = -520581357;
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_groups.id</code>. 
+	 * Setter for <code>rigel.pet_attribute_groups.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_groups.id</code>. 
+	 * Getter for <code>rigel.pet_attribute_groups.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_groups.entity_id</code>. 
+	 * Setter for <code>rigel.pet_attribute_groups.entity_id</code>. 
 	 */
 	public void setEntityId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_groups.entity_id</code>. 
+	 * Getter for <code>rigel.pet_attribute_groups.entity_id</code>. 
 	 */
 	public java.lang.String getEntityId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_groups.name</code>. 
+	 * Setter for <code>rigel.pet_attribute_groups.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_groups.name</code>. 
+	 * Getter for <code>rigel.pet_attribute_groups.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_groups.dateCreated</code>. 
+	 * Setter for <code>rigel.pet_attribute_groups.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_groups.dateCreated</code>. 
+	 * Getter for <code>rigel.pet_attribute_groups.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_groups.dateUpdated</code>. 
+	 * Setter for <code>rigel.pet_attribute_groups.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_groups.dateUpdated</code>. 
+	 * Getter for <code>rigel.pet_attribute_groups.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_groups.status</code>. 
+	 * Setter for <code>rigel.pet_attribute_groups.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_groups.status</code>. 
+	 * Getter for <code>rigel.pet_attribute_groups.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_groups.note</code>. 
+	 * Setter for <code>rigel.pet_attribute_groups.note</code>. 
 	 */
 	public void setNote(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_groups.note</code>. 
+	 * Getter for <code>rigel.pet_attribute_groups.note</code>. 
 	 */
 	public java.lang.String getNote() {
 		return (java.lang.String) getValue(6);

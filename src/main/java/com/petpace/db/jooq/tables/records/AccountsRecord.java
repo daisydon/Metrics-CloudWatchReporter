@@ -9,157 +9,157 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AccountsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AccountsRecord> implements org.jooq.Record11<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1066326764;
+	private static final long serialVersionUID = 606609756;
 
 	/**
-	 * Setter for <code>sirius.accounts.id</code>. 
+	 * Setter for <code>rigel.accounts.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.id</code>. 
+	 * Getter for <code>rigel.accounts.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.fullname</code>. 
+	 * Setter for <code>rigel.accounts.fullname</code>. 
 	 */
 	public void setFullname(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.fullname</code>. 
+	 * Getter for <code>rigel.accounts.fullname</code>. 
 	 */
 	public java.lang.String getFullname() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.email</code>. 
+	 * Setter for <code>rigel.accounts.email</code>. 
 	 */
 	public void setEmail(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.email</code>. 
+	 * Getter for <code>rigel.accounts.email</code>. 
 	 */
 	public java.lang.String getEmail() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.imageUrl</code>. 
+	 * Setter for <code>rigel.accounts.imageUrl</code>. 
 	 */
 	public void setImageurl(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.imageUrl</code>. 
+	 * Getter for <code>rigel.accounts.imageUrl</code>. 
 	 */
 	public java.lang.String getImageurl() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.passToken</code>. 
+	 * Setter for <code>rigel.accounts.passToken</code>. 
 	 */
 	public void setPasstoken(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.passToken</code>. 
+	 * Getter for <code>rigel.accounts.passToken</code>. 
 	 */
 	public java.lang.String getPasstoken() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.password</code>. 
+	 * Setter for <code>rigel.accounts.password</code>. 
 	 */
 	public void setPassword(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.password</code>. 
+	 * Getter for <code>rigel.accounts.password</code>. 
 	 */
 	public java.lang.String getPassword() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.salt</code>. 
+	 * Setter for <code>rigel.accounts.salt</code>. 
 	 */
 	public void setSalt(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.salt</code>. 
+	 * Getter for <code>rigel.accounts.salt</code>. 
 	 */
 	public java.lang.String getSalt() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.lastLogin</code>. 
+	 * Setter for <code>rigel.accounts.lastLogin</code>. 
 	 */
 	public void setLastlogin(java.sql.Timestamp value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.lastLogin</code>. 
+	 * Getter for <code>rigel.accounts.lastLogin</code>. 
 	 */
 	public java.sql.Timestamp getLastlogin() {
 		return (java.sql.Timestamp) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.dateCreated</code>. 
+	 * Setter for <code>rigel.accounts.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.dateCreated</code>. 
+	 * Getter for <code>rigel.accounts.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.dateUpdated</code>. 
+	 * Setter for <code>rigel.accounts.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.dateUpdated</code>. 
+	 * Getter for <code>rigel.accounts.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.accounts.status</code>. 
+	 * Setter for <code>rigel.accounts.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.accounts.status</code>. 
+	 * Getter for <code>rigel.accounts.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(10);

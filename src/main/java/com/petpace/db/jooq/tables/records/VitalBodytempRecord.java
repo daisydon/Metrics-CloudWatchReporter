@@ -9,353 +9,353 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalBodytempRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.VitalBodytempRecord> {
 
-	private static final long serialVersionUID = -2090321764;
+	private static final long serialVersionUID = -529070536;
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.id</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.id</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.collar_id</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.collar_id</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.pet_id</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.pet_id</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.name</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.name</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.quality</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.quality</code>. 
 	 */
 	public void setQuality(java.lang.Integer value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.quality</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.quality</code>. 
 	 */
 	public java.lang.Integer getQuality() {
 		return (java.lang.Integer) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.deviation</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.deviation</code>. 
 	 */
 	public void setDeviation(java.math.BigDecimal value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.deviation</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.deviation</code>. 
 	 */
 	public java.math.BigDecimal getDeviation() {
 		return (java.math.BigDecimal) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.duration</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.duration</code>. 
 	 */
 	public void setDuration(java.lang.Integer value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.duration</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.duration</code>. 
 	 */
 	public java.lang.Integer getDuration() {
 		return (java.lang.Integer) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.value</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.value</code>. 
 	 */
 	public void setValue(java.math.BigDecimal value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.value</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.value</code>. 
 	 */
 	public java.math.BigDecimal getValue() {
 		return (java.math.BigDecimal) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.ambient</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.ambient</code>. 
 	 */
 	public void setAmbient(java.math.BigDecimal value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.ambient</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.ambient</code>. 
 	 */
 	public java.math.BigDecimal getAmbient() {
 		return (java.math.BigDecimal) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.hiLimit</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.hiLimit</code>. 
 	 */
 	public void setHilimit(java.math.BigDecimal value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.hiLimit</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.hiLimit</code>. 
 	 */
 	public java.math.BigDecimal getHilimit() {
 		return (java.math.BigDecimal) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.lowLimit</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.lowLimit</code>. 
 	 */
 	public void setLowlimit(java.math.BigDecimal value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.lowLimit</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.lowLimit</code>. 
 	 */
 	public java.math.BigDecimal getLowlimit() {
 		return (java.math.BigDecimal) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.smv10</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.smv10</code>. 
 	 */
 	public void setSmv10(java.math.BigDecimal value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.smv10</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.smv10</code>. 
 	 */
 	public java.math.BigDecimal getSmv10() {
 		return (java.math.BigDecimal) getValue(11);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.smv30</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.smv30</code>. 
 	 */
 	public void setSmv30(java.math.BigDecimal value) {
 		setValue(12, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.smv30</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.smv30</code>. 
 	 */
 	public java.math.BigDecimal getSmv30() {
 		return (java.math.BigDecimal) getValue(12);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.exhale</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.exhale</code>. 
 	 */
 	public void setExhale(java.math.BigDecimal value) {
 		setValue(13, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.exhale</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.exhale</code>. 
 	 */
 	public java.math.BigDecimal getExhale() {
 		return (java.math.BigDecimal) getValue(13);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.exhale_std</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.exhale_std</code>. 
 	 */
 	public void setExhaleStd(java.math.BigDecimal value) {
 		setValue(14, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.exhale_std</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.exhale_std</code>. 
 	 */
 	public java.math.BigDecimal getExhaleStd() {
 		return (java.math.BigDecimal) getValue(14);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.inhale</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.inhale</code>. 
 	 */
 	public void setInhale(java.math.BigDecimal value) {
 		setValue(15, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.inhale</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.inhale</code>. 
 	 */
 	public java.math.BigDecimal getInhale() {
 		return (java.math.BigDecimal) getValue(15);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.inhale_std</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.inhale_std</code>. 
 	 */
 	public void setInhaleStd(java.math.BigDecimal value) {
 		setValue(16, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.inhale_std</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.inhale_std</code>. 
 	 */
 	public java.math.BigDecimal getInhaleStd() {
 		return (java.math.BigDecimal) getValue(16);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.nn</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.nn</code>. 
 	 */
 	public void setNn(java.math.BigDecimal value) {
 		setValue(17, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.nn</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.nn</code>. 
 	 */
 	public java.math.BigDecimal getNn() {
 		return (java.math.BigDecimal) getValue(17);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.nn_std</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.nn_std</code>. 
 	 */
 	public void setNnStd(java.math.BigDecimal value) {
 		setValue(18, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.nn_std</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.nn_std</code>. 
 	 */
 	public java.math.BigDecimal getNnStd() {
 		return (java.math.BigDecimal) getValue(18);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.ipr</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.ipr</code>. 
 	 */
 	public void setIpr(java.math.BigDecimal value) {
 		setValue(19, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.ipr</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.ipr</code>. 
 	 */
 	public java.math.BigDecimal getIpr() {
 		return (java.math.BigDecimal) getValue(19);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.ipr_std</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.ipr_std</code>. 
 	 */
 	public void setIprStd(java.math.BigDecimal value) {
 		setValue(20, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.ipr_std</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.ipr_std</code>. 
 	 */
 	public java.math.BigDecimal getIprStd() {
 		return (java.math.BigDecimal) getValue(20);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.debug</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.debug</code>. 
 	 */
 	public void setDebug(java.lang.String value) {
 		setValue(21, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.debug</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.debug</code>. 
 	 */
 	public java.lang.String getDebug() {
 		return (java.lang.String) getValue(21);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.time</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.time</code>. 
 	 */
 	public void setTime(java.sql.Timestamp value) {
 		setValue(22, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.time</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.time</code>. 
 	 */
 	public java.sql.Timestamp getTime() {
 		return (java.sql.Timestamp) getValue(22);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.created</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(23, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.created</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(23);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_bodyTemp.notes</code>. 
+	 * Setter for <code>rigel.vital_bodyTemp.notes</code>. 
 	 */
 	public void setNotes(java.lang.String value) {
 		setValue(24, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_bodyTemp.notes</code>. 
+	 * Getter for <code>rigel.vital_bodyTemp.notes</code>. 
 	 */
 	public java.lang.String getNotes() {
 		return (java.lang.String) getValue(24);

@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PlaceCountriesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PlaceCountriesRecord> implements org.jooq.Record2<java.lang.String, java.lang.String> {
 
-	private static final long serialVersionUID = 229499867;
+	private static final long serialVersionUID = -1019534095;
 
 	/**
-	 * Setter for <code>sirius.place_countries.countryCode</code>. 
+	 * Setter for <code>rigel.place_countries.countryCode</code>. 
 	 */
 	public void setCountrycode(java.lang.String value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_countries.countryCode</code>. 
+	 * Getter for <code>rigel.place_countries.countryCode</code>. 
 	 */
 	public java.lang.String getCountrycode() {
 		return (java.lang.String) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_countries.countryName</code>. 
+	 * Setter for <code>rigel.place_countries.countryName</code>. 
 	 */
 	public void setCountryname(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_countries.countryName</code>. 
+	 * Getter for <code>rigel.place_countries.countryName</code>. 
 	 */
 	public java.lang.String getCountryname() {
 		return (java.lang.String) getValue(1);

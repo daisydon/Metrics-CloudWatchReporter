@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayServers extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.GatewayServersRecord> {
 
-	private static final long serialVersionUID = -1228587815;
+	private static final long serialVersionUID = 949664733;
 
 	/**
-	 * The singleton instance of <code>sirius.gateway_servers</code>
+	 * The singleton instance of <code>rigel.gateway_servers</code>
 	 */
 	public static final com.petpace.db.jooq.tables.GatewayServers GATEWAY_SERVERS = new com.petpace.db.jooq.tables.GatewayServers();
 
@@ -25,42 +25,42 @@ public class GatewayServers extends org.jooq.impl.TableImpl<com.petpace.db.jooq.
 	}
 
 	/**
-	 * The column <code>sirius.gateway_servers.ServerID</code>. 
+	 * The column <code>rigel.gateway_servers.ServerID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServersRecord, java.lang.Integer> SERVERID = createField("ServerID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.gateway_servers.name</code>. 
+	 * The column <code>rigel.gateway_servers.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServersRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_servers.HostAddr</code>. 
+	 * The column <code>rigel.gateway_servers.HostAddr</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServersRecord, java.lang.String> HOSTADDR = createField("HostAddr", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_servers.version</code>. 
+	 * The column <code>rigel.gateway_servers.version</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServersRecord, java.lang.String> VERSION = createField("version", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_servers.updated</code>. 
+	 * The column <code>rigel.gateway_servers.updated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServersRecord, java.sql.Timestamp> UPDATED = createField("updated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.gateway_servers</code> table reference
+	 * Create a <code>rigel.gateway_servers</code> table reference
 	 */
 	public GatewayServers() {
-		super("gateway_servers", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("gateway_servers", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.gateway_servers</code> table reference
+	 * Create an aliased <code>rigel.gateway_servers</code> table reference
 	 */
 	public GatewayServers(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.GatewayServers.GATEWAY_SERVERS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.GatewayServers.GATEWAY_SERVERS);
 	}
 
 	/**

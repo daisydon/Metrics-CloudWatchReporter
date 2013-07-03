@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalActivityHour extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.VitalActivityHourRecord> {
 
-	private static final long serialVersionUID = 1879075320;
+	private static final long serialVersionUID = 1957905496;
 
 	/**
-	 * The singleton instance of <code>sirius.vital_activity_hour</code>
+	 * The singleton instance of <code>rigel.vital_activity_hour</code>
 	 */
 	public static final com.petpace.db.jooq.tables.VitalActivityHour VITAL_ACTIVITY_HOUR = new com.petpace.db.jooq.tables.VitalActivityHour();
 
@@ -25,52 +25,52 @@ public class VitalActivityHour extends org.jooq.impl.TableImpl<com.petpace.db.jo
 	}
 
 	/**
-	 * The column <code>sirius.vital_activity_hour.id</code>. 
+	 * The column <code>rigel.vital_activity_hour.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalActivityHourRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_activity_hour.collar_id</code>. 
+	 * The column <code>rigel.vital_activity_hour.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalActivityHourRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_activity_hour.pet_id</code>. 
+	 * The column <code>rigel.vital_activity_hour.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalActivityHourRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_activity_hour.value</code>. 
+	 * The column <code>rigel.vital_activity_hour.value</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalActivityHourRecord, java.lang.Long> VALUE = createField("value", org.jooq.impl.SQLDataType.BIGINT, this);
 
 	/**
-	 * The column <code>sirius.vital_activity_hour.smv10</code>. 
+	 * The column <code>rigel.vital_activity_hour.smv10</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalActivityHourRecord, java.math.BigDecimal> SMV10 = createField("smv10", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_activity_hour.smv30</code>. 
+	 * The column <code>rigel.vital_activity_hour.smv30</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalActivityHourRecord, java.math.BigDecimal> SMV30 = createField("smv30", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_activity_hour.time</code>. 
+	 * The column <code>rigel.vital_activity_hour.time</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalActivityHourRecord, java.sql.Timestamp> TIME = createField("time", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.vital_activity_hour</code> table reference
+	 * Create a <code>rigel.vital_activity_hour</code> table reference
 	 */
 	public VitalActivityHour() {
-		super("vital_activity_hour", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("vital_activity_hour", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.vital_activity_hour</code> table reference
+	 * Create an aliased <code>rigel.vital_activity_hour</code> table reference
 	 */
 	public VitalActivityHour(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.VitalActivityHour.VITAL_ACTIVITY_HOUR);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.VitalActivityHour.VITAL_ACTIVITY_HOUR);
 	}
 
 	/**

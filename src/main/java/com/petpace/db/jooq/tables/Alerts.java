@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Alerts extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.AlertsRecord> {
 
-	private static final long serialVersionUID = 1182532293;
+	private static final long serialVersionUID = 1331703623;
 
 	/**
-	 * The singleton instance of <code>sirius.alerts</code>
+	 * The singleton instance of <code>rigel.alerts</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Alerts ALERTS = new com.petpace.db.jooq.tables.Alerts();
 
@@ -25,62 +25,62 @@ public class Alerts extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.r
 	}
 
 	/**
-	 * The column <code>sirius.alerts.id</code>. 
+	 * The column <code>rigel.alerts.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alerts.rule_id</code>. 
+	 * The column <code>rigel.alerts.rule_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.Integer> RULE_ID = createField("rule_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alerts.collar_id</code>. 
+	 * The column <code>rigel.alerts.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alerts.pet_id</code>. 
+	 * The column <code>rigel.alerts.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alerts.sensor_id</code>. 
+	 * The column <code>rigel.alerts.sensor_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.Integer> SENSOR_ID = createField("sensor_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alerts.message</code>. 
+	 * The column <code>rigel.alerts.message</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.String> MESSAGE = createField("message", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alerts.data</code>. 
+	 * The column <code>rigel.alerts.data</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.String> DATA = createField("data", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * The column <code>sirius.alerts.processed</code>. 
+	 * The column <code>rigel.alerts.processed</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.lang.Integer> PROCESSED = createField("processed", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alerts.created</code>. 
+	 * The column <code>rigel.alerts.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertsRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.alerts</code> table reference
+	 * Create a <code>rigel.alerts</code> table reference
 	 */
 	public Alerts() {
-		super("alerts", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("alerts", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.alerts</code> table reference
+	 * Create an aliased <code>rigel.alerts</code> table reference
 	 */
 	public Alerts(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Alerts.ALERTS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Alerts.ALERTS);
 	}
 
 	/**

@@ -9,87 +9,87 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertRulesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AlertRulesRecord> implements org.jooq.Record6<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = 308151304;
+	private static final long serialVersionUID = 591442080;
 
 	/**
-	 * Setter for <code>sirius.alert_rules.id</code>. 
+	 * Setter for <code>rigel.alert_rules.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_rules.id</code>. 
+	 * Getter for <code>rigel.alert_rules.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_rules.name</code>. 
+	 * Setter for <code>rigel.alert_rules.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_rules.name</code>. 
+	 * Getter for <code>rigel.alert_rules.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_rules.sensor</code>. 
+	 * Setter for <code>rigel.alert_rules.sensor</code>. 
 	 */
 	public void setSensor(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_rules.sensor</code>. 
+	 * Getter for <code>rigel.alert_rules.sensor</code>. 
 	 */
 	public java.lang.String getSensor() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_rules.description</code>. 
+	 * Setter for <code>rigel.alert_rules.description</code>. 
 	 */
 	public void setDescription(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_rules.description</code>. 
+	 * Getter for <code>rigel.alert_rules.description</code>. 
 	 */
 	public java.lang.String getDescription() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_rules.status</code>. 
+	 * Setter for <code>rigel.alert_rules.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_rules.status</code>. 
+	 * Getter for <code>rigel.alert_rules.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_rules.created</code>. 
+	 * Setter for <code>rigel.alert_rules.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_rules.created</code>. 
+	 * Getter for <code>rigel.alert_rules.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(5);

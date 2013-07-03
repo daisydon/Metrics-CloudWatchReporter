@@ -9,101 +9,101 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotificationPreferencesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AlertNotificationPreferencesRecord> implements org.jooq.Record7<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1254231708;
+	private static final long serialVersionUID = -1748253686;
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preferences.id</code>. 
+	 * Setter for <code>rigel.alert_notification_preferences.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preferences.id</code>. 
+	 * Getter for <code>rigel.alert_notification_preferences.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preferences.phoneList</code>. 
+	 * Setter for <code>rigel.alert_notification_preferences.phoneList</code>. 
 	 */
 	public void setPhonelist(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preferences.phoneList</code>. 
+	 * Getter for <code>rigel.alert_notification_preferences.phoneList</code>. 
 	 */
 	public java.lang.String getPhonelist() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preferences.emailList</code>. 
+	 * Setter for <code>rigel.alert_notification_preferences.emailList</code>. 
 	 */
 	public void setEmaillist(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preferences.emailList</code>. 
+	 * Getter for <code>rigel.alert_notification_preferences.emailList</code>. 
 	 */
 	public java.lang.String getEmaillist() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preferences.smsList</code>. 
+	 * Setter for <code>rigel.alert_notification_preferences.smsList</code>. 
 	 */
 	public void setSmslist(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preferences.smsList</code>. 
+	 * Getter for <code>rigel.alert_notification_preferences.smsList</code>. 
 	 */
 	public java.lang.String getSmslist() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preferences.created</code>. 
+	 * Setter for <code>rigel.alert_notification_preferences.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preferences.created</code>. 
+	 * Getter for <code>rigel.alert_notification_preferences.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preferences.updated</code>. 
+	 * Setter for <code>rigel.alert_notification_preferences.updated</code>. 
 	 */
 	public void setUpdated(java.sql.Timestamp value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preferences.updated</code>. 
+	 * Getter for <code>rigel.alert_notification_preferences.updated</code>. 
 	 */
 	public java.sql.Timestamp getUpdated() {
 		return (java.sql.Timestamp) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_preferences.status</code>. 
+	 * Setter for <code>rigel.alert_notification_preferences.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_preferences.status</code>. 
+	 * Getter for <code>rigel.alert_notification_preferences.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(6);

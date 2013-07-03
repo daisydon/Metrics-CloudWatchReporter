@@ -9,45 +9,45 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetAttributeGroupingRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetAttributeGroupingRecord> implements org.jooq.Record3<java.lang.Integer, java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1304416924;
+	private static final long serialVersionUID = -1043647654;
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_grouping.group_id</code>. 
+	 * Setter for <code>rigel.pet_attribute_grouping.group_id</code>. 
 	 */
 	public void setGroupId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_grouping.group_id</code>. 
+	 * Getter for <code>rigel.pet_attribute_grouping.group_id</code>. 
 	 */
 	public java.lang.Integer getGroupId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_grouping.attribute_id</code>. 
+	 * Setter for <code>rigel.pet_attribute_grouping.attribute_id</code>. 
 	 */
 	public void setAttributeId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_grouping.attribute_id</code>. 
+	 * Getter for <code>rigel.pet_attribute_grouping.attribute_id</code>. 
 	 */
 	public java.lang.Integer getAttributeId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_grouping.sort</code>. 
+	 * Setter for <code>rigel.pet_attribute_grouping.sort</code>. 
 	 */
 	public void setSort(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_grouping.sort</code>. 
+	 * Getter for <code>rigel.pet_attribute_grouping.sort</code>. 
 	 */
 	public java.lang.Integer getSort() {
 		return (java.lang.Integer) getValue(2);

@@ -9,101 +9,101 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalActivityHourRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.VitalActivityHourRecord> implements org.jooq.Record7<java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.Long, java.math.BigDecimal, java.math.BigDecimal, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -346607888;
+	private static final long serialVersionUID = 899084542;
 
 	/**
-	 * Setter for <code>sirius.vital_activity_hour.id</code>. 
+	 * Setter for <code>rigel.vital_activity_hour.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_activity_hour.id</code>. 
+	 * Getter for <code>rigel.vital_activity_hour.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_activity_hour.collar_id</code>. 
+	 * Setter for <code>rigel.vital_activity_hour.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_activity_hour.collar_id</code>. 
+	 * Getter for <code>rigel.vital_activity_hour.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_activity_hour.pet_id</code>. 
+	 * Setter for <code>rigel.vital_activity_hour.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_activity_hour.pet_id</code>. 
+	 * Getter for <code>rigel.vital_activity_hour.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_activity_hour.value</code>. 
+	 * Setter for <code>rigel.vital_activity_hour.value</code>. 
 	 */
 	public void setValue(java.lang.Long value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_activity_hour.value</code>. 
+	 * Getter for <code>rigel.vital_activity_hour.value</code>. 
 	 */
 	public java.lang.Long getValue() {
 		return (java.lang.Long) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_activity_hour.smv10</code>. 
+	 * Setter for <code>rigel.vital_activity_hour.smv10</code>. 
 	 */
 	public void setSmv10(java.math.BigDecimal value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_activity_hour.smv10</code>. 
+	 * Getter for <code>rigel.vital_activity_hour.smv10</code>. 
 	 */
 	public java.math.BigDecimal getSmv10() {
 		return (java.math.BigDecimal) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_activity_hour.smv30</code>. 
+	 * Setter for <code>rigel.vital_activity_hour.smv30</code>. 
 	 */
 	public void setSmv30(java.math.BigDecimal value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_activity_hour.smv30</code>. 
+	 * Getter for <code>rigel.vital_activity_hour.smv30</code>. 
 	 */
 	public java.math.BigDecimal getSmv30() {
 		return (java.math.BigDecimal) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_activity_hour.time</code>. 
+	 * Setter for <code>rigel.vital_activity_hour.time</code>. 
 	 */
 	public void setTime(java.sql.Timestamp value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_activity_hour.time</code>. 
+	 * Getter for <code>rigel.vital_activity_hour.time</code>. 
 	 */
 	public java.sql.Timestamp getTime() {
 		return (java.sql.Timestamp) getValue(6);

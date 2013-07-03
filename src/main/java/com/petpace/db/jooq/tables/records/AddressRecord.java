@@ -9,143 +9,143 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AddressRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AddressRecord> implements org.jooq.Record10<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = 169366019;
+	private static final long serialVersionUID = -1048565091;
 
 	/**
-	 * Setter for <code>sirius.address.id</code>. 
+	 * Setter for <code>rigel.address.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.id</code>. 
+	 * Getter for <code>rigel.address.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.street</code>. 
+	 * Setter for <code>rigel.address.street</code>. 
 	 */
 	public void setStreet(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.street</code>. 
+	 * Getter for <code>rigel.address.street</code>. 
 	 */
 	public java.lang.String getStreet() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.street2</code>. 
+	 * Setter for <code>rigel.address.street2</code>. 
 	 */
 	public void setStreet2(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.street2</code>. 
+	 * Getter for <code>rigel.address.street2</code>. 
 	 */
 	public java.lang.String getStreet2() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.city</code>. 
+	 * Setter for <code>rigel.address.city</code>. 
 	 */
 	public void setCity(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.city</code>. 
+	 * Getter for <code>rigel.address.city</code>. 
 	 */
 	public java.lang.String getCity() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.region</code>. 
+	 * Setter for <code>rigel.address.region</code>. 
 	 */
 	public void setRegion(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.region</code>. 
+	 * Getter for <code>rigel.address.region</code>. 
 	 */
 	public java.lang.String getRegion() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.country</code>. 
+	 * Setter for <code>rigel.address.country</code>. 
 	 */
 	public void setCountry(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.country</code>. 
+	 * Getter for <code>rigel.address.country</code>. 
 	 */
 	public java.lang.String getCountry() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.zipcode</code>. 
+	 * Setter for <code>rigel.address.zipcode</code>. 
 	 */
 	public void setZipcode(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.zipcode</code>. 
+	 * Getter for <code>rigel.address.zipcode</code>. 
 	 */
 	public java.lang.String getZipcode() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.dateCreated</code>. 
+	 * Setter for <code>rigel.address.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.dateCreated</code>. 
+	 * Getter for <code>rigel.address.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.dateUpdated</code>. 
+	 * Setter for <code>rigel.address.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.dateUpdated</code>. 
+	 * Getter for <code>rigel.address.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.address.status</code>. 
+	 * Setter for <code>rigel.address.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.address.status</code>. 
+	 * Getter for <code>rigel.address.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(9);

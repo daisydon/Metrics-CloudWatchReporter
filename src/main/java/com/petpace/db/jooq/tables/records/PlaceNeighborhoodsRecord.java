@@ -9,171 +9,171 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PlaceNeighborhoodsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord> implements org.jooq.Record12<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.Double, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1302893228;
+	private static final long serialVersionUID = -335941370;
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.id</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.id</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.name</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.name</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.sub</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.sub</code>. 
 	 */
 	public void setSub(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.sub</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.sub</code>. 
 	 */
 	public java.lang.String getSub() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.display</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.display</code>. 
 	 */
 	public void setDisplay(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.display</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.display</code>. 
 	 */
 	public java.lang.String getDisplay() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.url</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.url</code>. 
 	 */
 	public void setUrl(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.url</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.url</code>. 
 	 */
 	public java.lang.String getUrl() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.city</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.city</code>. 
 	 */
 	public void setCity(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.city</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.city</code>. 
 	 */
 	public java.lang.String getCity() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.region</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.region</code>. 
 	 */
 	public void setRegion(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.region</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.region</code>. 
 	 */
 	public java.lang.String getRegion() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.country</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.country</code>. 
 	 */
 	public void setCountry(java.lang.String value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.country</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.country</code>. 
 	 */
 	public java.lang.String getCountry() {
 		return (java.lang.String) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.latitude</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.latitude</code>. 
 	 */
 	public void setLatitude(java.lang.Double value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.latitude</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.latitude</code>. 
 	 */
 	public java.lang.Double getLatitude() {
 		return (java.lang.Double) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.longitude</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.longitude</code>. 
 	 */
 	public void setLongitude(java.lang.Double value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.longitude</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.longitude</code>. 
 	 */
 	public java.lang.Double getLongitude() {
 		return (java.lang.Double) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.created</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.created</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_neighborhoods.status</code>. 
+	 * Setter for <code>rigel.place_neighborhoods.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_neighborhoods.status</code>. 
+	 * Getter for <code>rigel.place_neighborhoods.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(11);

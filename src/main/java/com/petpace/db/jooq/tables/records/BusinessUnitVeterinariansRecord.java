@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessUnitVeterinariansRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.BusinessUnitVeterinariansRecord> implements org.jooq.Record2<java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = -454986802;
+	private static final long serialVersionUID = 914454722;
 
 	/**
-	 * Setter for <code>sirius.business_unit_veterinarians.business_unit_id</code>. 
+	 * Setter for <code>rigel.business_unit_veterinarians.business_unit_id</code>. 
 	 */
 	public void setBusinessUnitId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_unit_veterinarians.business_unit_id</code>. 
+	 * Getter for <code>rigel.business_unit_veterinarians.business_unit_id</code>. 
 	 */
 	public java.lang.Integer getBusinessUnitId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_unit_veterinarians.veterinarian_id</code>. 
+	 * Setter for <code>rigel.business_unit_veterinarians.veterinarian_id</code>. 
 	 */
 	public void setVeterinarianId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_unit_veterinarians.veterinarian_id</code>. 
+	 * Getter for <code>rigel.business_unit_veterinarians.veterinarian_id</code>. 
 	 */
 	public java.lang.Integer getVeterinarianId() {
 		return (java.lang.Integer) getValue(1);

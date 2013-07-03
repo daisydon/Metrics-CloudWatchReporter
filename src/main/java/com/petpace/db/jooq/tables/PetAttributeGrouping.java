@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetAttributeGrouping extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PetAttributeGroupingRecord> {
 
-	private static final long serialVersionUID = 1885223701;
+	private static final long serialVersionUID = 277735801;
 
 	/**
-	 * The singleton instance of <code>sirius.pet_attribute_grouping</code>
+	 * The singleton instance of <code>rigel.pet_attribute_grouping</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PetAttributeGrouping PET_ATTRIBUTE_GROUPING = new com.petpace.db.jooq.tables.PetAttributeGrouping();
 
@@ -25,32 +25,32 @@ public class PetAttributeGrouping extends org.jooq.impl.TableImpl<com.petpace.db
 	}
 
 	/**
-	 * The column <code>sirius.pet_attribute_grouping.group_id</code>. 
+	 * The column <code>rigel.pet_attribute_grouping.group_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeGroupingRecord, java.lang.Integer> GROUP_ID = createField("group_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_grouping.attribute_id</code>. 
+	 * The column <code>rigel.pet_attribute_grouping.attribute_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeGroupingRecord, java.lang.Integer> ATTRIBUTE_ID = createField("attribute_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_attribute_grouping.sort</code>. 
+	 * The column <code>rigel.pet_attribute_grouping.sort</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetAttributeGroupingRecord, java.lang.Integer> SORT = createField("sort", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.pet_attribute_grouping</code> table reference
+	 * Create a <code>rigel.pet_attribute_grouping</code> table reference
 	 */
 	public PetAttributeGrouping() {
-		super("pet_attribute_grouping", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("pet_attribute_grouping", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.pet_attribute_grouping</code> table reference
+	 * Create an aliased <code>rigel.pet_attribute_grouping</code> table reference
 	 */
 	public PetAttributeGrouping(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PetAttributeGrouping.PET_ATTRIBUTE_GROUPING);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PetAttributeGrouping.PET_ATTRIBUTE_GROUPING);
 	}
 
 	/**

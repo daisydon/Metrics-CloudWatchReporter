@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetGuardianship extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PetGuardianshipRecord> {
 
-	private static final long serialVersionUID = -575394835;
+	private static final long serialVersionUID = -1515495131;
 
 	/**
-	 * The singleton instance of <code>sirius.pet_guardianship</code>
+	 * The singleton instance of <code>rigel.pet_guardianship</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PetGuardianship PET_GUARDIANSHIP = new com.petpace.db.jooq.tables.PetGuardianship();
 
@@ -25,37 +25,37 @@ public class PetGuardianship extends org.jooq.impl.TableImpl<com.petpace.db.jooq
 	}
 
 	/**
-	 * The column <code>sirius.pet_guardianship.id</code>. 
+	 * The column <code>rigel.pet_guardianship.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetGuardianshipRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_guardianship.guardian_id</code>. 
+	 * The column <code>rigel.pet_guardianship.guardian_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetGuardianshipRecord, java.lang.Integer> GUARDIAN_ID = createField("guardian_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_guardianship.pet_id</code>. 
+	 * The column <code>rigel.pet_guardianship.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetGuardianshipRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_guardianship.created</code>. 
+	 * The column <code>rigel.pet_guardianship.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetGuardianshipRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.pet_guardianship</code> table reference
+	 * Create a <code>rigel.pet_guardianship</code> table reference
 	 */
 	public PetGuardianship() {
-		super("pet_guardianship", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("pet_guardianship", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.pet_guardianship</code> table reference
+	 * Create an aliased <code>rigel.pet_guardianship</code> table reference
 	 */
 	public PetGuardianship(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PetGuardianship.PET_GUARDIANSHIP);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PetGuardianship.PET_GUARDIANSHIP);
 	}
 
 	/**

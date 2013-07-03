@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class CollarConfigs extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.CollarConfigsRecord> {
 
-	private static final long serialVersionUID = 655870787;
+	private static final long serialVersionUID = -621006907;
 
 	/**
-	 * The singleton instance of <code>sirius.collar_configs</code>
+	 * The singleton instance of <code>rigel.collar_configs</code>
 	 */
 	public static final com.petpace.db.jooq.tables.CollarConfigs COLLAR_CONFIGS = new com.petpace.db.jooq.tables.CollarConfigs();
 
@@ -25,42 +25,42 @@ public class CollarConfigs extends org.jooq.impl.TableImpl<com.petpace.db.jooq.t
 	}
 
 	/**
-	 * The column <code>sirius.collar_configs.ConfigID</code>. 
+	 * The column <code>rigel.collar_configs.ConfigID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarConfigsRecord, java.lang.Integer> CONFIGID = createField("ConfigID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.collar_configs.version</code>. 
+	 * The column <code>rigel.collar_configs.version</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarConfigsRecord, java.lang.String> VERSION = createField("version", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collar_configs.Comment</code>. 
+	 * The column <code>rigel.collar_configs.Comment</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarConfigsRecord, java.lang.String> COMMENT = createField("Comment", org.jooq.impl.SQLDataType.CLOB.length(65535), this);
 
 	/**
-	 * The column <code>sirius.collar_configs.s3</code>. 
+	 * The column <code>rigel.collar_configs.s3</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarConfigsRecord, java.lang.String> S3 = createField("s3", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collar_configs.uploadDate</code>. 
+	 * The column <code>rigel.collar_configs.uploadDate</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarConfigsRecord, java.sql.Timestamp> UPLOADDATE = createField("uploadDate", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.collar_configs</code> table reference
+	 * Create a <code>rigel.collar_configs</code> table reference
 	 */
 	public CollarConfigs() {
-		super("collar_configs", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("collar_configs", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.collar_configs</code> table reference
+	 * Create an aliased <code>rigel.collar_configs</code> table reference
 	 */
 	public CollarConfigs(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.CollarConfigs.COLLAR_CONFIGS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.CollarConfigs.COLLAR_CONFIGS);
 	}
 
 	/**

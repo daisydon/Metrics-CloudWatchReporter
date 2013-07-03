@@ -9,157 +9,157 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessUnitsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.BusinessUnitsRecord> implements org.jooq.Record11<java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = 812037674;
+	private static final long serialVersionUID = -1262521924;
 
 	/**
-	 * Setter for <code>sirius.business_units.id</code>. 
+	 * Setter for <code>rigel.business_units.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.id</code>. 
+	 * Getter for <code>rigel.business_units.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.parent_id</code>. 
+	 * Setter for <code>rigel.business_units.parent_id</code>. 
 	 */
 	public void setParentId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.parent_id</code>. 
+	 * Getter for <code>rigel.business_units.parent_id</code>. 
 	 */
 	public java.lang.Integer getParentId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.address_id</code>. 
+	 * Setter for <code>rigel.business_units.address_id</code>. 
 	 */
 	public void setAddressId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.address_id</code>. 
+	 * Getter for <code>rigel.business_units.address_id</code>. 
 	 */
 	public java.lang.Integer getAddressId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.name</code>. 
+	 * Setter for <code>rigel.business_units.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.name</code>. 
+	 * Getter for <code>rigel.business_units.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.url</code>. 
+	 * Setter for <code>rigel.business_units.url</code>. 
 	 */
 	public void setUrl(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.url</code>. 
+	 * Getter for <code>rigel.business_units.url</code>. 
 	 */
 	public java.lang.String getUrl() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.website</code>. 
+	 * Setter for <code>rigel.business_units.website</code>. 
 	 */
 	public void setWebsite(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.website</code>. 
+	 * Getter for <code>rigel.business_units.website</code>. 
 	 */
 	public java.lang.String getWebsite() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.phone</code>. 
+	 * Setter for <code>rigel.business_units.phone</code>. 
 	 */
 	public void setPhone(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.phone</code>. 
+	 * Getter for <code>rigel.business_units.phone</code>. 
 	 */
 	public java.lang.String getPhone() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.fax</code>. 
+	 * Setter for <code>rigel.business_units.fax</code>. 
 	 */
 	public void setFax(java.lang.String value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.fax</code>. 
+	 * Getter for <code>rigel.business_units.fax</code>. 
 	 */
 	public java.lang.String getFax() {
 		return (java.lang.String) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.created</code>. 
+	 * Setter for <code>rigel.business_units.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.created</code>. 
+	 * Getter for <code>rigel.business_units.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.updated</code>. 
+	 * Setter for <code>rigel.business_units.updated</code>. 
 	 */
 	public void setUpdated(java.sql.Timestamp value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.updated</code>. 
+	 * Getter for <code>rigel.business_units.updated</code>. 
 	 */
 	public java.sql.Timestamp getUpdated() {
 		return (java.sql.Timestamp) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_units.status</code>. 
+	 * Setter for <code>rigel.business_units.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_units.status</code>. 
+	 * Getter for <code>rigel.business_units.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(10);

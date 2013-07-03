@@ -9,59 +9,59 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayCollarConnectionsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewayCollarConnectionsRecord> implements org.jooq.Record4<java.lang.Short, java.sql.Timestamp, java.lang.String, java.lang.Integer> {
 
-	private static final long serialVersionUID = -898144514;
+	private static final long serialVersionUID = -1855451116;
 
 	/**
-	 * Setter for <code>sirius.gateway_collar_connections.isActive</code>. 
+	 * Setter for <code>rigel.gateway_collar_connections.isActive</code>. 
 	 */
 	public void setIsactive(java.lang.Short value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_collar_connections.isActive</code>. 
+	 * Getter for <code>rigel.gateway_collar_connections.isActive</code>. 
 	 */
 	public java.lang.Short getIsactive() {
 		return (java.lang.Short) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_collar_connections.connectTime</code>. 
+	 * Setter for <code>rigel.gateway_collar_connections.connectTime</code>. 
 	 */
 	public void setConnecttime(java.sql.Timestamp value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_collar_connections.connectTime</code>. 
+	 * Getter for <code>rigel.gateway_collar_connections.connectTime</code>. 
 	 */
 	public java.sql.Timestamp getConnecttime() {
 		return (java.sql.Timestamp) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_collar_connections.GollarID</code>. 
+	 * Setter for <code>rigel.gateway_collar_connections.GollarID</code>. 
 	 */
 	public void setGollarid(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_collar_connections.GollarID</code>. 
+	 * Getter for <code>rigel.gateway_collar_connections.GollarID</code>. 
 	 */
 	public java.lang.String getGollarid() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_collar_connections.GatewayID</code>. 
+	 * Setter for <code>rigel.gateway_collar_connections.GatewayID</code>. 
 	 */
 	public void setGatewayid(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_collar_connections.GatewayID</code>. 
+	 * Getter for <code>rigel.gateway_collar_connections.GatewayID</code>. 
 	 */
 	public java.lang.Integer getGatewayid() {
 		return (java.lang.Integer) getValue(3);

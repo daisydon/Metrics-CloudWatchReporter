@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Veterinarians extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.VeterinariansRecord> {
 
-	private static final long serialVersionUID = -1157559010;
+	private static final long serialVersionUID = -2077064756;
 
 	/**
-	 * The singleton instance of <code>sirius.veterinarians</code>
+	 * The singleton instance of <code>rigel.veterinarians</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Veterinarians VETERINARIANS = new com.petpace.db.jooq.tables.Veterinarians();
 
@@ -25,97 +25,97 @@ public class Veterinarians extends org.jooq.impl.TableImpl<com.petpace.db.jooq.t
 	}
 
 	/**
-	 * The column <code>sirius.veterinarians.id</code>. 
+	 * The column <code>rigel.veterinarians.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.veterinarians.account_id</code>. 
+	 * The column <code>rigel.veterinarians.account_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.Integer> ACCOUNT_ID = createField("account_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.veterinarians.address_id</code>. 
+	 * The column <code>rigel.veterinarians.address_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.Integer> ADDRESS_ID = createField("address_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.veterinarians.fullName</code>. 
+	 * The column <code>rigel.veterinarians.fullName</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> FULLNAME = createField("fullName", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.clinic</code>. 
+	 * The column <code>rigel.veterinarians.clinic</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> CLINIC = createField("clinic", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.prefix</code>. 
+	 * The column <code>rigel.veterinarians.prefix</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> PREFIX = createField("prefix", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.suffix</code>. 
+	 * The column <code>rigel.veterinarians.suffix</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> SUFFIX = createField("suffix", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.phone</code>. 
+	 * The column <code>rigel.veterinarians.phone</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> PHONE = createField("phone", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.cell</code>. 
+	 * The column <code>rigel.veterinarians.cell</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> CELL = createField("cell", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.fax</code>. 
+	 * The column <code>rigel.veterinarians.fax</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> FAX = createField("fax", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.hours</code>. 
+	 * The column <code>rigel.veterinarians.hours</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> HOURS = createField("hours", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.veterinarians.dateCreated</code>. 
+	 * The column <code>rigel.veterinarians.dateCreated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.sql.Timestamp> DATECREATED = createField("dateCreated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.veterinarians.dateUpdated</code>. 
+	 * The column <code>rigel.veterinarians.dateUpdated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.sql.Timestamp> DATEUPDATED = createField("dateUpdated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.veterinarians.status</code>. 
+	 * The column <code>rigel.veterinarians.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.veterinarians.about</code>. 
+	 * The column <code>rigel.veterinarians.about</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.String> ABOUT = createField("about", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * The column <code>sirius.veterinarians.primary_id</code>. 
+	 * The column <code>rigel.veterinarians.primary_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VeterinariansRecord, java.lang.Integer> PRIMARY_ID = createField("primary_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.veterinarians</code> table reference
+	 * Create a <code>rigel.veterinarians</code> table reference
 	 */
 	public Veterinarians() {
-		super("veterinarians", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("veterinarians", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.veterinarians</code> table reference
+	 * Create an aliased <code>rigel.veterinarians</code> table reference
 	 */
 	public Veterinarians(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Veterinarians.VETERINARIANS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Veterinarians.VETERINARIANS);
 	}
 
 	/**

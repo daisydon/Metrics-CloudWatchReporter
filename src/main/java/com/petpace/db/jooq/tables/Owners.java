@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Owners extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.OwnersRecord> {
 
-	private static final long serialVersionUID = 838056233;
+	private static final long serialVersionUID = -1173602373;
 
 	/**
-	 * The singleton instance of <code>sirius.owners</code>
+	 * The singleton instance of <code>rigel.owners</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Owners OWNERS = new com.petpace.db.jooq.tables.Owners();
 
@@ -25,62 +25,62 @@ public class Owners extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.r
 	}
 
 	/**
-	 * The column <code>sirius.owners.id</code>. 
+	 * The column <code>rigel.owners.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.owners.account_id</code>. 
+	 * The column <code>rigel.owners.account_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.lang.Integer> ACCOUNT_ID = createField("account_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.owners.address_id</code>. 
+	 * The column <code>rigel.owners.address_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.lang.Integer> ADDRESS_ID = createField("address_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.owners.fullname</code>. 
+	 * The column <code>rigel.owners.fullname</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.lang.String> FULLNAME = createField("fullname", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.owners.email</code>. 
+	 * The column <code>rigel.owners.email</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.lang.String> EMAIL = createField("email", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.owners.phone</code>. 
+	 * The column <code>rigel.owners.phone</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.lang.String> PHONE = createField("phone", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.owners.dateCreated</code>. 
+	 * The column <code>rigel.owners.dateCreated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.sql.Timestamp> DATECREATED = createField("dateCreated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.owners.dateUpdated</code>. 
+	 * The column <code>rigel.owners.dateUpdated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.sql.Timestamp> DATEUPDATED = createField("dateUpdated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.owners.status</code>. 
+	 * The column <code>rigel.owners.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.OwnersRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.owners</code> table reference
+	 * Create a <code>rigel.owners</code> table reference
 	 */
 	public Owners() {
-		super("owners", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("owners", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.owners</code> table reference
+	 * Create an aliased <code>rigel.owners</code> table reference
 	 */
 	public Owners(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Owners.OWNERS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Owners.OWNERS);
 	}
 
 	/**

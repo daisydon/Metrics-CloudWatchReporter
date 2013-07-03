@@ -9,101 +9,101 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetAttributeValueHistoryRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetAttributeValueHistoryRecord> implements org.jooq.Record7<java.lang.Integer, java.lang.Integer, java.sql.Timestamp, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = 791800716;
+	private static final long serialVersionUID = 1138387024;
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_value_history.id</code>. 
+	 * Setter for <code>rigel.pet_attribute_value_history.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_value_history.id</code>. 
+	 * Getter for <code>rigel.pet_attribute_value_history.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_value_history.pet_id</code>. 
+	 * Setter for <code>rigel.pet_attribute_value_history.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_value_history.pet_id</code>. 
+	 * Getter for <code>rigel.pet_attribute_value_history.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_value_history.val</code>. 
+	 * Setter for <code>rigel.pet_attribute_value_history.val</code>. 
 	 */
 	public void setVal(java.sql.Timestamp value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_value_history.val</code>. 
+	 * Getter for <code>rigel.pet_attribute_value_history.val</code>. 
 	 */
 	public java.sql.Timestamp getVal() {
 		return (java.sql.Timestamp) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_value_history.dateCreated</code>. 
+	 * Setter for <code>rigel.pet_attribute_value_history.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_value_history.dateCreated</code>. 
+	 * Getter for <code>rigel.pet_attribute_value_history.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_value_history.dateUpdated</code>. 
+	 * Setter for <code>rigel.pet_attribute_value_history.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_value_history.dateUpdated</code>. 
+	 * Getter for <code>rigel.pet_attribute_value_history.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_value_history.status</code>. 
+	 * Setter for <code>rigel.pet_attribute_value_history.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_value_history.status</code>. 
+	 * Getter for <code>rigel.pet_attribute_value_history.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attribute_value_history.petAttribute_id</code>. 
+	 * Setter for <code>rigel.pet_attribute_value_history.petAttribute_id</code>. 
 	 */
 	public void setPetattributeId(java.lang.Integer value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attribute_value_history.petAttribute_id</code>. 
+	 * Getter for <code>rigel.pet_attribute_value_history.petAttribute_id</code>. 
 	 */
 	public java.lang.Integer getPetattributeId() {
 		return (java.lang.Integer) getValue(6);

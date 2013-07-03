@@ -9,129 +9,129 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class OwnersRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.OwnersRecord> implements org.jooq.Record9<java.lang.Integer, java.lang.Integer, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1262475536;
+	private static final long serialVersionUID = 1871838674;
 
 	/**
-	 * Setter for <code>sirius.owners.id</code>. 
+	 * Setter for <code>rigel.owners.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.id</code>. 
+	 * Getter for <code>rigel.owners.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.account_id</code>. 
+	 * Setter for <code>rigel.owners.account_id</code>. 
 	 */
 	public void setAccountId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.account_id</code>. 
+	 * Getter for <code>rigel.owners.account_id</code>. 
 	 */
 	public java.lang.Integer getAccountId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.address_id</code>. 
+	 * Setter for <code>rigel.owners.address_id</code>. 
 	 */
 	public void setAddressId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.address_id</code>. 
+	 * Getter for <code>rigel.owners.address_id</code>. 
 	 */
 	public java.lang.Integer getAddressId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.fullname</code>. 
+	 * Setter for <code>rigel.owners.fullname</code>. 
 	 */
 	public void setFullname(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.fullname</code>. 
+	 * Getter for <code>rigel.owners.fullname</code>. 
 	 */
 	public java.lang.String getFullname() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.email</code>. 
+	 * Setter for <code>rigel.owners.email</code>. 
 	 */
 	public void setEmail(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.email</code>. 
+	 * Getter for <code>rigel.owners.email</code>. 
 	 */
 	public java.lang.String getEmail() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.phone</code>. 
+	 * Setter for <code>rigel.owners.phone</code>. 
 	 */
 	public void setPhone(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.phone</code>. 
+	 * Getter for <code>rigel.owners.phone</code>. 
 	 */
 	public java.lang.String getPhone() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.dateCreated</code>. 
+	 * Setter for <code>rigel.owners.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.dateCreated</code>. 
+	 * Getter for <code>rigel.owners.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.dateUpdated</code>. 
+	 * Setter for <code>rigel.owners.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.dateUpdated</code>. 
+	 * Getter for <code>rigel.owners.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.owners.status</code>. 
+	 * Setter for <code>rigel.owners.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.owners.status</code>. 
+	 * Getter for <code>rigel.owners.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(8);

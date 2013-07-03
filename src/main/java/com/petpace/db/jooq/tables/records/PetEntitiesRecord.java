@@ -9,59 +9,59 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetEntitiesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetEntitiesRecord> implements org.jooq.Record4<java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1629028729;
+	private static final long serialVersionUID = 1083992605;
 
 	/**
-	 * Setter for <code>sirius.pet_entities.id</code>. 
+	 * Setter for <code>rigel.pet_entities.id</code>. 
 	 */
 	public void setId(java.lang.String value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_entities.id</code>. 
+	 * Getter for <code>rigel.pet_entities.id</code>. 
 	 */
 	public java.lang.String getId() {
 		return (java.lang.String) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_entities.dateCreated</code>. 
+	 * Setter for <code>rigel.pet_entities.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_entities.dateCreated</code>. 
+	 * Getter for <code>rigel.pet_entities.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_entities.dateUpdated</code>. 
+	 * Setter for <code>rigel.pet_entities.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_entities.dateUpdated</code>. 
+	 * Getter for <code>rigel.pet_entities.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_entities.status</code>. 
+	 * Setter for <code>rigel.pet_entities.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_entities.status</code>. 
+	 * Getter for <code>rigel.pet_entities.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(3);

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Roles extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.RolesRecord> {
 
-	private static final long serialVersionUID = 1245429645;
+	private static final long serialVersionUID = 1047436761;
 
 	/**
-	 * The singleton instance of <code>sirius.roles</code>
+	 * The singleton instance of <code>rigel.roles</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Roles ROLES = new com.petpace.db.jooq.tables.Roles();
 
@@ -25,47 +25,47 @@ public class Roles extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.re
 	}
 
 	/**
-	 * The column <code>sirius.roles.id</code>. 
+	 * The column <code>rigel.roles.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RolesRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.roles.account_id</code>. 
+	 * The column <code>rigel.roles.account_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RolesRecord, java.lang.Integer> ACCOUNT_ID = createField("account_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.roles.name</code>. 
+	 * The column <code>rigel.roles.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RolesRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.roles.dateCreated</code>. 
+	 * The column <code>rigel.roles.dateCreated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RolesRecord, java.sql.Timestamp> DATECREATED = createField("dateCreated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.roles.dateUpdated</code>. 
+	 * The column <code>rigel.roles.dateUpdated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RolesRecord, java.sql.Timestamp> DATEUPDATED = createField("dateUpdated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.roles.status</code>. 
+	 * The column <code>rigel.roles.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RolesRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.roles</code> table reference
+	 * Create a <code>rigel.roles</code> table reference
 	 */
 	public Roles() {
-		super("roles", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("roles", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.roles</code> table reference
+	 * Create an aliased <code>rigel.roles</code> table reference
 	 */
 	public Roles(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Roles.ROLES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Roles.ROLES);
 	}
 
 	/**

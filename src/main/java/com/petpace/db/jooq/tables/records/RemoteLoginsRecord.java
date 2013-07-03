@@ -9,157 +9,157 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class RemoteLoginsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.RemoteLoginsRecord> implements org.jooq.Record11<java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.Integer, java.sql.Timestamp, java.sql.Timestamp, java.lang.Double, java.lang.String, java.lang.Integer, java.lang.Integer, java.lang.String> {
 
-	private static final long serialVersionUID = -76738431;
+	private static final long serialVersionUID = 105986445;
 
 	/**
-	 * Setter for <code>sirius.remote_logins.id</code>. 
+	 * Setter for <code>rigel.remote_logins.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.id</code>. 
+	 * Getter for <code>rigel.remote_logins.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.collar_id</code>. 
+	 * Setter for <code>rigel.remote_logins.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.collar_id</code>. 
+	 * Getter for <code>rigel.remote_logins.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.pet_id</code>. 
+	 * Setter for <code>rigel.remote_logins.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.pet_id</code>. 
+	 * Getter for <code>rigel.remote_logins.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.account_id</code>. 
+	 * Setter for <code>rigel.remote_logins.account_id</code>. 
 	 */
 	public void setAccountId(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.account_id</code>. 
+	 * Getter for <code>rigel.remote_logins.account_id</code>. 
 	 */
 	public java.lang.Integer getAccountId() {
 		return (java.lang.Integer) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.start</code>. 
+	 * Setter for <code>rigel.remote_logins.start</code>. 
 	 */
 	public void setStart(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.start</code>. 
+	 * Getter for <code>rigel.remote_logins.start</code>. 
 	 */
 	public java.sql.Timestamp getStart() {
 		return (java.sql.Timestamp) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.end</code>. 
+	 * Setter for <code>rigel.remote_logins.end</code>. 
 	 */
 	public void setEnd(java.sql.Timestamp value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.end</code>. 
+	 * Getter for <code>rigel.remote_logins.end</code>. 
 	 */
 	public java.sql.Timestamp getEnd() {
 		return (java.sql.Timestamp) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.microtime</code>. 
+	 * Setter for <code>rigel.remote_logins.microtime</code>. 
 	 */
 	public void setMicrotime(java.lang.Double value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.microtime</code>. 
+	 * Getter for <code>rigel.remote_logins.microtime</code>. 
 	 */
 	public java.lang.Double getMicrotime() {
 		return (java.lang.Double) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.samplingFrequency</code>. 
+	 * Setter for <code>rigel.remote_logins.samplingFrequency</code>. 
 	 */
 	public void setSamplingfrequency(java.lang.String value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.samplingFrequency</code>. 
+	 * Getter for <code>rigel.remote_logins.samplingFrequency</code>. 
 	 */
 	public java.lang.String getSamplingfrequency() {
 		return (java.lang.String) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.duration</code>. 
+	 * Setter for <code>rigel.remote_logins.duration</code>. 
 	 */
 	public void setDuration(java.lang.Integer value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.duration</code>. 
+	 * Getter for <code>rigel.remote_logins.duration</code>. 
 	 */
 	public java.lang.Integer getDuration() {
 		return (java.lang.Integer) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.status</code>. 
+	 * Setter for <code>rigel.remote_logins.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.status</code>. 
+	 * Getter for <code>rigel.remote_logins.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.remote_logins.notes</code>. 
+	 * Setter for <code>rigel.remote_logins.notes</code>. 
 	 */
 	public void setNotes(java.lang.String value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.remote_logins.notes</code>. 
+	 * Getter for <code>rigel.remote_logins.notes</code>. 
 	 */
 	public java.lang.String getNotes() {
 		return (java.lang.String) getValue(10);

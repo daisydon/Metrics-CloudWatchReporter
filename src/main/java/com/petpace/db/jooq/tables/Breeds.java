@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Breeds extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BreedsRecord> {
 
-	private static final long serialVersionUID = -1646779653;
+	private static final long serialVersionUID = 368839215;
 
 	/**
-	 * The singleton instance of <code>sirius.breeds</code>
+	 * The singleton instance of <code>rigel.breeds</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Breeds BREEDS = new com.petpace.db.jooq.tables.Breeds();
 
@@ -25,27 +25,27 @@ public class Breeds extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.r
 	}
 
 	/**
-	 * The column <code>sirius.breeds.id</code>. 
+	 * The column <code>rigel.breeds.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedsRecord, java.lang.String> ID = createField("id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.breeds.uid</code>. 
+	 * The column <code>rigel.breeds.uid</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedsRecord, java.lang.String> UID = createField("uid", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.breeds</code> table reference
+	 * Create a <code>rigel.breeds</code> table reference
 	 */
 	public Breeds() {
-		super("breeds", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("breeds", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.breeds</code> table reference
+	 * Create an aliased <code>rigel.breeds</code> table reference
 	 */
 	public Breeds(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Breeds.BREEDS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Breeds.BREEDS);
 	}
 
 	/**

@@ -9,59 +9,59 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayServerConnectionsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewayServerConnectionsRecord> implements org.jooq.Record4<java.lang.Short, java.sql.Timestamp, java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1962391945;
+	private static final long serialVersionUID = 1471023019;
 
 	/**
-	 * Setter for <code>sirius.gateway_server_connections.isActive</code>. 
+	 * Setter for <code>rigel.gateway_server_connections.isActive</code>. 
 	 */
 	public void setIsactive(java.lang.Short value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_server_connections.isActive</code>. 
+	 * Getter for <code>rigel.gateway_server_connections.isActive</code>. 
 	 */
 	public java.lang.Short getIsactive() {
 		return (java.lang.Short) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_server_connections.connectTime</code>. 
+	 * Setter for <code>rigel.gateway_server_connections.connectTime</code>. 
 	 */
 	public void setConnecttime(java.sql.Timestamp value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_server_connections.connectTime</code>. 
+	 * Getter for <code>rigel.gateway_server_connections.connectTime</code>. 
 	 */
 	public java.sql.Timestamp getConnecttime() {
 		return (java.sql.Timestamp) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_server_connections.GatewayID</code>. 
+	 * Setter for <code>rigel.gateway_server_connections.GatewayID</code>. 
 	 */
 	public void setGatewayid(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_server_connections.GatewayID</code>. 
+	 * Getter for <code>rigel.gateway_server_connections.GatewayID</code>. 
 	 */
 	public java.lang.Integer getGatewayid() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_server_connections.ServerID</code>. 
+	 * Setter for <code>rigel.gateway_server_connections.ServerID</code>. 
 	 */
 	public void setServerid(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_server_connections.ServerID</code>. 
+	 * Getter for <code>rigel.gateway_server_connections.ServerID</code>. 
 	 */
 	public java.lang.Integer getServerid() {
 		return (java.lang.Integer) getValue(3);

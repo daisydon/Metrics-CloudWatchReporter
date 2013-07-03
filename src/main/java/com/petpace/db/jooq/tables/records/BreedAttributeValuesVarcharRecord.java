@@ -9,59 +9,59 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BreedAttributeValuesVarcharRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.BreedAttributeValuesVarcharRecord> implements org.jooq.Record4<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String> {
 
-	private static final long serialVersionUID = -573100250;
+	private static final long serialVersionUID = 205504608;
 
 	/**
-	 * Setter for <code>sirius.breed_attribute_values_varchar.id</code>. 
+	 * Setter for <code>rigel.breed_attribute_values_varchar.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.breed_attribute_values_varchar.id</code>. 
+	 * Getter for <code>rigel.breed_attribute_values_varchar.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.breed_attribute_values_varchar.breed_id</code>. 
+	 * Setter for <code>rigel.breed_attribute_values_varchar.breed_id</code>. 
 	 */
 	public void setBreedId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.breed_attribute_values_varchar.breed_id</code>. 
+	 * Getter for <code>rigel.breed_attribute_values_varchar.breed_id</code>. 
 	 */
 	public java.lang.String getBreedId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.breed_attribute_values_varchar.val</code>. 
+	 * Setter for <code>rigel.breed_attribute_values_varchar.val</code>. 
 	 */
 	public void setVal(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.breed_attribute_values_varchar.val</code>. 
+	 * Getter for <code>rigel.breed_attribute_values_varchar.val</code>. 
 	 */
 	public java.lang.String getVal() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.breed_attribute_values_varchar.breedAttribute_id</code>. 
+	 * Setter for <code>rigel.breed_attribute_values_varchar.breedAttribute_id</code>. 
 	 */
 	public void setBreedattributeId(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.breed_attribute_values_varchar.breedAttribute_id</code>. 
+	 * Getter for <code>rigel.breed_attribute_values_varchar.breedAttribute_id</code>. 
 	 */
 	public java.lang.String getBreedattributeId() {
 		return (java.lang.String) getValue(3);

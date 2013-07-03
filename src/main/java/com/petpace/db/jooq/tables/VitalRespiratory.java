@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalRespiratory extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord> {
 
-	private static final long serialVersionUID = -646952745;
+	private static final long serialVersionUID = -1468871835;
 
 	/**
-	 * The singleton instance of <code>sirius.vital_respiratory</code>
+	 * The singleton instance of <code>rigel.vital_respiratory</code>
 	 */
 	public static final com.petpace.db.jooq.tables.VitalRespiratory VITAL_RESPIRATORY = new com.petpace.db.jooq.tables.VitalRespiratory();
 
@@ -25,127 +25,127 @@ public class VitalRespiratory extends org.jooq.impl.TableImpl<com.petpace.db.joo
 	}
 
 	/**
-	 * The column <code>sirius.vital_respiratory.id</code>. 
+	 * The column <code>rigel.vital_respiratory.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.collar_id</code>. 
+	 * The column <code>rigel.vital_respiratory.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.pet_id</code>. 
+	 * The column <code>rigel.vital_respiratory.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.name</code>. 
+	 * The column <code>rigel.vital_respiratory.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.quality</code>. 
+	 * The column <code>rigel.vital_respiratory.quality</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.Integer> QUALITY = createField("quality", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.deviation</code>. 
+	 * The column <code>rigel.vital_respiratory.deviation</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> DEVIATION = createField("deviation", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.duration</code>. 
+	 * The column <code>rigel.vital_respiratory.duration</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.Integer> DURATION = createField("duration", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.exhale</code>. 
+	 * The column <code>rigel.vital_respiratory.exhale</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> EXHALE = createField("exhale", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.exhale_std</code>. 
+	 * The column <code>rigel.vital_respiratory.exhale_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> EXHALE_STD = createField("exhale_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.inhale</code>. 
+	 * The column <code>rigel.vital_respiratory.inhale</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> INHALE = createField("inhale", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.inhale_std</code>. 
+	 * The column <code>rigel.vital_respiratory.inhale_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> INHALE_STD = createField("inhale_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.nn</code>. 
+	 * The column <code>rigel.vital_respiratory.nn</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> NN = createField("nn", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.nn_std</code>. 
+	 * The column <code>rigel.vital_respiratory.nn_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> NN_STD = createField("nn_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.ipr</code>. 
+	 * The column <code>rigel.vital_respiratory.ipr</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> IPR = createField("ipr", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.ipr_std</code>. 
+	 * The column <code>rigel.vital_respiratory.ipr_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> IPR_STD = createField("ipr_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.value</code>. 
+	 * The column <code>rigel.vital_respiratory.value</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.Long> VALUE = createField("value", org.jooq.impl.SQLDataType.BIGINT, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.smv10</code>. 
+	 * The column <code>rigel.vital_respiratory.smv10</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> SMV10 = createField("smv10", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.smv30</code>. 
+	 * The column <code>rigel.vital_respiratory.smv30</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.math.BigDecimal> SMV30 = createField("smv30", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.debug</code>. 
+	 * The column <code>rigel.vital_respiratory.debug</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.String> DEBUG = createField("debug", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.time</code>. 
+	 * The column <code>rigel.vital_respiratory.time</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.sql.Timestamp> TIME = createField("time", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.created</code>. 
+	 * The column <code>rigel.vital_respiratory.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_respiratory.notes</code>. 
+	 * The column <code>rigel.vital_respiratory.notes</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalRespiratoryRecord, java.lang.String> NOTES = createField("notes", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * Create a <code>sirius.vital_respiratory</code> table reference
+	 * Create a <code>rigel.vital_respiratory</code> table reference
 	 */
 	public VitalRespiratory() {
-		super("vital_respiratory", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("vital_respiratory", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.vital_respiratory</code> table reference
+	 * Create an aliased <code>rigel.vital_respiratory</code> table reference
 	 */
 	public VitalRespiratory(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.VitalRespiratory.VITAL_RESPIRATORY);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.VitalRespiratory.VITAL_RESPIRATORY);
 	}
 
 	/**

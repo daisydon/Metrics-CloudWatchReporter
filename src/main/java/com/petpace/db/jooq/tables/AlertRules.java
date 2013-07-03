@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertRules extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.AlertRulesRecord> {
 
-	private static final long serialVersionUID = -1990592379;
+	private static final long serialVersionUID = -54033025;
 
 	/**
-	 * The singleton instance of <code>sirius.alert_rules</code>
+	 * The singleton instance of <code>rigel.alert_rules</code>
 	 */
 	public static final com.petpace.db.jooq.tables.AlertRules ALERT_RULES = new com.petpace.db.jooq.tables.AlertRules();
 
@@ -25,47 +25,47 @@ public class AlertRules extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tabl
 	}
 
 	/**
-	 * The column <code>sirius.alert_rules.id</code>. 
+	 * The column <code>rigel.alert_rules.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertRulesRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_rules.name</code>. 
+	 * The column <code>rigel.alert_rules.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertRulesRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alert_rules.sensor</code>. 
+	 * The column <code>rigel.alert_rules.sensor</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertRulesRecord, java.lang.String> SENSOR = createField("sensor", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alert_rules.description</code>. 
+	 * The column <code>rigel.alert_rules.description</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertRulesRecord, java.lang.String> DESCRIPTION = createField("description", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alert_rules.status</code>. 
+	 * The column <code>rigel.alert_rules.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertRulesRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_rules.created</code>. 
+	 * The column <code>rigel.alert_rules.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertRulesRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.alert_rules</code> table reference
+	 * Create a <code>rigel.alert_rules</code> table reference
 	 */
 	public AlertRules() {
-		super("alert_rules", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("alert_rules", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.alert_rules</code> table reference
+	 * Create an aliased <code>rigel.alert_rules</code> table reference
 	 */
 	public AlertRules(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.AlertRules.ALERT_RULES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.AlertRules.ALERT_RULES);
 	}
 
 	/**

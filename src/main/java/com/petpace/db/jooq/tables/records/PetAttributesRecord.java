@@ -9,115 +9,115 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetAttributesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetAttributesRecord> implements org.jooq.Record8<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1198232966;
+	private static final long serialVersionUID = 516026332;
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.id</code>. 
+	 * Setter for <code>rigel.pet_attributes.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.id</code>. 
+	 * Getter for <code>rigel.pet_attributes.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.name</code>. 
+	 * Setter for <code>rigel.pet_attributes.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.name</code>. 
+	 * Getter for <code>rigel.pet_attributes.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.dataType</code>. 
+	 * Setter for <code>rigel.pet_attributes.dataType</code>. 
 	 */
 	public void setDatatype(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.dataType</code>. 
+	 * Getter for <code>rigel.pet_attributes.dataType</code>. 
 	 */
 	public java.lang.String getDatatype() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.defaultValue</code>. 
+	 * Setter for <code>rigel.pet_attributes.defaultValue</code>. 
 	 */
 	public void setDefaultvalue(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.defaultValue</code>. 
+	 * Getter for <code>rigel.pet_attributes.defaultValue</code>. 
 	 */
 	public java.lang.String getDefaultvalue() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.isRequired</code>. 
+	 * Setter for <code>rigel.pet_attributes.isRequired</code>. 
 	 */
 	public void setIsrequired(java.lang.Integer value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.isRequired</code>. 
+	 * Getter for <code>rigel.pet_attributes.isRequired</code>. 
 	 */
 	public java.lang.Integer getIsrequired() {
 		return (java.lang.Integer) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.dateCreated</code>. 
+	 * Setter for <code>rigel.pet_attributes.dateCreated</code>. 
 	 */
 	public void setDatecreated(java.sql.Timestamp value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.dateCreated</code>. 
+	 * Getter for <code>rigel.pet_attributes.dateCreated</code>. 
 	 */
 	public java.sql.Timestamp getDatecreated() {
 		return (java.sql.Timestamp) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.dateUpdated</code>. 
+	 * Setter for <code>rigel.pet_attributes.dateUpdated</code>. 
 	 */
 	public void setDateupdated(java.sql.Timestamp value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.dateUpdated</code>. 
+	 * Getter for <code>rigel.pet_attributes.dateUpdated</code>. 
 	 */
 	public java.sql.Timestamp getDateupdated() {
 		return (java.sql.Timestamp) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_attributes.status</code>. 
+	 * Setter for <code>rigel.pet_attributes.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_attributes.status</code>. 
+	 * Getter for <code>rigel.pet_attributes.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(7);

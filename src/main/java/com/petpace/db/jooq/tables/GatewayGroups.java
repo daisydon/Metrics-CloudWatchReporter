@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayGroups extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.GatewayGroupsRecord> {
 
-	private static final long serialVersionUID = 38115759;
+	private static final long serialVersionUID = -122815783;
 
 	/**
-	 * The singleton instance of <code>sirius.gateway_groups</code>
+	 * The singleton instance of <code>rigel.gateway_groups</code>
 	 */
 	public static final com.petpace.db.jooq.tables.GatewayGroups GATEWAY_GROUPS = new com.petpace.db.jooq.tables.GatewayGroups();
 
@@ -25,42 +25,42 @@ public class GatewayGroups extends org.jooq.impl.TableImpl<com.petpace.db.jooq.t
 	}
 
 	/**
-	 * The column <code>sirius.gateway_groups.GroupID</code>. 
+	 * The column <code>rigel.gateway_groups.GroupID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayGroupsRecord, java.lang.Integer> GROUPID = createField("GroupID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.gateway_groups.Name</code>. 
+	 * The column <code>rigel.gateway_groups.Name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayGroupsRecord, java.lang.String> NAME = createField("Name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_groups.Comment</code>. 
+	 * The column <code>rigel.gateway_groups.Comment</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayGroupsRecord, java.lang.String> COMMENT = createField("Comment", org.jooq.impl.SQLDataType.CLOB.length(65535), this);
 
 	/**
-	 * The column <code>sirius.gateway_groups.FirmwareID</code>. 
+	 * The column <code>rigel.gateway_groups.FirmwareID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayGroupsRecord, java.lang.Integer> FIRMWAREID = createField("FirmwareID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.gateway_groups.ConfigID</code>. 
+	 * The column <code>rigel.gateway_groups.ConfigID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayGroupsRecord, java.lang.Integer> CONFIGID = createField("ConfigID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.gateway_groups</code> table reference
+	 * Create a <code>rigel.gateway_groups</code> table reference
 	 */
 	public GatewayGroups() {
-		super("gateway_groups", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("gateway_groups", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.gateway_groups</code> table reference
+	 * Create an aliased <code>rigel.gateway_groups</code> table reference
 	 */
 	public GatewayGroups(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.GatewayGroups.GATEWAY_GROUPS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.GatewayGroups.GATEWAY_GROUPS);
 	}
 
 	/**

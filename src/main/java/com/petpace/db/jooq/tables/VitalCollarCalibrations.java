@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalCollarCalibrations extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord> {
 
-	private static final long serialVersionUID = 1350378944;
+	private static final long serialVersionUID = 1317925268;
 
 	/**
-	 * The singleton instance of <code>sirius.vital_collar_calibrations</code>
+	 * The singleton instance of <code>rigel.vital_collar_calibrations</code>
 	 */
 	public static final com.petpace.db.jooq.tables.VitalCollarCalibrations VITAL_COLLAR_CALIBRATIONS = new com.petpace.db.jooq.tables.VitalCollarCalibrations();
 
@@ -25,112 +25,112 @@ public class VitalCollarCalibrations extends org.jooq.impl.TableImpl<com.petpace
 	}
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.id</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.collar_id</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.pet_id</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.account_id</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.account_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.Integer> ACCOUNT_ID = createField("account_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.temperature</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.temperature</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.math.BigDecimal> TEMPERATURE = createField("temperature", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.rectal</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.rectal</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.math.BigDecimal> RECTAL = createField("rectal", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.ambient</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.ambient</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.math.BigDecimal> AMBIENT = createField("ambient", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.pulse</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.pulse</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.Long> PULSE = createField("pulse", org.jooq.impl.SQLDataType.BIGINT, this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.respiratory</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.respiratory</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.Long> RESPIRATORY = createField("respiratory", org.jooq.impl.SQLDataType.BIGINT, this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.sound</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.sound</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> SOUND = createField("sound", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.lameness</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.lameness</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> LAMENESS = createField("lameness", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.movement</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.movement</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> MOVEMENT = createField("movement", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.activity</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.activity</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> ACTIVITY = createField("activity", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.position</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.position</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> POSITION = createField("position", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.technician</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.technician</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> TECHNICIAN = createField("technician", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.notes</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.notes</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.lang.String> NOTES = createField("notes", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.time</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.time</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.sql.Timestamp> TIME = createField("time", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.created</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_collar_calibrations.updated</code>. 
+	 * The column <code>rigel.vital_collar_calibrations.updated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord, java.sql.Timestamp> UPDATED = createField("updated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.vital_collar_calibrations</code> table reference
+	 * Create a <code>rigel.vital_collar_calibrations</code> table reference
 	 */
 	public VitalCollarCalibrations() {
-		super("vital_collar_calibrations", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("vital_collar_calibrations", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.vital_collar_calibrations</code> table reference
+	 * Create an aliased <code>rigel.vital_collar_calibrations</code> table reference
 	 */
 	public VitalCollarCalibrations(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.VitalCollarCalibrations.VITAL_COLLAR_CALIBRATIONS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.VitalCollarCalibrations.VITAL_COLLAR_CALIBRATIONS);
 	}
 
 	/**

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalBodytemp extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.VitalBodytempRecord> {
 
-	private static final long serialVersionUID = -2127225179;
+	private static final long serialVersionUID = 917443685;
 
 	/**
-	 * The singleton instance of <code>sirius.vital_bodyTemp</code>
+	 * The singleton instance of <code>rigel.vital_bodyTemp</code>
 	 */
 	public static final com.petpace.db.jooq.tables.VitalBodytemp VITAL_BODYTEMP = new com.petpace.db.jooq.tables.VitalBodytemp();
 
@@ -25,142 +25,142 @@ public class VitalBodytemp extends org.jooq.impl.TableImpl<com.petpace.db.jooq.t
 	}
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.id</code>. 
+	 * The column <code>rigel.vital_bodyTemp.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.collar_id</code>. 
+	 * The column <code>rigel.vital_bodyTemp.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.pet_id</code>. 
+	 * The column <code>rigel.vital_bodyTemp.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.name</code>. 
+	 * The column <code>rigel.vital_bodyTemp.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.quality</code>. 
+	 * The column <code>rigel.vital_bodyTemp.quality</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.Integer> QUALITY = createField("quality", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.deviation</code>. 
+	 * The column <code>rigel.vital_bodyTemp.deviation</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> DEVIATION = createField("deviation", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.duration</code>. 
+	 * The column <code>rigel.vital_bodyTemp.duration</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.Integer> DURATION = createField("duration", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.value</code>. 
+	 * The column <code>rigel.vital_bodyTemp.value</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> VALUE = createField("value", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.ambient</code>. 
+	 * The column <code>rigel.vital_bodyTemp.ambient</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> AMBIENT = createField("ambient", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.hiLimit</code>. 
+	 * The column <code>rigel.vital_bodyTemp.hiLimit</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> HILIMIT = createField("hiLimit", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.lowLimit</code>. 
+	 * The column <code>rigel.vital_bodyTemp.lowLimit</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> LOWLIMIT = createField("lowLimit", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.smv10</code>. 
+	 * The column <code>rigel.vital_bodyTemp.smv10</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> SMV10 = createField("smv10", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.smv30</code>. 
+	 * The column <code>rigel.vital_bodyTemp.smv30</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> SMV30 = createField("smv30", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.exhale</code>. 
+	 * The column <code>rigel.vital_bodyTemp.exhale</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> EXHALE = createField("exhale", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.exhale_std</code>. 
+	 * The column <code>rigel.vital_bodyTemp.exhale_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> EXHALE_STD = createField("exhale_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.inhale</code>. 
+	 * The column <code>rigel.vital_bodyTemp.inhale</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> INHALE = createField("inhale", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.inhale_std</code>. 
+	 * The column <code>rigel.vital_bodyTemp.inhale_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> INHALE_STD = createField("inhale_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.nn</code>. 
+	 * The column <code>rigel.vital_bodyTemp.nn</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> NN = createField("nn", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.nn_std</code>. 
+	 * The column <code>rigel.vital_bodyTemp.nn_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> NN_STD = createField("nn_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.ipr</code>. 
+	 * The column <code>rigel.vital_bodyTemp.ipr</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> IPR = createField("ipr", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.ipr_std</code>. 
+	 * The column <code>rigel.vital_bodyTemp.ipr_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.math.BigDecimal> IPR_STD = createField("ipr_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.debug</code>. 
+	 * The column <code>rigel.vital_bodyTemp.debug</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.String> DEBUG = createField("debug", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.time</code>. 
+	 * The column <code>rigel.vital_bodyTemp.time</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.sql.Timestamp> TIME = createField("time", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.created</code>. 
+	 * The column <code>rigel.vital_bodyTemp.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_bodyTemp.notes</code>. 
+	 * The column <code>rigel.vital_bodyTemp.notes</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalBodytempRecord, java.lang.String> NOTES = createField("notes", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * Create a <code>sirius.vital_bodyTemp</code> table reference
+	 * Create a <code>rigel.vital_bodyTemp</code> table reference
 	 */
 	public VitalBodytemp() {
-		super("vital_bodyTemp", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("vital_bodyTemp", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.vital_bodyTemp</code> table reference
+	 * Create an aliased <code>rigel.vital_bodyTemp</code> table reference
 	 */
 	public VitalBodytemp(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.VitalBodytemp.VITAL_BODYTEMP);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.VitalBodytemp.VITAL_BODYTEMP);
 	}
 
 	/**

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BreedAttributeValuesVarchar extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BreedAttributeValuesVarcharRecord> {
 
-	private static final long serialVersionUID = 2099696000;
+	private static final long serialVersionUID = 1486975680;
 
 	/**
-	 * The singleton instance of <code>sirius.breed_attribute_values_varchar</code>
+	 * The singleton instance of <code>rigel.breed_attribute_values_varchar</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BreedAttributeValuesVarchar BREED_ATTRIBUTE_VALUES_VARCHAR = new com.petpace.db.jooq.tables.BreedAttributeValuesVarchar();
 
@@ -25,37 +25,37 @@ public class BreedAttributeValuesVarchar extends org.jooq.impl.TableImpl<com.pet
 	}
 
 	/**
-	 * The column <code>sirius.breed_attribute_values_varchar.id</code>. 
+	 * The column <code>rigel.breed_attribute_values_varchar.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeValuesVarcharRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.breed_attribute_values_varchar.breed_id</code>. 
+	 * The column <code>rigel.breed_attribute_values_varchar.breed_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeValuesVarcharRecord, java.lang.String> BREED_ID = createField("breed_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.breed_attribute_values_varchar.val</code>. 
+	 * The column <code>rigel.breed_attribute_values_varchar.val</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeValuesVarcharRecord, java.lang.String> VAL = createField("val", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.breed_attribute_values_varchar.breedAttribute_id</code>. 
+	 * The column <code>rigel.breed_attribute_values_varchar.breedAttribute_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeValuesVarcharRecord, java.lang.String> BREEDATTRIBUTE_ID = createField("breedAttribute_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.breed_attribute_values_varchar</code> table reference
+	 * Create a <code>rigel.breed_attribute_values_varchar</code> table reference
 	 */
 	public BreedAttributeValuesVarchar() {
-		super("breed_attribute_values_varchar", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("breed_attribute_values_varchar", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.breed_attribute_values_varchar</code> table reference
+	 * Create an aliased <code>rigel.breed_attribute_values_varchar</code> table reference
 	 */
 	public BreedAttributeValuesVarchar(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BreedAttributeValuesVarchar.BREED_ATTRIBUTE_VALUES_VARCHAR);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BreedAttributeValuesVarchar.BREED_ATTRIBUTE_VALUES_VARCHAR);
 	}
 
 	/**

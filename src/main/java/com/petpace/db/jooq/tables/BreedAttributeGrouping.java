@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BreedAttributeGrouping extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BreedAttributeGroupingRecord> {
 
-	private static final long serialVersionUID = -391033097;
+	private static final long serialVersionUID = -1512243743;
 
 	/**
-	 * The singleton instance of <code>sirius.breed_attribute_grouping</code>
+	 * The singleton instance of <code>rigel.breed_attribute_grouping</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BreedAttributeGrouping BREED_ATTRIBUTE_GROUPING = new com.petpace.db.jooq.tables.BreedAttributeGrouping();
 
@@ -25,27 +25,27 @@ public class BreedAttributeGrouping extends org.jooq.impl.TableImpl<com.petpace.
 	}
 
 	/**
-	 * The column <code>sirius.breed_attribute_grouping.attribute_id</code>. 
+	 * The column <code>rigel.breed_attribute_grouping.attribute_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeGroupingRecord, java.lang.String> ATTRIBUTE_ID = createField("attribute_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.breed_attribute_grouping.group_id</code>. 
+	 * The column <code>rigel.breed_attribute_grouping.group_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributeGroupingRecord, java.lang.Integer> GROUP_ID = createField("group_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.breed_attribute_grouping</code> table reference
+	 * Create a <code>rigel.breed_attribute_grouping</code> table reference
 	 */
 	public BreedAttributeGrouping() {
-		super("breed_attribute_grouping", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("breed_attribute_grouping", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.breed_attribute_grouping</code> table reference
+	 * Create an aliased <code>rigel.breed_attribute_grouping</code> table reference
 	 */
 	public BreedAttributeGrouping(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BreedAttributeGrouping.BREED_ATTRIBUTE_GROUPING);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BreedAttributeGrouping.BREED_ATTRIBUTE_GROUPING);
 	}
 
 	/**

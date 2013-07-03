@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Collars extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.CollarsRecord> {
 
-	private static final long serialVersionUID = 1190027218;
+	private static final long serialVersionUID = 1141144570;
 
 	/**
-	 * The singleton instance of <code>sirius.collars</code>
+	 * The singleton instance of <code>rigel.collars</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Collars COLLARS = new com.petpace.db.jooq.tables.Collars();
 
@@ -25,82 +25,82 @@ public class Collars extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.
 	}
 
 	/**
-	 * The column <code>sirius.collars.id</code>. 
+	 * The column <code>rigel.collars.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.String> ID = createField("id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collars.Authorized</code>. 
+	 * The column <code>rigel.collars.Authorized</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.Short> AUTHORIZED = createField("Authorized", org.jooq.impl.SQLDataType.SMALLINT, this);
 
 	/**
-	 * The column <code>sirius.collars.BatteryLevel</code>. 
+	 * The column <code>rigel.collars.BatteryLevel</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.Short> BATTERYLEVEL = createField("BatteryLevel", org.jooq.impl.SQLDataType.SMALLINT, this);
 
 	/**
-	 * The column <code>sirius.collars.State</code>. 
+	 * The column <code>rigel.collars.State</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.String> STATE = createField("State", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collars.HWVersion</code>. 
+	 * The column <code>rigel.collars.HWVersion</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.String> HWVERSION = createField("HWVersion", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collars.CurrFWVersion</code>. 
+	 * The column <code>rigel.collars.CurrFWVersion</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.String> CURRFWVERSION = createField("CurrFWVersion", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collars.CurrConfVersion</code>. 
+	 * The column <code>rigel.collars.CurrConfVersion</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.String> CURRCONFVERSION = createField("CurrConfVersion", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collars.WantSupport</code>. 
+	 * The column <code>rigel.collars.WantSupport</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.Short> WANTSUPPORT = createField("WantSupport", org.jooq.impl.SQLDataType.SMALLINT, this);
 
 	/**
-	 * The column <code>sirius.collars.Cookie</code>. 
+	 * The column <code>rigel.collars.Cookie</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.String> COOKIE = createField("Cookie", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collars.updated</code>. 
+	 * The column <code>rigel.collars.updated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.sql.Timestamp> UPDATED = createField("updated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.collars.GroupID</code>. 
+	 * The column <code>rigel.collars.GroupID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.Integer> GROUPID = createField("GroupID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.collars.InputRef</code>. 
+	 * The column <code>rigel.collars.InputRef</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.String> INPUTREF = createField("InputRef", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collars.GatewayID</code>. 
+	 * The column <code>rigel.collars.GatewayID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarsRecord, java.lang.Integer> GATEWAYID = createField("GatewayID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.collars</code> table reference
+	 * Create a <code>rigel.collars</code> table reference
 	 */
 	public Collars() {
-		super("collars", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("collars", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.collars</code> table reference
+	 * Create an aliased <code>rigel.collars</code> table reference
 	 */
 	public Collars(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Collars.COLLARS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Collars.COLLARS);
 	}
 
 	/**

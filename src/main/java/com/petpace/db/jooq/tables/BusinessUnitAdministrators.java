@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessUnitAdministrators extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BusinessUnitAdministratorsRecord> {
 
-	private static final long serialVersionUID = -348181181;
+	private static final long serialVersionUID = 639224203;
 
 	/**
-	 * The singleton instance of <code>sirius.business_unit_administrators</code>
+	 * The singleton instance of <code>rigel.business_unit_administrators</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BusinessUnitAdministrators BUSINESS_UNIT_ADMINISTRATORS = new com.petpace.db.jooq.tables.BusinessUnitAdministrators();
 
@@ -25,27 +25,27 @@ public class BusinessUnitAdministrators extends org.jooq.impl.TableImpl<com.petp
 	}
 
 	/**
-	 * The column <code>sirius.business_unit_administrators.business_unit_id</code>. 
+	 * The column <code>rigel.business_unit_administrators.business_unit_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitAdministratorsRecord, java.lang.Integer> BUSINESS_UNIT_ID = createField("business_unit_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.business_unit_administrators.account_id</code>. 
+	 * The column <code>rigel.business_unit_administrators.account_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitAdministratorsRecord, java.lang.Integer> ACCOUNT_ID = createField("account_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.business_unit_administrators</code> table reference
+	 * Create a <code>rigel.business_unit_administrators</code> table reference
 	 */
 	public BusinessUnitAdministrators() {
-		super("business_unit_administrators", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("business_unit_administrators", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.business_unit_administrators</code> table reference
+	 * Create an aliased <code>rigel.business_unit_administrators</code> table reference
 	 */
 	public BusinessUnitAdministrators(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BusinessUnitAdministrators.BUSINESS_UNIT_ADMINISTRATORS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BusinessUnitAdministrators.BUSINESS_UNIT_ADMINISTRATORS);
 	}
 
 	/**

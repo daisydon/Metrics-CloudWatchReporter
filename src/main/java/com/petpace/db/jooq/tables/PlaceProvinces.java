@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PlaceProvinces extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PlaceProvincesRecord> {
 
-	private static final long serialVersionUID = 1573322123;
+	private static final long serialVersionUID = -1784845811;
 
 	/**
-	 * The singleton instance of <code>sirius.place_provinces</code>
+	 * The singleton instance of <code>rigel.place_provinces</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PlaceProvinces PLACE_PROVINCES = new com.petpace.db.jooq.tables.PlaceProvinces();
 
@@ -25,37 +25,37 @@ public class PlaceProvinces extends org.jooq.impl.TableImpl<com.petpace.db.jooq.
 	}
 
 	/**
-	 * The column <code>sirius.place_provinces.provinceCode</code>. 
+	 * The column <code>rigel.place_provinces.provinceCode</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceProvincesRecord, java.lang.String> PROVINCECODE = createField("provinceCode", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_provinces.province</code>. 
+	 * The column <code>rigel.place_provinces.province</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceProvincesRecord, java.lang.String> PROVINCE = createField("province", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_provinces.country</code>. 
+	 * The column <code>rigel.place_provinces.country</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceProvincesRecord, java.lang.String> COUNTRY = createField("country", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_provinces.countryCode</code>. 
+	 * The column <code>rigel.place_provinces.countryCode</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceProvincesRecord, java.lang.String> COUNTRYCODE = createField("countryCode", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.place_provinces</code> table reference
+	 * Create a <code>rigel.place_provinces</code> table reference
 	 */
 	public PlaceProvinces() {
-		super("place_provinces", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("place_provinces", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.place_provinces</code> table reference
+	 * Create an aliased <code>rigel.place_provinces</code> table reference
 	 */
 	public PlaceProvinces(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PlaceProvinces.PLACE_PROVINCES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PlaceProvinces.PLACE_PROVINCES);
 	}
 
 	/**

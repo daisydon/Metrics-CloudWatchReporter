@@ -9,59 +9,59 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PlaceProvincesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PlaceProvincesRecord> implements org.jooq.Record4<java.lang.String, java.lang.String, java.lang.String, java.lang.String> {
 
-	private static final long serialVersionUID = -1674523347;
+	private static final long serialVersionUID = 734427293;
 
 	/**
-	 * Setter for <code>sirius.place_provinces.provinceCode</code>. 
+	 * Setter for <code>rigel.place_provinces.provinceCode</code>. 
 	 */
 	public void setProvincecode(java.lang.String value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_provinces.provinceCode</code>. 
+	 * Getter for <code>rigel.place_provinces.provinceCode</code>. 
 	 */
 	public java.lang.String getProvincecode() {
 		return (java.lang.String) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_provinces.province</code>. 
+	 * Setter for <code>rigel.place_provinces.province</code>. 
 	 */
 	public void setProvince(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_provinces.province</code>. 
+	 * Getter for <code>rigel.place_provinces.province</code>. 
 	 */
 	public java.lang.String getProvince() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_provinces.country</code>. 
+	 * Setter for <code>rigel.place_provinces.country</code>. 
 	 */
 	public void setCountry(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_provinces.country</code>. 
+	 * Getter for <code>rigel.place_provinces.country</code>. 
 	 */
 	public java.lang.String getCountry() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_provinces.countryCode</code>. 
+	 * Setter for <code>rigel.place_provinces.countryCode</code>. 
 	 */
 	public void setCountrycode(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_provinces.countryCode</code>. 
+	 * Getter for <code>rigel.place_provinces.countryCode</code>. 
 	 */
 	public java.lang.String getCountrycode() {
 		return (java.lang.String) getValue(3);

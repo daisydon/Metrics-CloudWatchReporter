@@ -9,73 +9,73 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayFirmwaresRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewayFirmwaresRecord> implements org.jooq.Record5<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -499541852;
+	private static final long serialVersionUID = -522473908;
 
 	/**
-	 * Setter for <code>sirius.gateway_firmwares.FirmwareID</code>. 
+	 * Setter for <code>rigel.gateway_firmwares.FirmwareID</code>. 
 	 */
 	public void setFirmwareid(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_firmwares.FirmwareID</code>. 
+	 * Getter for <code>rigel.gateway_firmwares.FirmwareID</code>. 
 	 */
 	public java.lang.Integer getFirmwareid() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_firmwares.Version</code>. 
+	 * Setter for <code>rigel.gateway_firmwares.Version</code>. 
 	 */
 	public void setVersion(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_firmwares.Version</code>. 
+	 * Getter for <code>rigel.gateway_firmwares.Version</code>. 
 	 */
 	public java.lang.String getVersion() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_firmwares.Comment</code>. 
+	 * Setter for <code>rigel.gateway_firmwares.Comment</code>. 
 	 */
 	public void setComment(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_firmwares.Comment</code>. 
+	 * Getter for <code>rigel.gateway_firmwares.Comment</code>. 
 	 */
 	public java.lang.String getComment() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_firmwares.S3</code>. 
+	 * Setter for <code>rigel.gateway_firmwares.S3</code>. 
 	 */
 	public void setS3(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_firmwares.S3</code>. 
+	 * Getter for <code>rigel.gateway_firmwares.S3</code>. 
 	 */
 	public java.lang.String getS3() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_firmwares.UploadDate</code>. 
+	 * Setter for <code>rigel.gateway_firmwares.UploadDate</code>. 
 	 */
 	public void setUploaddate(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_firmwares.UploadDate</code>. 
+	 * Getter for <code>rigel.gateway_firmwares.UploadDate</code>. 
 	 */
 	public java.sql.Timestamp getUploaddate() {
 		return (java.sql.Timestamp) getValue(4);

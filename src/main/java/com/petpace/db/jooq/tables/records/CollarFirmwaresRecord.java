@@ -9,73 +9,73 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class CollarFirmwaresRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.CollarFirmwaresRecord> implements org.jooq.Record5<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -10717072;
+	private static final long serialVersionUID = -31181042;
 
 	/**
-	 * Setter for <code>sirius.collar_firmwares.FirmwareID</code>. 
+	 * Setter for <code>rigel.collar_firmwares.FirmwareID</code>. 
 	 */
 	public void setFirmwareid(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_firmwares.FirmwareID</code>. 
+	 * Getter for <code>rigel.collar_firmwares.FirmwareID</code>. 
 	 */
 	public java.lang.Integer getFirmwareid() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_firmwares.version</code>. 
+	 * Setter for <code>rigel.collar_firmwares.version</code>. 
 	 */
 	public void setVersion(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_firmwares.version</code>. 
+	 * Getter for <code>rigel.collar_firmwares.version</code>. 
 	 */
 	public java.lang.String getVersion() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_firmwares.Comment</code>. 
+	 * Setter for <code>rigel.collar_firmwares.Comment</code>. 
 	 */
 	public void setComment(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_firmwares.Comment</code>. 
+	 * Getter for <code>rigel.collar_firmwares.Comment</code>. 
 	 */
 	public java.lang.String getComment() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_firmwares.s3</code>. 
+	 * Setter for <code>rigel.collar_firmwares.s3</code>. 
 	 */
 	public void setS3(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_firmwares.s3</code>. 
+	 * Getter for <code>rigel.collar_firmwares.s3</code>. 
 	 */
 	public java.lang.String getS3() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.collar_firmwares.uploadDate</code>. 
+	 * Setter for <code>rigel.collar_firmwares.uploadDate</code>. 
 	 */
 	public void setUploaddate(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collar_firmwares.uploadDate</code>. 
+	 * Getter for <code>rigel.collar_firmwares.uploadDate</code>. 
 	 */
 	public java.sql.Timestamp getUploaddate() {
 		return (java.sql.Timestamp) getValue(4);

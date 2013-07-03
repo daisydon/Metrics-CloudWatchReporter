@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotificationBusinessUnitsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AlertNotificationBusinessUnitsRecord> implements org.jooq.Record2<java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = -442865728;
+	private static final long serialVersionUID = 1236727694;
 
 	/**
-	 * Setter for <code>sirius.alert_notification_business_units.preference_id</code>. 
+	 * Setter for <code>rigel.alert_notification_business_units.preference_id</code>. 
 	 */
 	public void setPreferenceId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_business_units.preference_id</code>. 
+	 * Getter for <code>rigel.alert_notification_business_units.preference_id</code>. 
 	 */
 	public java.lang.Integer getPreferenceId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_business_units.businessUnit_id</code>. 
+	 * Setter for <code>rigel.alert_notification_business_units.businessUnit_id</code>. 
 	 */
 	public void setBusinessunitId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_business_units.businessUnit_id</code>. 
+	 * Getter for <code>rigel.alert_notification_business_units.businessUnit_id</code>. 
 	 */
 	public java.lang.Integer getBusinessunitId() {
 		return (java.lang.Integer) getValue(1);

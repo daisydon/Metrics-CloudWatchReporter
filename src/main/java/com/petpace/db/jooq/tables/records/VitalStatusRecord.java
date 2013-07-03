@@ -9,157 +9,157 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalStatusRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.VitalStatusRecord> implements org.jooq.Record11<java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.lang.String, java.lang.String, java.lang.Integer> {
 
-	private static final long serialVersionUID = 992347411;
+	private static final long serialVersionUID = -1646538169;
 
 	/**
-	 * Setter for <code>sirius.vital_status.id</code>. 
+	 * Setter for <code>rigel.vital_status.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.id</code>. 
+	 * Getter for <code>rigel.vital_status.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.collar_id</code>. 
+	 * Setter for <code>rigel.vital_status.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.collar_id</code>. 
+	 * Getter for <code>rigel.vital_status.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.battery</code>. 
+	 * Setter for <code>rigel.vital_status.battery</code>. 
 	 */
 	public void setBattery(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.battery</code>. 
+	 * Getter for <code>rigel.vital_status.battery</code>. 
 	 */
 	public java.lang.Integer getBattery() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.buckle</code>. 
+	 * Setter for <code>rigel.vital_status.buckle</code>. 
 	 */
 	public void setBuckle(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.buckle</code>. 
+	 * Getter for <code>rigel.vital_status.buckle</code>. 
 	 */
 	public java.lang.String getBuckle() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.charging</code>. 
+	 * Setter for <code>rigel.vital_status.charging</code>. 
 	 */
 	public void setCharging(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.charging</code>. 
+	 * Getter for <code>rigel.vital_status.charging</code>. 
 	 */
 	public java.lang.String getCharging() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.version</code>. 
+	 * Setter for <code>rigel.vital_status.version</code>. 
 	 */
 	public void setVersion(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.version</code>. 
+	 * Getter for <code>rigel.vital_status.version</code>. 
 	 */
 	public java.lang.String getVersion() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.time</code>. 
+	 * Setter for <code>rigel.vital_status.time</code>. 
 	 */
 	public void setTime(java.sql.Timestamp value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.time</code>. 
+	 * Getter for <code>rigel.vital_status.time</code>. 
 	 */
 	public java.sql.Timestamp getTime() {
 		return (java.sql.Timestamp) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.created</code>. 
+	 * Setter for <code>rigel.vital_status.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.created</code>. 
+	 * Getter for <code>rigel.vital_status.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.Cookie</code>. 
+	 * Setter for <code>rigel.vital_status.Cookie</code>. 
 	 */
 	public void setCookie(java.lang.String value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.Cookie</code>. 
+	 * Getter for <code>rigel.vital_status.Cookie</code>. 
 	 */
 	public java.lang.String getCookie() {
 		return (java.lang.String) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.InputRef</code>. 
+	 * Setter for <code>rigel.vital_status.InputRef</code>. 
 	 */
 	public void setInputref(java.lang.String value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.InputRef</code>. 
+	 * Getter for <code>rigel.vital_status.InputRef</code>. 
 	 */
 	public java.lang.String getInputref() {
 		return (java.lang.String) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_status.GatewayID</code>. 
+	 * Setter for <code>rigel.vital_status.GatewayID</code>. 
 	 */
 	public void setGatewayid(java.lang.Integer value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_status.GatewayID</code>. 
+	 * Getter for <code>rigel.vital_status.GatewayID</code>. 
 	 */
 	public java.lang.Integer getGatewayid() {
 		return (java.lang.Integer) getValue(10);

@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BreedsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.BreedsRecord> implements org.jooq.Record2<java.lang.String, java.lang.String> {
 
-	private static final long serialVersionUID = 446049632;
+	private static final long serialVersionUID = 1331030238;
 
 	/**
-	 * Setter for <code>sirius.breeds.id</code>. 
+	 * Setter for <code>rigel.breeds.id</code>. 
 	 */
 	public void setId(java.lang.String value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.breeds.id</code>. 
+	 * Getter for <code>rigel.breeds.id</code>. 
 	 */
 	public java.lang.String getId() {
 		return (java.lang.String) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.breeds.uid</code>. 
+	 * Setter for <code>rigel.breeds.uid</code>. 
 	 */
 	public void setUid(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.breeds.uid</code>. 
+	 * Getter for <code>rigel.breeds.uid</code>. 
 	 */
 	public java.lang.String getUid() {
 		return (java.lang.String) getValue(1);

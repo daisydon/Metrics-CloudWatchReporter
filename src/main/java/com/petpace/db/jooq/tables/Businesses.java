@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Businesses extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BusinessesRecord> {
 
-	private static final long serialVersionUID = -1144447487;
+	private static final long serialVersionUID = -99759535;
 
 	/**
-	 * The singleton instance of <code>sirius.businesses</code>
+	 * The singleton instance of <code>rigel.businesses</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Businesses BUSINESSES = new com.petpace.db.jooq.tables.Businesses();
 
@@ -25,77 +25,77 @@ public class Businesses extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tabl
 	}
 
 	/**
-	 * The column <code>sirius.businesses.id</code>. 
+	 * The column <code>rigel.businesses.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.businesses.address_id</code>. 
+	 * The column <code>rigel.businesses.address_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.Integer> ADDRESS_ID = createField("address_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.businesses.name</code>. 
+	 * The column <code>rigel.businesses.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.businesses.url</code>. 
+	 * The column <code>rigel.businesses.url</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.String> URL = createField("url", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.businesses.btype</code>. 
+	 * The column <code>rigel.businesses.btype</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.Integer> BTYPE = createField("btype", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.businesses.website</code>. 
+	 * The column <code>rigel.businesses.website</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.String> WEBSITE = createField("website", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.businesses.phone</code>. 
+	 * The column <code>rigel.businesses.phone</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.String> PHONE = createField("phone", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.businesses.fax</code>. 
+	 * The column <code>rigel.businesses.fax</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.String> FAX = createField("fax", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.businesses.created</code>. 
+	 * The column <code>rigel.businesses.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.businesses.updated</code>. 
+	 * The column <code>rigel.businesses.updated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.sql.Timestamp> UPDATED = createField("updated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.businesses.status</code>. 
+	 * The column <code>rigel.businesses.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.businesses.parent_id</code>. 
+	 * The column <code>rigel.businesses.parent_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessesRecord, java.lang.Integer> PARENT_ID = createField("parent_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.businesses</code> table reference
+	 * Create a <code>rigel.businesses</code> table reference
 	 */
 	public Businesses() {
-		super("businesses", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("businesses", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.businesses</code> table reference
+	 * Create an aliased <code>rigel.businesses</code> table reference
 	 */
 	public Businesses(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Businesses.BUSINESSES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Businesses.BUSINESSES);
 	}
 
 	/**

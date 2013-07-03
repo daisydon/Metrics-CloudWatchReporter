@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayConfigs extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.GatewayConfigsRecord> {
 
-	private static final long serialVersionUID = -2009206419;
+	private static final long serialVersionUID = 1180359853;
 
 	/**
-	 * The singleton instance of <code>sirius.gateway_configs</code>
+	 * The singleton instance of <code>rigel.gateway_configs</code>
 	 */
 	public static final com.petpace.db.jooq.tables.GatewayConfigs GATEWAY_CONFIGS = new com.petpace.db.jooq.tables.GatewayConfigs();
 
@@ -25,42 +25,42 @@ public class GatewayConfigs extends org.jooq.impl.TableImpl<com.petpace.db.jooq.
 	}
 
 	/**
-	 * The column <code>sirius.gateway_configs.ConfigID</code>. 
+	 * The column <code>rigel.gateway_configs.ConfigID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayConfigsRecord, java.lang.Integer> CONFIGID = createField("ConfigID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.gateway_configs.Version</code>. 
+	 * The column <code>rigel.gateway_configs.Version</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayConfigsRecord, java.lang.String> VERSION = createField("Version", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_configs.Comment</code>. 
+	 * The column <code>rigel.gateway_configs.Comment</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayConfigsRecord, java.lang.String> COMMENT = createField("Comment", org.jooq.impl.SQLDataType.CLOB.length(65535), this);
 
 	/**
-	 * The column <code>sirius.gateway_configs.S3</code>. 
+	 * The column <code>rigel.gateway_configs.S3</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayConfigsRecord, java.lang.String> S3 = createField("S3", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_configs.UploadDate</code>. 
+	 * The column <code>rigel.gateway_configs.UploadDate</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayConfigsRecord, java.sql.Timestamp> UPLOADDATE = createField("UploadDate", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.gateway_configs</code> table reference
+	 * Create a <code>rigel.gateway_configs</code> table reference
 	 */
 	public GatewayConfigs() {
-		super("gateway_configs", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("gateway_configs", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.gateway_configs</code> table reference
+	 * Create an aliased <code>rigel.gateway_configs</code> table reference
 	 */
 	public GatewayConfigs(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.GatewayConfigs.GATEWAY_CONFIGS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.GatewayConfigs.GATEWAY_CONFIGS);
 	}
 
 	/**

@@ -9,185 +9,185 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class CollarsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.CollarsRecord> implements org.jooq.Record13<java.lang.String, java.lang.Short, java.lang.Short, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Short, java.lang.String, java.sql.Timestamp, java.lang.Integer, java.lang.String, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1872363445;
+	private static final long serialVersionUID = -137653371;
 
 	/**
-	 * Setter for <code>sirius.collars.id</code>. 
+	 * Setter for <code>rigel.collars.id</code>. 
 	 */
 	public void setId(java.lang.String value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.id</code>. 
+	 * Getter for <code>rigel.collars.id</code>. 
 	 */
 	public java.lang.String getId() {
 		return (java.lang.String) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.Authorized</code>. 
+	 * Setter for <code>rigel.collars.Authorized</code>. 
 	 */
 	public void setAuthorized(java.lang.Short value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.Authorized</code>. 
+	 * Getter for <code>rigel.collars.Authorized</code>. 
 	 */
 	public java.lang.Short getAuthorized() {
 		return (java.lang.Short) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.BatteryLevel</code>. 
+	 * Setter for <code>rigel.collars.BatteryLevel</code>. 
 	 */
 	public void setBatterylevel(java.lang.Short value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.BatteryLevel</code>. 
+	 * Getter for <code>rigel.collars.BatteryLevel</code>. 
 	 */
 	public java.lang.Short getBatterylevel() {
 		return (java.lang.Short) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.State</code>. 
+	 * Setter for <code>rigel.collars.State</code>. 
 	 */
 	public void setState(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.State</code>. 
+	 * Getter for <code>rigel.collars.State</code>. 
 	 */
 	public java.lang.String getState() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.HWVersion</code>. 
+	 * Setter for <code>rigel.collars.HWVersion</code>. 
 	 */
 	public void setHwversion(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.HWVersion</code>. 
+	 * Getter for <code>rigel.collars.HWVersion</code>. 
 	 */
 	public java.lang.String getHwversion() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.CurrFWVersion</code>. 
+	 * Setter for <code>rigel.collars.CurrFWVersion</code>. 
 	 */
 	public void setCurrfwversion(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.CurrFWVersion</code>. 
+	 * Getter for <code>rigel.collars.CurrFWVersion</code>. 
 	 */
 	public java.lang.String getCurrfwversion() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.CurrConfVersion</code>. 
+	 * Setter for <code>rigel.collars.CurrConfVersion</code>. 
 	 */
 	public void setCurrconfversion(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.CurrConfVersion</code>. 
+	 * Getter for <code>rigel.collars.CurrConfVersion</code>. 
 	 */
 	public java.lang.String getCurrconfversion() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.WantSupport</code>. 
+	 * Setter for <code>rigel.collars.WantSupport</code>. 
 	 */
 	public void setWantsupport(java.lang.Short value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.WantSupport</code>. 
+	 * Getter for <code>rigel.collars.WantSupport</code>. 
 	 */
 	public java.lang.Short getWantsupport() {
 		return (java.lang.Short) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.Cookie</code>. 
+	 * Setter for <code>rigel.collars.Cookie</code>. 
 	 */
 	public void setCookie(java.lang.String value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.Cookie</code>. 
+	 * Getter for <code>rigel.collars.Cookie</code>. 
 	 */
 	public java.lang.String getCookie() {
 		return (java.lang.String) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.updated</code>. 
+	 * Setter for <code>rigel.collars.updated</code>. 
 	 */
 	public void setUpdated(java.sql.Timestamp value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.updated</code>. 
+	 * Getter for <code>rigel.collars.updated</code>. 
 	 */
 	public java.sql.Timestamp getUpdated() {
 		return (java.sql.Timestamp) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.GroupID</code>. 
+	 * Setter for <code>rigel.collars.GroupID</code>. 
 	 */
 	public void setGroupid(java.lang.Integer value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.GroupID</code>. 
+	 * Getter for <code>rigel.collars.GroupID</code>. 
 	 */
 	public java.lang.Integer getGroupid() {
 		return (java.lang.Integer) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.InputRef</code>. 
+	 * Setter for <code>rigel.collars.InputRef</code>. 
 	 */
 	public void setInputref(java.lang.String value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.InputRef</code>. 
+	 * Getter for <code>rigel.collars.InputRef</code>. 
 	 */
 	public java.lang.String getInputref() {
 		return (java.lang.String) getValue(11);
 	}
 
 	/**
-	 * Setter for <code>sirius.collars.GatewayID</code>. 
+	 * Setter for <code>rigel.collars.GatewayID</code>. 
 	 */
 	public void setGatewayid(java.lang.Integer value) {
 		setValue(12, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.collars.GatewayID</code>. 
+	 * Getter for <code>rigel.collars.GatewayID</code>. 
 	 */
 	public java.lang.Integer getGatewayid() {
 		return (java.lang.Integer) getValue(12);

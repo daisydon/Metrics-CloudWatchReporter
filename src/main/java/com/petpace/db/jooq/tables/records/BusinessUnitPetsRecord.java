@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessUnitPetsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.BusinessUnitPetsRecord> implements org.jooq.Record2<java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1539389464;
+	private static final long serialVersionUID = -876642776;
 
 	/**
-	 * Setter for <code>sirius.business_unit_pets.business_unit_id</code>. 
+	 * Setter for <code>rigel.business_unit_pets.business_unit_id</code>. 
 	 */
 	public void setBusinessUnitId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_unit_pets.business_unit_id</code>. 
+	 * Getter for <code>rigel.business_unit_pets.business_unit_id</code>. 
 	 */
 	public java.lang.Integer getBusinessUnitId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_unit_pets.pet_id</code>. 
+	 * Setter for <code>rigel.business_unit_pets.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_unit_pets.pet_id</code>. 
+	 * Getter for <code>rigel.business_unit_pets.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(1);

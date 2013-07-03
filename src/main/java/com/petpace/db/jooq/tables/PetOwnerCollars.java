@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetOwnerCollars extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PetOwnerCollarsRecord> {
 
-	private static final long serialVersionUID = -434025741;
+	private static final long serialVersionUID = 2083527351;
 
 	/**
-	 * The singleton instance of <code>sirius.pet_owner_collars</code>
+	 * The singleton instance of <code>rigel.pet_owner_collars</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PetOwnerCollars PET_OWNER_COLLARS = new com.petpace.db.jooq.tables.PetOwnerCollars();
 
@@ -25,27 +25,27 @@ public class PetOwnerCollars extends org.jooq.impl.TableImpl<com.petpace.db.jooq
 	}
 
 	/**
-	 * The column <code>sirius.pet_owner_collars.owner_id</code>. 
+	 * The column <code>rigel.pet_owner_collars.owner_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetOwnerCollarsRecord, java.lang.Integer> OWNER_ID = createField("owner_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_owner_collars.collar_id</code>. 
+	 * The column <code>rigel.pet_owner_collars.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetOwnerCollarsRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.pet_owner_collars</code> table reference
+	 * Create a <code>rigel.pet_owner_collars</code> table reference
 	 */
 	public PetOwnerCollars() {
-		super("pet_owner_collars", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("pet_owner_collars", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.pet_owner_collars</code> table reference
+	 * Create an aliased <code>rigel.pet_owner_collars</code> table reference
 	 */
 	public PetOwnerCollars(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PetOwnerCollars.PET_OWNER_COLLARS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PetOwnerCollars.PET_OWNER_COLLARS);
 	}
 
 	/**

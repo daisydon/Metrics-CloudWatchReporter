@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotificationPreferencePets extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.AlertNotificationPreferencePetsRecord> {
 
-	private static final long serialVersionUID = -32025415;
+	private static final long serialVersionUID = 266437901;
 
 	/**
-	 * The singleton instance of <code>sirius.alert_notification_preference_pets</code>
+	 * The singleton instance of <code>rigel.alert_notification_preference_pets</code>
 	 */
 	public static final com.petpace.db.jooq.tables.AlertNotificationPreferencePets ALERT_NOTIFICATION_PREFERENCE_PETS = new com.petpace.db.jooq.tables.AlertNotificationPreferencePets();
 
@@ -25,32 +25,32 @@ public class AlertNotificationPreferencePets extends org.jooq.impl.TableImpl<com
 	}
 
 	/**
-	 * The column <code>sirius.alert_notification_preference_pets.pet_id</code>. 
+	 * The column <code>rigel.alert_notification_preference_pets.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationPreferencePetsRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_notification_preference_pets.preference_id</code>. 
+	 * The column <code>rigel.alert_notification_preference_pets.preference_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationPreferencePetsRecord, java.lang.Integer> PREFERENCE_ID = createField("preference_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_notification_preference_pets.businessUnit_id</code>. 
+	 * The column <code>rigel.alert_notification_preference_pets.businessUnit_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationPreferencePetsRecord, java.lang.Integer> BUSINESSUNIT_ID = createField("businessUnit_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.alert_notification_preference_pets</code> table reference
+	 * Create a <code>rigel.alert_notification_preference_pets</code> table reference
 	 */
 	public AlertNotificationPreferencePets() {
-		super("alert_notification_preference_pets", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("alert_notification_preference_pets", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.alert_notification_preference_pets</code> table reference
+	 * Create an aliased <code>rigel.alert_notification_preference_pets</code> table reference
 	 */
 	public AlertNotificationPreferencePets(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.AlertNotificationPreferencePets.ALERT_NOTIFICATION_PREFERENCE_PETS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.AlertNotificationPreferencePets.ALERT_NOTIFICATION_PREFERENCE_PETS);
 	}
 
 	/**

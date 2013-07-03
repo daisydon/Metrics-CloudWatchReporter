@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalAmbienttemp extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord> {
 
-	private static final long serialVersionUID = -1574134942;
+	private static final long serialVersionUID = -414726630;
 
 	/**
-	 * The singleton instance of <code>sirius.vital_ambientTemp</code>
+	 * The singleton instance of <code>rigel.vital_ambientTemp</code>
 	 */
 	public static final com.petpace.db.jooq.tables.VitalAmbienttemp VITAL_AMBIENTTEMP = new com.petpace.db.jooq.tables.VitalAmbienttemp();
 
@@ -25,117 +25,117 @@ public class VitalAmbienttemp extends org.jooq.impl.TableImpl<com.petpace.db.joo
 	}
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.id</code>. 
+	 * The column <code>rigel.vital_ambientTemp.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.collar_id</code>. 
+	 * The column <code>rigel.vital_ambientTemp.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.pet_id</code>. 
+	 * The column <code>rigel.vital_ambientTemp.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.name</code>. 
+	 * The column <code>rigel.vital_ambientTemp.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.quality</code>. 
+	 * The column <code>rigel.vital_ambientTemp.quality</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.Integer> QUALITY = createField("quality", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.deviation</code>. 
+	 * The column <code>rigel.vital_ambientTemp.deviation</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> DEVIATION = createField("deviation", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.duration</code>. 
+	 * The column <code>rigel.vital_ambientTemp.duration</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.Integer> DURATION = createField("duration", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.value</code>. 
+	 * The column <code>rigel.vital_ambientTemp.value</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> VALUE = createField("value", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 2), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.debug</code>. 
+	 * The column <code>rigel.vital_ambientTemp.debug</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.String> DEBUG = createField("debug", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.exhale</code>. 
+	 * The column <code>rigel.vital_ambientTemp.exhale</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> EXHALE = createField("exhale", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.exhale_std</code>. 
+	 * The column <code>rigel.vital_ambientTemp.exhale_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> EXHALE_STD = createField("exhale_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.inhale</code>. 
+	 * The column <code>rigel.vital_ambientTemp.inhale</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> INHALE = createField("inhale", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.inhale_std</code>. 
+	 * The column <code>rigel.vital_ambientTemp.inhale_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> INHALE_STD = createField("inhale_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.nn</code>. 
+	 * The column <code>rigel.vital_ambientTemp.nn</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> NN = createField("nn", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.nn_std</code>. 
+	 * The column <code>rigel.vital_ambientTemp.nn_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> NN_STD = createField("nn_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.ipr</code>. 
+	 * The column <code>rigel.vital_ambientTemp.ipr</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> IPR = createField("ipr", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.ipr_std</code>. 
+	 * The column <code>rigel.vital_ambientTemp.ipr_std</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.math.BigDecimal> IPR_STD = createField("ipr_std", org.jooq.impl.SQLDataType.DECIMAL.precision(10, 5), this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.time</code>. 
+	 * The column <code>rigel.vital_ambientTemp.time</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.sql.Timestamp> TIME = createField("time", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.created</code>. 
+	 * The column <code>rigel.vital_ambientTemp.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_ambientTemp.notes</code>. 
+	 * The column <code>rigel.vital_ambientTemp.notes</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalAmbienttempRecord, java.lang.String> NOTES = createField("notes", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * Create a <code>sirius.vital_ambientTemp</code> table reference
+	 * Create a <code>rigel.vital_ambientTemp</code> table reference
 	 */
 	public VitalAmbienttemp() {
-		super("vital_ambientTemp", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("vital_ambientTemp", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.vital_ambientTemp</code> table reference
+	 * Create an aliased <code>rigel.vital_ambientTemp</code> table reference
 	 */
 	public VitalAmbienttemp(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.VitalAmbienttemp.VITAL_AMBIENTTEMP);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.VitalAmbienttemp.VITAL_AMBIENTTEMP);
 	}
 
 	/**

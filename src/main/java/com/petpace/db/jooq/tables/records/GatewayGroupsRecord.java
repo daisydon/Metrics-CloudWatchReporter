@@ -9,73 +9,73 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayGroupsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewayGroupsRecord> implements org.jooq.Record5<java.lang.Integer, java.lang.String, java.lang.String, java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1915459150;
+	private static final long serialVersionUID = -1820931804;
 
 	/**
-	 * Setter for <code>sirius.gateway_groups.GroupID</code>. 
+	 * Setter for <code>rigel.gateway_groups.GroupID</code>. 
 	 */
 	public void setGroupid(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_groups.GroupID</code>. 
+	 * Getter for <code>rigel.gateway_groups.GroupID</code>. 
 	 */
 	public java.lang.Integer getGroupid() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_groups.Name</code>. 
+	 * Setter for <code>rigel.gateway_groups.Name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_groups.Name</code>. 
+	 * Getter for <code>rigel.gateway_groups.Name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_groups.Comment</code>. 
+	 * Setter for <code>rigel.gateway_groups.Comment</code>. 
 	 */
 	public void setComment(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_groups.Comment</code>. 
+	 * Getter for <code>rigel.gateway_groups.Comment</code>. 
 	 */
 	public java.lang.String getComment() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_groups.FirmwareID</code>. 
+	 * Setter for <code>rigel.gateway_groups.FirmwareID</code>. 
 	 */
 	public void setFirmwareid(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_groups.FirmwareID</code>. 
+	 * Getter for <code>rigel.gateway_groups.FirmwareID</code>. 
 	 */
 	public java.lang.Integer getFirmwareid() {
 		return (java.lang.Integer) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateway_groups.ConfigID</code>. 
+	 * Setter for <code>rigel.gateway_groups.ConfigID</code>. 
 	 */
 	public void setConfigid(java.lang.Integer value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateway_groups.ConfigID</code>. 
+	 * Getter for <code>rigel.gateway_groups.ConfigID</code>. 
 	 */
 	public java.lang.Integer getConfigid() {
 		return (java.lang.Integer) getValue(4);

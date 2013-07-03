@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetEntities extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PetEntitiesRecord> {
 
-	private static final long serialVersionUID = 1784174408;
+	private static final long serialVersionUID = 1231346950;
 
 	/**
-	 * The singleton instance of <code>sirius.pet_entities</code>
+	 * The singleton instance of <code>rigel.pet_entities</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PetEntities PET_ENTITIES = new com.petpace.db.jooq.tables.PetEntities();
 
@@ -25,37 +25,37 @@ public class PetEntities extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tab
 	}
 
 	/**
-	 * The column <code>sirius.pet_entities.id</code>. 
+	 * The column <code>rigel.pet_entities.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetEntitiesRecord, java.lang.String> ID = createField("id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.pet_entities.dateCreated</code>. 
+	 * The column <code>rigel.pet_entities.dateCreated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetEntitiesRecord, java.sql.Timestamp> DATECREATED = createField("dateCreated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pet_entities.dateUpdated</code>. 
+	 * The column <code>rigel.pet_entities.dateUpdated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetEntitiesRecord, java.sql.Timestamp> DATEUPDATED = createField("dateUpdated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pet_entities.status</code>. 
+	 * The column <code>rigel.pet_entities.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetEntitiesRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.pet_entities</code> table reference
+	 * Create a <code>rigel.pet_entities</code> table reference
 	 */
 	public PetEntities() {
-		super("pet_entities", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("pet_entities", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.pet_entities</code> table reference
+	 * Create an aliased <code>rigel.pet_entities</code> table reference
 	 */
 	public PetEntities(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PetEntities.PET_ENTITIES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PetEntities.PET_ENTITIES);
 	}
 
 	/**

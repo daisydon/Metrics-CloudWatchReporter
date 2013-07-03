@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayLogs extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.GatewayLogsRecord> {
 
-	private static final long serialVersionUID = 632484936;
+	private static final long serialVersionUID = 296447254;
 
 	/**
-	 * The singleton instance of <code>sirius.gateway_logs</code>
+	 * The singleton instance of <code>rigel.gateway_logs</code>
 	 */
 	public static final com.petpace.db.jooq.tables.GatewayLogs GATEWAY_LOGS = new com.petpace.db.jooq.tables.GatewayLogs();
 
@@ -25,47 +25,47 @@ public class GatewayLogs extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tab
 	}
 
 	/**
-	 * The column <code>sirius.gateway_logs.LogID</code>. 
+	 * The column <code>rigel.gateway_logs.LogID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayLogsRecord, java.lang.Integer> LOGID = createField("LogID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.gateway_logs.DeviceType</code>. 
+	 * The column <code>rigel.gateway_logs.DeviceType</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayLogsRecord, java.lang.String> DEVICETYPE = createField("DeviceType", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_logs.DeviceId</code>. 
+	 * The column <code>rigel.gateway_logs.DeviceId</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayLogsRecord, java.lang.String> DEVICEID = createField("DeviceId", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_logs.Severity</code>. 
+	 * The column <code>rigel.gateway_logs.Severity</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayLogsRecord, java.lang.String> SEVERITY = createField("Severity", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateway_logs.Message</code>. 
+	 * The column <code>rigel.gateway_logs.Message</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayLogsRecord, java.lang.String> MESSAGE = createField("Message", org.jooq.impl.SQLDataType.CLOB.length(65535), this);
 
 	/**
-	 * The column <code>sirius.gateway_logs.logTime</code>. 
+	 * The column <code>rigel.gateway_logs.logTime</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayLogsRecord, java.sql.Timestamp> LOGTIME = createField("logTime", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * Create a <code>sirius.gateway_logs</code> table reference
+	 * Create a <code>rigel.gateway_logs</code> table reference
 	 */
 	public GatewayLogs() {
-		super("gateway_logs", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("gateway_logs", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.gateway_logs</code> table reference
+	 * Create an aliased <code>rigel.gateway_logs</code> table reference
 	 */
 	public GatewayLogs(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.GatewayLogs.GATEWAY_LOGS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.GatewayLogs.GATEWAY_LOGS);
 	}
 
 	/**

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotifications extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.AlertNotificationsRecord> {
 
-	private static final long serialVersionUID = 1611766018;
+	private static final long serialVersionUID = 510689176;
 
 	/**
-	 * The singleton instance of <code>sirius.alert_notifications</code>
+	 * The singleton instance of <code>rigel.alert_notifications</code>
 	 */
 	public static final com.petpace.db.jooq.tables.AlertNotifications ALERT_NOTIFICATIONS = new com.petpace.db.jooq.tables.AlertNotifications();
 
@@ -25,42 +25,42 @@ public class AlertNotifications extends org.jooq.impl.TableImpl<com.petpace.db.j
 	}
 
 	/**
-	 * The column <code>sirius.alert_notifications.id</code>. 
+	 * The column <code>rigel.alert_notifications.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_notifications.alert_id</code>. 
+	 * The column <code>rigel.alert_notifications.alert_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationsRecord, java.lang.Integer> ALERT_ID = createField("alert_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_notifications.confirmationRequired</code>. 
+	 * The column <code>rigel.alert_notifications.confirmationRequired</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationsRecord, java.lang.Integer> CONFIRMATIONREQUIRED = createField("confirmationRequired", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_notifications.created</code>. 
+	 * The column <code>rigel.alert_notifications.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationsRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.alert_notifications.status</code>. 
+	 * The column <code>rigel.alert_notifications.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationsRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.alert_notifications</code> table reference
+	 * Create a <code>rigel.alert_notifications</code> table reference
 	 */
 	public AlertNotifications() {
-		super("alert_notifications", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("alert_notifications", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.alert_notifications</code> table reference
+	 * Create an aliased <code>rigel.alert_notifications</code> table reference
 	 */
 	public AlertNotifications(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.AlertNotifications.ALERT_NOTIFICATIONS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.AlertNotifications.ALERT_NOTIFICATIONS);
 	}
 
 	/**

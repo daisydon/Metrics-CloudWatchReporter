@@ -31,7 +31,7 @@
 				production schema. Use this to override your local development schema name 
 				for source code generation. If not specified, this will be the same as the 
 				input-schema. -->
-			<outputSchema>sirius</outputSchema>
+			<outputSchema>rigel</outputSchema>
 
 			<!-- All elements that are generated from your schema (A Java regular 
 				expression. Use the pipe to separate several expressions) Watch out for case-sensitivity. 

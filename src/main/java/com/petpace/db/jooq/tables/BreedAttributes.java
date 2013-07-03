@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BreedAttributes extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BreedAttributesRecord> {
 
-	private static final long serialVersionUID = -710157500;
+	private static final long serialVersionUID = 933327210;
 
 	/**
-	 * The singleton instance of <code>sirius.breed_attributes</code>
+	 * The singleton instance of <code>rigel.breed_attributes</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BreedAttributes BREED_ATTRIBUTES = new com.petpace.db.jooq.tables.BreedAttributes();
 
@@ -25,27 +25,27 @@ public class BreedAttributes extends org.jooq.impl.TableImpl<com.petpace.db.jooq
 	}
 
 	/**
-	 * The column <code>sirius.breed_attributes.id</code>. 
+	 * The column <code>rigel.breed_attributes.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributesRecord, java.lang.String> ID = createField("id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.breed_attributes.dataType</code>. 
+	 * The column <code>rigel.breed_attributes.dataType</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BreedAttributesRecord, java.lang.String> DATATYPE = createField("dataType", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.breed_attributes</code> table reference
+	 * Create a <code>rigel.breed_attributes</code> table reference
 	 */
 	public BreedAttributes() {
-		super("breed_attributes", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("breed_attributes", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.breed_attributes</code> table reference
+	 * Create an aliased <code>rigel.breed_attributes</code> table reference
 	 */
 	public BreedAttributes(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BreedAttributes.BREED_ATTRIBUTES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BreedAttributes.BREED_ATTRIBUTES);
 	}
 
 	/**

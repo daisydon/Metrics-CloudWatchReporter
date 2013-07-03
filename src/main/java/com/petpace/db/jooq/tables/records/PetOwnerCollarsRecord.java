@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetOwnerCollarsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetOwnerCollarsRecord> implements org.jooq.Record2<java.lang.Integer, java.lang.String> {
 
-	private static final long serialVersionUID = -1439113550;
+	private static final long serialVersionUID = 42750438;
 
 	/**
-	 * Setter for <code>sirius.pet_owner_collars.owner_id</code>. 
+	 * Setter for <code>rigel.pet_owner_collars.owner_id</code>. 
 	 */
 	public void setOwnerId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_owner_collars.owner_id</code>. 
+	 * Getter for <code>rigel.pet_owner_collars.owner_id</code>. 
 	 */
 	public java.lang.Integer getOwnerId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_owner_collars.collar_id</code>. 
+	 * Setter for <code>rigel.pet_owner_collars.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_owner_collars.collar_id</code>. 
+	 * Getter for <code>rigel.pet_owner_collars.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetPrimaryVeterinarians extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord> {
 
-	private static final long serialVersionUID = 1759904415;
+	private static final long serialVersionUID = -1059791155;
 
 	/**
-	 * The singleton instance of <code>sirius.pet_primary_veterinarians</code>
+	 * The singleton instance of <code>rigel.pet_primary_veterinarians</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PetPrimaryVeterinarians PET_PRIMARY_VETERINARIANS = new com.petpace.db.jooq.tables.PetPrimaryVeterinarians();
 
@@ -25,47 +25,47 @@ public class PetPrimaryVeterinarians extends org.jooq.impl.TableImpl<com.petpace
 	}
 
 	/**
-	 * The column <code>sirius.pet_primary_veterinarians.vet_id</code>. 
+	 * The column <code>rigel.pet_primary_veterinarians.vet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord, java.lang.Integer> VET_ID = createField("vet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_primary_veterinarians.pet_id</code>. 
+	 * The column <code>rigel.pet_primary_veterinarians.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_primary_veterinarians.status</code>. 
+	 * The column <code>rigel.pet_primary_veterinarians.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.pet_primary_veterinarians.start</code>. 
+	 * The column <code>rigel.pet_primary_veterinarians.start</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord, java.sql.Timestamp> START = createField("start", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pet_primary_veterinarians.end</code>. 
+	 * The column <code>rigel.pet_primary_veterinarians.end</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord, java.sql.Timestamp> END = createField("end", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.pet_primary_veterinarians.notes</code>. 
+	 * The column <code>rigel.pet_primary_veterinarians.notes</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord, java.lang.String> NOTES = createField("notes", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * Create a <code>sirius.pet_primary_veterinarians</code> table reference
+	 * Create a <code>rigel.pet_primary_veterinarians</code> table reference
 	 */
 	public PetPrimaryVeterinarians() {
-		super("pet_primary_veterinarians", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("pet_primary_veterinarians", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.pet_primary_veterinarians</code> table reference
+	 * Create an aliased <code>rigel.pet_primary_veterinarians</code> table reference
 	 */
 	public PetPrimaryVeterinarians(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PetPrimaryVeterinarians.PET_PRIMARY_VETERINARIANS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PetPrimaryVeterinarians.PET_PRIMARY_VETERINARIANS);
 	}
 
 	/**

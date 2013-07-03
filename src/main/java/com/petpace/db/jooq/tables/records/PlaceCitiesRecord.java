@@ -9,255 +9,255 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PlaceCitiesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PlaceCitiesRecord> implements org.jooq.Record18<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Double, java.lang.Double, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1119902989;
+	private static final long serialVersionUID = -1246535679;
 
 	/**
-	 * Setter for <code>sirius.place_cities.id</code>. 
+	 * Setter for <code>rigel.place_cities.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.id</code>. 
+	 * Getter for <code>rigel.place_cities.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.name</code>. 
+	 * Setter for <code>rigel.place_cities.name</code>. 
 	 */
 	public void setName(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.name</code>. 
+	 * Getter for <code>rigel.place_cities.name</code>. 
 	 */
 	public java.lang.String getName() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.display</code>. 
+	 * Setter for <code>rigel.place_cities.display</code>. 
 	 */
 	public void setDisplay(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.display</code>. 
+	 * Getter for <code>rigel.place_cities.display</code>. 
 	 */
 	public java.lang.String getDisplay() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.oldurl</code>. 
+	 * Setter for <code>rigel.place_cities.oldurl</code>. 
 	 */
 	public void setOldurl(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.oldurl</code>. 
+	 * Getter for <code>rigel.place_cities.oldurl</code>. 
 	 */
 	public java.lang.String getOldurl() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.url</code>. 
+	 * Setter for <code>rigel.place_cities.url</code>. 
 	 */
 	public void setUrl(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.url</code>. 
+	 * Getter for <code>rigel.place_cities.url</code>. 
 	 */
 	public java.lang.String getUrl() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.locale</code>. 
+	 * Setter for <code>rigel.place_cities.locale</code>. 
 	 */
 	public void setLocale(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.locale</code>. 
+	 * Getter for <code>rigel.place_cities.locale</code>. 
 	 */
 	public java.lang.String getLocale() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.regionCode</code>. 
+	 * Setter for <code>rigel.place_cities.regionCode</code>. 
 	 */
 	public void setRegioncode(java.lang.String value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.regionCode</code>. 
+	 * Getter for <code>rigel.place_cities.regionCode</code>. 
 	 */
 	public java.lang.String getRegioncode() {
 		return (java.lang.String) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.regionFullname</code>. 
+	 * Setter for <code>rigel.place_cities.regionFullname</code>. 
 	 */
 	public void setRegionfullname(java.lang.String value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.regionFullname</code>. 
+	 * Getter for <code>rigel.place_cities.regionFullname</code>. 
 	 */
 	public java.lang.String getRegionfullname() {
 		return (java.lang.String) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.postalCode</code>. 
+	 * Setter for <code>rigel.place_cities.postalCode</code>. 
 	 */
 	public void setPostalcode(java.lang.String value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.postalCode</code>. 
+	 * Getter for <code>rigel.place_cities.postalCode</code>. 
 	 */
 	public java.lang.String getPostalcode() {
 		return (java.lang.String) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.country</code>. 
+	 * Setter for <code>rigel.place_cities.country</code>. 
 	 */
 	public void setCountry(java.lang.String value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.country</code>. 
+	 * Getter for <code>rigel.place_cities.country</code>. 
 	 */
 	public java.lang.String getCountry() {
 		return (java.lang.String) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.countryFullname</code>. 
+	 * Setter for <code>rigel.place_cities.countryFullname</code>. 
 	 */
 	public void setCountryfullname(java.lang.String value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.countryFullname</code>. 
+	 * Getter for <code>rigel.place_cities.countryFullname</code>. 
 	 */
 	public java.lang.String getCountryfullname() {
 		return (java.lang.String) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.metroName</code>. 
+	 * Setter for <code>rigel.place_cities.metroName</code>. 
 	 */
 	public void setMetroname(java.lang.String value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.metroName</code>. 
+	 * Getter for <code>rigel.place_cities.metroName</code>. 
 	 */
 	public java.lang.String getMetroname() {
 		return (java.lang.String) getValue(11);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.metroCode</code>. 
+	 * Setter for <code>rigel.place_cities.metroCode</code>. 
 	 */
 	public void setMetrocode(java.lang.String value) {
 		setValue(12, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.metroCode</code>. 
+	 * Getter for <code>rigel.place_cities.metroCode</code>. 
 	 */
 	public java.lang.String getMetrocode() {
 		return (java.lang.String) getValue(12);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.provinceCode</code>. 
+	 * Setter for <code>rigel.place_cities.provinceCode</code>. 
 	 */
 	public void setProvincecode(java.lang.String value) {
 		setValue(13, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.provinceCode</code>. 
+	 * Getter for <code>rigel.place_cities.provinceCode</code>. 
 	 */
 	public java.lang.String getProvincecode() {
 		return (java.lang.String) getValue(13);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.latitude</code>. 
+	 * Setter for <code>rigel.place_cities.latitude</code>. 
 	 */
 	public void setLatitude(java.lang.Double value) {
 		setValue(14, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.latitude</code>. 
+	 * Getter for <code>rigel.place_cities.latitude</code>. 
 	 */
 	public java.lang.Double getLatitude() {
 		return (java.lang.Double) getValue(14);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.longitude</code>. 
+	 * Setter for <code>rigel.place_cities.longitude</code>. 
 	 */
 	public void setLongitude(java.lang.Double value) {
 		setValue(15, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.longitude</code>. 
+	 * Getter for <code>rigel.place_cities.longitude</code>. 
 	 */
 	public java.lang.Double getLongitude() {
 		return (java.lang.Double) getValue(15);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.created</code>. 
+	 * Setter for <code>rigel.place_cities.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(16, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.created</code>. 
+	 * Getter for <code>rigel.place_cities.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(16);
 	}
 
 	/**
-	 * Setter for <code>sirius.place_cities.restaurant_count</code>. 
+	 * Setter for <code>rigel.place_cities.restaurant_count</code>. 
 	 */
 	public void setRestaurantCount(java.lang.Integer value) {
 		setValue(17, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.place_cities.restaurant_count</code>. 
+	 * Getter for <code>rigel.place_cities.restaurant_count</code>. 
 	 */
 	public java.lang.Integer getRestaurantCount() {
 		return (java.lang.Integer) getValue(17);

@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessAdministratorsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.BusinessAdministratorsRecord> implements org.jooq.Record2<java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1877931102;
+	private static final long serialVersionUID = -395994648;
 
 	/**
-	 * Setter for <code>sirius.business_administrators.business_id</code>. 
+	 * Setter for <code>rigel.business_administrators.business_id</code>. 
 	 */
 	public void setBusinessId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_administrators.business_id</code>. 
+	 * Getter for <code>rigel.business_administrators.business_id</code>. 
 	 */
 	public java.lang.Integer getBusinessId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_administrators.account_id</code>. 
+	 * Setter for <code>rigel.business_administrators.account_id</code>. 
 	 */
 	public void setAccountId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_administrators.account_id</code>. 
+	 * Getter for <code>rigel.business_administrators.account_id</code>. 
 	 */
 	public java.lang.Integer getAccountId() {
 		return (java.lang.Integer) getValue(1);

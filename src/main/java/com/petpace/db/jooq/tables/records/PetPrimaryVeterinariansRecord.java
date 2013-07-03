@@ -9,87 +9,87 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetPrimaryVeterinariansRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetPrimaryVeterinariansRecord> implements org.jooq.Record6<java.lang.Integer, java.lang.Integer, java.lang.Integer, java.sql.Timestamp, java.sql.Timestamp, java.lang.String> {
 
-	private static final long serialVersionUID = 2057477115;
+	private static final long serialVersionUID = -1073752305;
 
 	/**
-	 * Setter for <code>sirius.pet_primary_veterinarians.vet_id</code>. 
+	 * Setter for <code>rigel.pet_primary_veterinarians.vet_id</code>. 
 	 */
 	public void setVetId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_primary_veterinarians.vet_id</code>. 
+	 * Getter for <code>rigel.pet_primary_veterinarians.vet_id</code>. 
 	 */
 	public java.lang.Integer getVetId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_primary_veterinarians.pet_id</code>. 
+	 * Setter for <code>rigel.pet_primary_veterinarians.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_primary_veterinarians.pet_id</code>. 
+	 * Getter for <code>rigel.pet_primary_veterinarians.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_primary_veterinarians.status</code>. 
+	 * Setter for <code>rigel.pet_primary_veterinarians.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_primary_veterinarians.status</code>. 
+	 * Getter for <code>rigel.pet_primary_veterinarians.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_primary_veterinarians.start</code>. 
+	 * Setter for <code>rigel.pet_primary_veterinarians.start</code>. 
 	 */
 	public void setStart(java.sql.Timestamp value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_primary_veterinarians.start</code>. 
+	 * Getter for <code>rigel.pet_primary_veterinarians.start</code>. 
 	 */
 	public java.sql.Timestamp getStart() {
 		return (java.sql.Timestamp) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_primary_veterinarians.end</code>. 
+	 * Setter for <code>rigel.pet_primary_veterinarians.end</code>. 
 	 */
 	public void setEnd(java.sql.Timestamp value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_primary_veterinarians.end</code>. 
+	 * Getter for <code>rigel.pet_primary_veterinarians.end</code>. 
 	 */
 	public java.sql.Timestamp getEnd() {
 		return (java.sql.Timestamp) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_primary_veterinarians.notes</code>. 
+	 * Setter for <code>rigel.pet_primary_veterinarians.notes</code>. 
 	 */
 	public void setNotes(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_primary_veterinarians.notes</code>. 
+	 * Getter for <code>rigel.pet_primary_veterinarians.notes</code>. 
 	 */
 	public java.lang.String getNotes() {
 		return (java.lang.String) getValue(5);

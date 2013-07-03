@@ -9,227 +9,227 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalPetAttributesRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.VitalPetAttributesRecord> implements org.jooq.Record16<java.lang.Integer, java.lang.String, java.lang.String, java.lang.Integer, java.lang.String, java.lang.String, java.math.BigDecimal, java.math.BigDecimal, java.lang.Long, java.lang.Long, java.lang.Long, java.lang.Long, java.sql.Timestamp, java.sql.Timestamp, java.lang.Integer, java.lang.Integer> {
 
-	private static final long serialVersionUID = 456521271;
+	private static final long serialVersionUID = -1435351861;
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.pet_id</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.pet_id</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.collar_id</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.collar_id</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.samplingFrequency</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.samplingFrequency</code>. 
 	 */
 	public void setSamplingfrequency(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.samplingFrequency</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.samplingFrequency</code>. 
 	 */
 	public java.lang.String getSamplingfrequency() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.battery</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.battery</code>. 
 	 */
 	public void setBattery(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.battery</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.battery</code>. 
 	 */
 	public java.lang.Integer getBattery() {
 		return (java.lang.Integer) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.buckle</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.buckle</code>. 
 	 */
 	public void setBuckle(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.buckle</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.buckle</code>. 
 	 */
 	public java.lang.String getBuckle() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.charging</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.charging</code>. 
 	 */
 	public void setCharging(java.lang.String value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.charging</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.charging</code>. 
 	 */
 	public java.lang.String getCharging() {
 		return (java.lang.String) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.ambientTemp</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.ambientTemp</code>. 
 	 */
 	public void setAmbienttemp(java.math.BigDecimal value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.ambientTemp</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.ambientTemp</code>. 
 	 */
 	public java.math.BigDecimal getAmbienttemp() {
 		return (java.math.BigDecimal) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.bodyTemp</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.bodyTemp</code>. 
 	 */
 	public void setBodytemp(java.math.BigDecimal value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.bodyTemp</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.bodyTemp</code>. 
 	 */
 	public java.math.BigDecimal getBodytemp() {
 		return (java.math.BigDecimal) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.pulse</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.pulse</code>. 
 	 */
 	public void setPulse(java.lang.Long value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.pulse</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.pulse</code>. 
 	 */
 	public java.lang.Long getPulse() {
 		return (java.lang.Long) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.respiratory</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.respiratory</code>. 
 	 */
 	public void setRespiratory(java.lang.Long value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.respiratory</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.respiratory</code>. 
 	 */
 	public java.lang.Long getRespiratory() {
 		return (java.lang.Long) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.activity</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.activity</code>. 
 	 */
 	public void setActivity(java.lang.Long value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.activity</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.activity</code>. 
 	 */
 	public java.lang.Long getActivity() {
 		return (java.lang.Long) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.position</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.position</code>. 
 	 */
 	public void setPosition(java.lang.Long value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.position</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.position</code>. 
 	 */
 	public java.lang.Long getPosition() {
 		return (java.lang.Long) getValue(11);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.time</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.time</code>. 
 	 */
 	public void setTime(java.sql.Timestamp value) {
 		setValue(12, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.time</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.time</code>. 
 	 */
 	public java.sql.Timestamp getTime() {
 		return (java.sql.Timestamp) getValue(12);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.lastCommunication</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.lastCommunication</code>. 
 	 */
 	public void setLastcommunication(java.sql.Timestamp value) {
 		setValue(13, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.lastCommunication</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.lastCommunication</code>. 
 	 */
 	public java.sql.Timestamp getLastcommunication() {
 		return (java.sql.Timestamp) getValue(13);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.sendNotification</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.sendNotification</code>. 
 	 */
 	public void setSendnotification(java.lang.Integer value) {
 		setValue(14, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.sendNotification</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.sendNotification</code>. 
 	 */
 	public java.lang.Integer getSendnotification() {
 		return (java.lang.Integer) getValue(14);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_pet_attributes.clinicalTrial</code>. 
+	 * Setter for <code>rigel.vital_pet_attributes.clinicalTrial</code>. 
 	 */
 	public void setClinicaltrial(java.lang.Integer value) {
 		setValue(15, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_pet_attributes.clinicalTrial</code>. 
+	 * Getter for <code>rigel.vital_pet_attributes.clinicalTrial</code>. 
 	 */
 	public java.lang.Integer getClinicaltrial() {
 		return (java.lang.Integer) getValue(15);

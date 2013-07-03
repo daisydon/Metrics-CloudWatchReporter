@@ -9,73 +9,73 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotificationsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AlertNotificationsRecord> implements org.jooq.Record5<java.lang.Integer, java.lang.Integer, java.lang.Integer, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = -1805028343;
+	private static final long serialVersionUID = 548249157;
 
 	/**
-	 * Setter for <code>sirius.alert_notifications.id</code>. 
+	 * Setter for <code>rigel.alert_notifications.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notifications.id</code>. 
+	 * Getter for <code>rigel.alert_notifications.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notifications.alert_id</code>. 
+	 * Setter for <code>rigel.alert_notifications.alert_id</code>. 
 	 */
 	public void setAlertId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notifications.alert_id</code>. 
+	 * Getter for <code>rigel.alert_notifications.alert_id</code>. 
 	 */
 	public java.lang.Integer getAlertId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notifications.confirmationRequired</code>. 
+	 * Setter for <code>rigel.alert_notifications.confirmationRequired</code>. 
 	 */
 	public void setConfirmationrequired(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notifications.confirmationRequired</code>. 
+	 * Getter for <code>rigel.alert_notifications.confirmationRequired</code>. 
 	 */
 	public java.lang.Integer getConfirmationrequired() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notifications.created</code>. 
+	 * Setter for <code>rigel.alert_notifications.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notifications.created</code>. 
+	 * Getter for <code>rigel.alert_notifications.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notifications.status</code>. 
+	 * Setter for <code>rigel.alert_notifications.status</code>. 
 	 */
 	public void setStatus(java.lang.Integer value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notifications.status</code>. 
+	 * Getter for <code>rigel.alert_notifications.status</code>. 
 	 */
 	public java.lang.Integer getStatus() {
 		return (java.lang.Integer) getValue(4);

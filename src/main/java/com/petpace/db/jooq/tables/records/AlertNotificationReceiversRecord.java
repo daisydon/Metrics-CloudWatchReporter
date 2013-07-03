@@ -9,73 +9,73 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotificationReceiversRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.AlertNotificationReceiversRecord> implements org.jooq.Record5<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1620013594;
+	private static final long serialVersionUID = 1166141582;
 
 	/**
-	 * Setter for <code>sirius.alert_notification_receivers.id</code>. 
+	 * Setter for <code>rigel.alert_notification_receivers.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_receivers.id</code>. 
+	 * Getter for <code>rigel.alert_notification_receivers.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_receivers.protocol</code>. 
+	 * Setter for <code>rigel.alert_notification_receivers.protocol</code>. 
 	 */
 	public void setProtocol(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_receivers.protocol</code>. 
+	 * Getter for <code>rigel.alert_notification_receivers.protocol</code>. 
 	 */
 	public java.lang.String getProtocol() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_receivers.address</code>. 
+	 * Setter for <code>rigel.alert_notification_receivers.address</code>. 
 	 */
 	public void setAddress(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_receivers.address</code>. 
+	 * Getter for <code>rigel.alert_notification_receivers.address</code>. 
 	 */
 	public java.lang.String getAddress() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_receivers.message</code>. 
+	 * Setter for <code>rigel.alert_notification_receivers.message</code>. 
 	 */
 	public void setMessage(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_receivers.message</code>. 
+	 * Getter for <code>rigel.alert_notification_receivers.message</code>. 
 	 */
 	public java.lang.String getMessage() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.alert_notification_receivers.confirmationRequired</code>. 
+	 * Setter for <code>rigel.alert_notification_receivers.confirmationRequired</code>. 
 	 */
 	public void setConfirmationrequired(java.lang.Integer value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.alert_notification_receivers.confirmationRequired</code>. 
+	 * Getter for <code>rigel.alert_notification_receivers.confirmationRequired</code>. 
 	 */
 	public java.lang.Integer getConfirmationrequired() {
 		return (java.lang.Integer) getValue(4);

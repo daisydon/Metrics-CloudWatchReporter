@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewayServerConnections extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.GatewayServerConnectionsRecord> {
 
-	private static final long serialVersionUID = -1010558655;
+	private static final long serialVersionUID = -734399885;
 
 	/**
-	 * The singleton instance of <code>sirius.gateway_server_connections</code>
+	 * The singleton instance of <code>rigel.gateway_server_connections</code>
 	 */
 	public static final com.petpace.db.jooq.tables.GatewayServerConnections GATEWAY_SERVER_CONNECTIONS = new com.petpace.db.jooq.tables.GatewayServerConnections();
 
@@ -25,37 +25,37 @@ public class GatewayServerConnections extends org.jooq.impl.TableImpl<com.petpac
 	}
 
 	/**
-	 * The column <code>sirius.gateway_server_connections.isActive</code>. 
+	 * The column <code>rigel.gateway_server_connections.isActive</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServerConnectionsRecord, java.lang.Short> ISACTIVE = createField("isActive", org.jooq.impl.SQLDataType.SMALLINT, this);
 
 	/**
-	 * The column <code>sirius.gateway_server_connections.connectTime</code>. 
+	 * The column <code>rigel.gateway_server_connections.connectTime</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServerConnectionsRecord, java.sql.Timestamp> CONNECTTIME = createField("connectTime", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.gateway_server_connections.GatewayID</code>. 
+	 * The column <code>rigel.gateway_server_connections.GatewayID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServerConnectionsRecord, java.lang.Integer> GATEWAYID = createField("GatewayID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.gateway_server_connections.ServerID</code>. 
+	 * The column <code>rigel.gateway_server_connections.ServerID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewayServerConnectionsRecord, java.lang.Integer> SERVERID = createField("ServerID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.gateway_server_connections</code> table reference
+	 * Create a <code>rigel.gateway_server_connections</code> table reference
 	 */
 	public GatewayServerConnections() {
-		super("gateway_server_connections", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("gateway_server_connections", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.gateway_server_connections</code> table reference
+	 * Create an aliased <code>rigel.gateway_server_connections</code> table reference
 	 */
 	public GatewayServerConnections(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.GatewayServerConnections.GATEWAY_SERVER_CONNECTIONS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.GatewayServerConnections.GATEWAY_SERVER_CONNECTIONS);
 	}
 
 	/**

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class CollarGroups extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.CollarGroupsRecord> {
 
-	private static final long serialVersionUID = -249541551;
+	private static final long serialVersionUID = -2005972711;
 
 	/**
-	 * The singleton instance of <code>sirius.collar_groups</code>
+	 * The singleton instance of <code>rigel.collar_groups</code>
 	 */
 	public static final com.petpace.db.jooq.tables.CollarGroups COLLAR_GROUPS = new com.petpace.db.jooq.tables.CollarGroups();
 
@@ -25,42 +25,42 @@ public class CollarGroups extends org.jooq.impl.TableImpl<com.petpace.db.jooq.ta
 	}
 
 	/**
-	 * The column <code>sirius.collar_groups.GroupID</code>. 
+	 * The column <code>rigel.collar_groups.GroupID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarGroupsRecord, java.lang.Integer> GROUPID = createField("GroupID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.collar_groups.name</code>. 
+	 * The column <code>rigel.collar_groups.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarGroupsRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.collar_groups.Comment</code>. 
+	 * The column <code>rigel.collar_groups.Comment</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarGroupsRecord, java.lang.String> COMMENT = createField("Comment", org.jooq.impl.SQLDataType.CLOB.length(65535), this);
 
 	/**
-	 * The column <code>sirius.collar_groups.FirmwareID</code>. 
+	 * The column <code>rigel.collar_groups.FirmwareID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarGroupsRecord, java.lang.Integer> FIRMWAREID = createField("FirmwareID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.collar_groups.ConfigID</code>. 
+	 * The column <code>rigel.collar_groups.ConfigID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.CollarGroupsRecord, java.lang.Integer> CONFIGID = createField("ConfigID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.collar_groups</code> table reference
+	 * Create a <code>rigel.collar_groups</code> table reference
 	 */
 	public CollarGroups() {
-		super("collar_groups", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("collar_groups", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.collar_groups</code> table reference
+	 * Create an aliased <code>rigel.collar_groups</code> table reference
 	 */
 	public CollarGroups(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.CollarGroups.COLLAR_GROUPS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.CollarGroups.COLLAR_GROUPS);
 	}
 
 	/**

@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PlaceNeighborhoods extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord> {
 
-	private static final long serialVersionUID = 1189690414;
+	private static final long serialVersionUID = 17398812;
 
 	/**
-	 * The singleton instance of <code>sirius.place_neighborhoods</code>
+	 * The singleton instance of <code>rigel.place_neighborhoods</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PlaceNeighborhoods PLACE_NEIGHBORHOODS = new com.petpace.db.jooq.tables.PlaceNeighborhoods();
 
@@ -25,77 +25,77 @@ public class PlaceNeighborhoods extends org.jooq.impl.TableImpl<com.petpace.db.j
 	}
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.id</code>. 
+	 * The column <code>rigel.place_neighborhoods.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.name</code>. 
+	 * The column <code>rigel.place_neighborhoods.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.sub</code>. 
+	 * The column <code>rigel.place_neighborhoods.sub</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.String> SUB = createField("sub", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.display</code>. 
+	 * The column <code>rigel.place_neighborhoods.display</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.String> DISPLAY = createField("display", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.url</code>. 
+	 * The column <code>rigel.place_neighborhoods.url</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.String> URL = createField("url", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.city</code>. 
+	 * The column <code>rigel.place_neighborhoods.city</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.String> CITY = createField("city", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.region</code>. 
+	 * The column <code>rigel.place_neighborhoods.region</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.String> REGION = createField("region", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.country</code>. 
+	 * The column <code>rigel.place_neighborhoods.country</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.String> COUNTRY = createField("country", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.latitude</code>. 
+	 * The column <code>rigel.place_neighborhoods.latitude</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.Double> LATITUDE = createField("latitude", org.jooq.impl.SQLDataType.DOUBLE, this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.longitude</code>. 
+	 * The column <code>rigel.place_neighborhoods.longitude</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.Double> LONGITUDE = createField("longitude", org.jooq.impl.SQLDataType.DOUBLE, this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.created</code>. 
+	 * The column <code>rigel.place_neighborhoods.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.place_neighborhoods.status</code>. 
+	 * The column <code>rigel.place_neighborhoods.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceNeighborhoodsRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.place_neighborhoods</code> table reference
+	 * Create a <code>rigel.place_neighborhoods</code> table reference
 	 */
 	public PlaceNeighborhoods() {
-		super("place_neighborhoods", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("place_neighborhoods", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.place_neighborhoods</code> table reference
+	 * Create an aliased <code>rigel.place_neighborhoods</code> table reference
 	 */
 	public PlaceNeighborhoods(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PlaceNeighborhoods.PLACE_NEIGHBORHOODS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PlaceNeighborhoods.PLACE_NEIGHBORHOODS);
 	}
 
 	/**

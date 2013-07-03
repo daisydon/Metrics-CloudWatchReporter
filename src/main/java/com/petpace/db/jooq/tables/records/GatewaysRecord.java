@@ -9,171 +9,171 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class GatewaysRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.GatewaysRecord> implements org.jooq.Record12<java.lang.Integer, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Short, java.lang.Short, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.lang.Integer> {
 
-	private static final long serialVersionUID = 1024625945;
+	private static final long serialVersionUID = 1457174423;
 
 	/**
-	 * Setter for <code>sirius.gateways.GatewayID</code>. 
+	 * Setter for <code>rigel.gateways.GatewayID</code>. 
 	 */
 	public void setGatewayid(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.GatewayID</code>. 
+	 * Getter for <code>rigel.gateways.GatewayID</code>. 
 	 */
 	public java.lang.Integer getGatewayid() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.UUID</code>. 
+	 * Setter for <code>rigel.gateways.UUID</code>. 
 	 */
 	public void setUuid(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.UUID</code>. 
+	 * Getter for <code>rigel.gateways.UUID</code>. 
 	 */
 	public java.lang.String getUuid() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.HWVersion</code>. 
+	 * Setter for <code>rigel.gateways.HWVersion</code>. 
 	 */
 	public void setHwversion(java.lang.String value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.HWVersion</code>. 
+	 * Getter for <code>rigel.gateways.HWVersion</code>. 
 	 */
 	public java.lang.String getHwversion() {
 		return (java.lang.String) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.CurrFWVersion</code>. 
+	 * Setter for <code>rigel.gateways.CurrFWVersion</code>. 
 	 */
 	public void setCurrfwversion(java.lang.String value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.CurrFWVersion</code>. 
+	 * Getter for <code>rigel.gateways.CurrFWVersion</code>. 
 	 */
 	public java.lang.String getCurrfwversion() {
 		return (java.lang.String) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.CurrConfVersion</code>. 
+	 * Setter for <code>rigel.gateways.CurrConfVersion</code>. 
 	 */
 	public void setCurrconfversion(java.lang.String value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.CurrConfVersion</code>. 
+	 * Getter for <code>rigel.gateways.CurrConfVersion</code>. 
 	 */
 	public java.lang.String getCurrconfversion() {
 		return (java.lang.String) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.FWProtected</code>. 
+	 * Setter for <code>rigel.gateways.FWProtected</code>. 
 	 */
 	public void setFwprotected(java.lang.Short value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.FWProtected</code>. 
+	 * Getter for <code>rigel.gateways.FWProtected</code>. 
 	 */
 	public java.lang.Short getFwprotected() {
 		return (java.lang.Short) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.WantSupport</code>. 
+	 * Setter for <code>rigel.gateways.WantSupport</code>. 
 	 */
 	public void setWantsupport(java.lang.Short value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.WantSupport</code>. 
+	 * Getter for <code>rigel.gateways.WantSupport</code>. 
 	 */
 	public java.lang.Short getWantsupport() {
 		return (java.lang.Short) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.version</code>. 
+	 * Setter for <code>rigel.gateways.version</code>. 
 	 */
 	public void setVersion(java.lang.String value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.version</code>. 
+	 * Getter for <code>rigel.gateways.version</code>. 
 	 */
 	public java.lang.String getVersion() {
 		return (java.lang.String) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.Channel</code>. 
+	 * Setter for <code>rigel.gateways.Channel</code>. 
 	 */
 	public void setChannel(java.lang.String value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.Channel</code>. 
+	 * Getter for <code>rigel.gateways.Channel</code>. 
 	 */
 	public java.lang.String getChannel() {
 		return (java.lang.String) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.Cookie</code>. 
+	 * Setter for <code>rigel.gateways.Cookie</code>. 
 	 */
 	public void setCookie(java.lang.String value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.Cookie</code>. 
+	 * Getter for <code>rigel.gateways.Cookie</code>. 
 	 */
 	public java.lang.String getCookie() {
 		return (java.lang.String) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.updated</code>. 
+	 * Setter for <code>rigel.gateways.updated</code>. 
 	 */
 	public void setUpdated(java.sql.Timestamp value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.updated</code>. 
+	 * Getter for <code>rigel.gateways.updated</code>. 
 	 */
 	public java.sql.Timestamp getUpdated() {
 		return (java.sql.Timestamp) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.gateways.GroupID</code>. 
+	 * Setter for <code>rigel.gateways.GroupID</code>. 
 	 */
 	public void setGroupid(java.lang.Integer value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.gateways.GroupID</code>. 
+	 * Getter for <code>rigel.gateways.GroupID</code>. 
 	 */
 	public java.lang.Integer getGroupid() {
 		return (java.lang.Integer) getValue(11);

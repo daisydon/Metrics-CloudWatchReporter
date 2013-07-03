@@ -9,269 +9,269 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalCollarCalibrationsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.VitalCollarCalibrationsRecord> implements org.jooq.Record19<java.lang.Integer, java.lang.String, java.lang.Integer, java.lang.Integer, java.math.BigDecimal, java.math.BigDecimal, java.math.BigDecimal, java.lang.Long, java.lang.Long, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.sql.Timestamp, java.sql.Timestamp, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -631497563;
+	private static final long serialVersionUID = 2050532889;
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.id</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.id</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.collar_id</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.collar_id</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.pet_id</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.pet_id</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.account_id</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.account_id</code>. 
 	 */
 	public void setAccountId(java.lang.Integer value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.account_id</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.account_id</code>. 
 	 */
 	public java.lang.Integer getAccountId() {
 		return (java.lang.Integer) getValue(3);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.temperature</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.temperature</code>. 
 	 */
 	public void setTemperature(java.math.BigDecimal value) {
 		setValue(4, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.temperature</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.temperature</code>. 
 	 */
 	public java.math.BigDecimal getTemperature() {
 		return (java.math.BigDecimal) getValue(4);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.rectal</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.rectal</code>. 
 	 */
 	public void setRectal(java.math.BigDecimal value) {
 		setValue(5, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.rectal</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.rectal</code>. 
 	 */
 	public java.math.BigDecimal getRectal() {
 		return (java.math.BigDecimal) getValue(5);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.ambient</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.ambient</code>. 
 	 */
 	public void setAmbient(java.math.BigDecimal value) {
 		setValue(6, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.ambient</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.ambient</code>. 
 	 */
 	public java.math.BigDecimal getAmbient() {
 		return (java.math.BigDecimal) getValue(6);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.pulse</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.pulse</code>. 
 	 */
 	public void setPulse(java.lang.Long value) {
 		setValue(7, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.pulse</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.pulse</code>. 
 	 */
 	public java.lang.Long getPulse() {
 		return (java.lang.Long) getValue(7);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.respiratory</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.respiratory</code>. 
 	 */
 	public void setRespiratory(java.lang.Long value) {
 		setValue(8, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.respiratory</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.respiratory</code>. 
 	 */
 	public java.lang.Long getRespiratory() {
 		return (java.lang.Long) getValue(8);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.sound</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.sound</code>. 
 	 */
 	public void setSound(java.lang.String value) {
 		setValue(9, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.sound</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.sound</code>. 
 	 */
 	public java.lang.String getSound() {
 		return (java.lang.String) getValue(9);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.lameness</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.lameness</code>. 
 	 */
 	public void setLameness(java.lang.String value) {
 		setValue(10, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.lameness</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.lameness</code>. 
 	 */
 	public java.lang.String getLameness() {
 		return (java.lang.String) getValue(10);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.movement</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.movement</code>. 
 	 */
 	public void setMovement(java.lang.String value) {
 		setValue(11, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.movement</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.movement</code>. 
 	 */
 	public java.lang.String getMovement() {
 		return (java.lang.String) getValue(11);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.activity</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.activity</code>. 
 	 */
 	public void setActivity(java.lang.String value) {
 		setValue(12, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.activity</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.activity</code>. 
 	 */
 	public java.lang.String getActivity() {
 		return (java.lang.String) getValue(12);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.position</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.position</code>. 
 	 */
 	public void setPosition(java.lang.String value) {
 		setValue(13, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.position</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.position</code>. 
 	 */
 	public java.lang.String getPosition() {
 		return (java.lang.String) getValue(13);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.technician</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.technician</code>. 
 	 */
 	public void setTechnician(java.lang.String value) {
 		setValue(14, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.technician</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.technician</code>. 
 	 */
 	public java.lang.String getTechnician() {
 		return (java.lang.String) getValue(14);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.notes</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.notes</code>. 
 	 */
 	public void setNotes(java.lang.String value) {
 		setValue(15, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.notes</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.notes</code>. 
 	 */
 	public java.lang.String getNotes() {
 		return (java.lang.String) getValue(15);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.time</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.time</code>. 
 	 */
 	public void setTime(java.sql.Timestamp value) {
 		setValue(16, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.time</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.time</code>. 
 	 */
 	public java.sql.Timestamp getTime() {
 		return (java.sql.Timestamp) getValue(16);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.created</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(17, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.created</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(17);
 	}
 
 	/**
-	 * Setter for <code>sirius.vital_collar_calibrations.updated</code>. 
+	 * Setter for <code>rigel.vital_collar_calibrations.updated</code>. 
 	 */
 	public void setUpdated(java.sql.Timestamp value) {
 		setValue(18, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.vital_collar_calibrations.updated</code>. 
+	 * Getter for <code>rigel.vital_collar_calibrations.updated</code>. 
 	 */
 	public java.sql.Timestamp getUpdated() {
 		return (java.sql.Timestamp) getValue(18);

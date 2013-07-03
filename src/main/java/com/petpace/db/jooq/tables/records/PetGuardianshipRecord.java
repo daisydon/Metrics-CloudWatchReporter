@@ -9,59 +9,59 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PetGuardianshipRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.PetGuardianshipRecord> implements org.jooq.Record4<java.lang.Integer, java.lang.Integer, java.lang.Integer, java.sql.Timestamp> {
 
-	private static final long serialVersionUID = -64290266;
+	private static final long serialVersionUID = -1618297818;
 
 	/**
-	 * Setter for <code>sirius.pet_guardianship.id</code>. 
+	 * Setter for <code>rigel.pet_guardianship.id</code>. 
 	 */
 	public void setId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_guardianship.id</code>. 
+	 * Getter for <code>rigel.pet_guardianship.id</code>. 
 	 */
 	public java.lang.Integer getId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_guardianship.guardian_id</code>. 
+	 * Setter for <code>rigel.pet_guardianship.guardian_id</code>. 
 	 */
 	public void setGuardianId(java.lang.Integer value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_guardianship.guardian_id</code>. 
+	 * Getter for <code>rigel.pet_guardianship.guardian_id</code>. 
 	 */
 	public java.lang.Integer getGuardianId() {
 		return (java.lang.Integer) getValue(1);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_guardianship.pet_id</code>. 
+	 * Setter for <code>rigel.pet_guardianship.pet_id</code>. 
 	 */
 	public void setPetId(java.lang.Integer value) {
 		setValue(2, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_guardianship.pet_id</code>. 
+	 * Getter for <code>rigel.pet_guardianship.pet_id</code>. 
 	 */
 	public java.lang.Integer getPetId() {
 		return (java.lang.Integer) getValue(2);
 	}
 
 	/**
-	 * Setter for <code>sirius.pet_guardianship.created</code>. 
+	 * Setter for <code>rigel.pet_guardianship.created</code>. 
 	 */
 	public void setCreated(java.sql.Timestamp value) {
 		setValue(3, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.pet_guardianship.created</code>. 
+	 * Getter for <code>rigel.pet_guardianship.created</code>. 
 	 */
 	public java.sql.Timestamp getCreated() {
 		return (java.sql.Timestamp) getValue(3);

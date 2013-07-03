@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class RemoteLogins extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.RemoteLoginsRecord> {
 
-	private static final long serialVersionUID = 427123566;
+	private static final long serialVersionUID = -1559941616;
 
 	/**
-	 * The singleton instance of <code>sirius.remote_logins</code>
+	 * The singleton instance of <code>rigel.remote_logins</code>
 	 */
 	public static final com.petpace.db.jooq.tables.RemoteLogins REMOTE_LOGINS = new com.petpace.db.jooq.tables.RemoteLogins();
 
@@ -25,72 +25,72 @@ public class RemoteLogins extends org.jooq.impl.TableImpl<com.petpace.db.jooq.ta
 	}
 
 	/**
-	 * The column <code>sirius.remote_logins.id</code>. 
+	 * The column <code>rigel.remote_logins.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.collar_id</code>. 
+	 * The column <code>rigel.remote_logins.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.remote_logins.pet_id</code>. 
+	 * The column <code>rigel.remote_logins.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.account_id</code>. 
+	 * The column <code>rigel.remote_logins.account_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.Integer> ACCOUNT_ID = createField("account_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.start</code>. 
+	 * The column <code>rigel.remote_logins.start</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.sql.Timestamp> START = createField("start", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.end</code>. 
+	 * The column <code>rigel.remote_logins.end</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.sql.Timestamp> END = createField("end", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.microtime</code>. 
+	 * The column <code>rigel.remote_logins.microtime</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.Double> MICROTIME = createField("microtime", org.jooq.impl.SQLDataType.DOUBLE, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.samplingFrequency</code>. 
+	 * The column <code>rigel.remote_logins.samplingFrequency</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.String> SAMPLINGFREQUENCY = createField("samplingFrequency", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.remote_logins.duration</code>. 
+	 * The column <code>rigel.remote_logins.duration</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.Integer> DURATION = createField("duration", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.status</code>. 
+	 * The column <code>rigel.remote_logins.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.remote_logins.notes</code>. 
+	 * The column <code>rigel.remote_logins.notes</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.RemoteLoginsRecord, java.lang.String> NOTES = createField("notes", org.jooq.impl.SQLDataType.CLOB, this);
 
 	/**
-	 * Create a <code>sirius.remote_logins</code> table reference
+	 * Create a <code>rigel.remote_logins</code> table reference
 	 */
 	public RemoteLogins() {
-		super("remote_logins", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("remote_logins", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.remote_logins</code> table reference
+	 * Create an aliased <code>rigel.remote_logins</code> table reference
 	 */
 	public RemoteLogins(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.RemoteLogins.REMOTE_LOGINS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.RemoteLogins.REMOTE_LOGINS);
 	}
 
 	/**

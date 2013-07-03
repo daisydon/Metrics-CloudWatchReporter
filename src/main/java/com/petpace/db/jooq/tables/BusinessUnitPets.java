@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessUnitPets extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BusinessUnitPetsRecord> {
 
-	private static final long serialVersionUID = 440404527;
+	private static final long serialVersionUID = -2069834661;
 
 	/**
-	 * The singleton instance of <code>sirius.business_unit_pets</code>
+	 * The singleton instance of <code>rigel.business_unit_pets</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BusinessUnitPets BUSINESS_UNIT_PETS = new com.petpace.db.jooq.tables.BusinessUnitPets();
 
@@ -25,27 +25,27 @@ public class BusinessUnitPets extends org.jooq.impl.TableImpl<com.petpace.db.joo
 	}
 
 	/**
-	 * The column <code>sirius.business_unit_pets.business_unit_id</code>. 
+	 * The column <code>rigel.business_unit_pets.business_unit_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitPetsRecord, java.lang.Integer> BUSINESS_UNIT_ID = createField("business_unit_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.business_unit_pets.pet_id</code>. 
+	 * The column <code>rigel.business_unit_pets.pet_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitPetsRecord, java.lang.Integer> PET_ID = createField("pet_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.business_unit_pets</code> table reference
+	 * Create a <code>rigel.business_unit_pets</code> table reference
 	 */
 	public BusinessUnitPets() {
-		super("business_unit_pets", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("business_unit_pets", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.business_unit_pets</code> table reference
+	 * Create an aliased <code>rigel.business_unit_pets</code> table reference
 	 */
 	public BusinessUnitPets(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BusinessUnitPets.BUSINESS_UNIT_PETS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BusinessUnitPets.BUSINESS_UNIT_PETS);
 	}
 
 	/**

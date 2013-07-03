@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessUnits extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.BusinessUnitsRecord> {
 
-	private static final long serialVersionUID = 1990549714;
+	private static final long serialVersionUID = 440231516;
 
 	/**
-	 * The singleton instance of <code>sirius.business_units</code>
+	 * The singleton instance of <code>rigel.business_units</code>
 	 */
 	public static final com.petpace.db.jooq.tables.BusinessUnits BUSINESS_UNITS = new com.petpace.db.jooq.tables.BusinessUnits();
 
@@ -25,72 +25,72 @@ public class BusinessUnits extends org.jooq.impl.TableImpl<com.petpace.db.jooq.t
 	}
 
 	/**
-	 * The column <code>sirius.business_units.id</code>. 
+	 * The column <code>rigel.business_units.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.business_units.parent_id</code>. 
+	 * The column <code>rigel.business_units.parent_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.Integer> PARENT_ID = createField("parent_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.business_units.address_id</code>. 
+	 * The column <code>rigel.business_units.address_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.Integer> ADDRESS_ID = createField("address_id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.business_units.name</code>. 
+	 * The column <code>rigel.business_units.name</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.String> NAME = createField("name", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.business_units.url</code>. 
+	 * The column <code>rigel.business_units.url</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.String> URL = createField("url", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.business_units.website</code>. 
+	 * The column <code>rigel.business_units.website</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.String> WEBSITE = createField("website", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.business_units.phone</code>. 
+	 * The column <code>rigel.business_units.phone</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.String> PHONE = createField("phone", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.business_units.fax</code>. 
+	 * The column <code>rigel.business_units.fax</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.String> FAX = createField("fax", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.business_units.created</code>. 
+	 * The column <code>rigel.business_units.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.business_units.updated</code>. 
+	 * The column <code>rigel.business_units.updated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.sql.Timestamp> UPDATED = createField("updated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.business_units.status</code>. 
+	 * The column <code>rigel.business_units.status</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.BusinessUnitsRecord, java.lang.Integer> STATUS = createField("status", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.business_units</code> table reference
+	 * Create a <code>rigel.business_units</code> table reference
 	 */
 	public BusinessUnits() {
-		super("business_units", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("business_units", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.business_units</code> table reference
+	 * Create an aliased <code>rigel.business_units</code> table reference
 	 */
 	public BusinessUnits(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.BusinessUnits.BUSINESS_UNITS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.BusinessUnits.BUSINESS_UNITS);
 	}
 
 	/**

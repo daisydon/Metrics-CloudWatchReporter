@@ -9,31 +9,31 @@ package com.petpace.db.jooq.tables.records;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class BusinessUnitCollarsRecord extends org.jooq.impl.UpdatableRecordImpl<com.petpace.db.jooq.tables.records.BusinessUnitCollarsRecord> implements org.jooq.Record2<java.lang.Integer, java.lang.String> {
 
-	private static final long serialVersionUID = -763122909;
+	private static final long serialVersionUID = -153266063;
 
 	/**
-	 * Setter for <code>sirius.business_unit_collars.business_unit_id</code>. 
+	 * Setter for <code>rigel.business_unit_collars.business_unit_id</code>. 
 	 */
 	public void setBusinessUnitId(java.lang.Integer value) {
 		setValue(0, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_unit_collars.business_unit_id</code>. 
+	 * Getter for <code>rigel.business_unit_collars.business_unit_id</code>. 
 	 */
 	public java.lang.Integer getBusinessUnitId() {
 		return (java.lang.Integer) getValue(0);
 	}
 
 	/**
-	 * Setter for <code>sirius.business_unit_collars.collar_id</code>. 
+	 * Setter for <code>rigel.business_unit_collars.collar_id</code>. 
 	 */
 	public void setCollarId(java.lang.String value) {
 		setValue(1, value);
 	}
 
 	/**
-	 * Getter for <code>sirius.business_unit_collars.collar_id</code>. 
+	 * Getter for <code>rigel.business_unit_collars.collar_id</code>. 
 	 */
 	public java.lang.String getCollarId() {
 		return (java.lang.String) getValue(1);

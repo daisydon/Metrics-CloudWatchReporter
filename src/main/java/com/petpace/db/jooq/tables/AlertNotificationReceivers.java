@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class AlertNotificationReceivers extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.AlertNotificationReceiversRecord> {
 
-	private static final long serialVersionUID = 1814381537;
+	private static final long serialVersionUID = -1978076829;
 
 	/**
-	 * The singleton instance of <code>sirius.alert_notification_receivers</code>
+	 * The singleton instance of <code>rigel.alert_notification_receivers</code>
 	 */
 	public static final com.petpace.db.jooq.tables.AlertNotificationReceivers ALERT_NOTIFICATION_RECEIVERS = new com.petpace.db.jooq.tables.AlertNotificationReceivers();
 
@@ -25,42 +25,42 @@ public class AlertNotificationReceivers extends org.jooq.impl.TableImpl<com.petp
 	}
 
 	/**
-	 * The column <code>sirius.alert_notification_receivers.id</code>. 
+	 * The column <code>rigel.alert_notification_receivers.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationReceiversRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.alert_notification_receivers.protocol</code>. 
+	 * The column <code>rigel.alert_notification_receivers.protocol</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationReceiversRecord, java.lang.String> PROTOCOL = createField("protocol", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alert_notification_receivers.address</code>. 
+	 * The column <code>rigel.alert_notification_receivers.address</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationReceiversRecord, java.lang.String> ADDRESS = createField("address", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alert_notification_receivers.message</code>. 
+	 * The column <code>rigel.alert_notification_receivers.message</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationReceiversRecord, java.lang.String> MESSAGE = createField("message", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.alert_notification_receivers.confirmationRequired</code>. 
+	 * The column <code>rigel.alert_notification_receivers.confirmationRequired</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.AlertNotificationReceiversRecord, java.lang.Integer> CONFIRMATIONREQUIRED = createField("confirmationRequired", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.alert_notification_receivers</code> table reference
+	 * Create a <code>rigel.alert_notification_receivers</code> table reference
 	 */
 	public AlertNotificationReceivers() {
-		super("alert_notification_receivers", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("alert_notification_receivers", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.alert_notification_receivers</code> table reference
+	 * Create an aliased <code>rigel.alert_notification_receivers</code> table reference
 	 */
 	public AlertNotificationReceivers(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.AlertNotificationReceivers.ALERT_NOTIFICATION_RECEIVERS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.AlertNotificationReceivers.ALERT_NOTIFICATION_RECEIVERS);
 	}
 
 	/**

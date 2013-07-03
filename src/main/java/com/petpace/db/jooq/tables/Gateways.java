@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Gateways extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.GatewaysRecord> {
 
-	private static final long serialVersionUID = -925161836;
+	private static final long serialVersionUID = 385076758;
 
 	/**
-	 * The singleton instance of <code>sirius.gateways</code>
+	 * The singleton instance of <code>rigel.gateways</code>
 	 */
 	public static final com.petpace.db.jooq.tables.Gateways GATEWAYS = new com.petpace.db.jooq.tables.Gateways();
 
@@ -25,77 +25,77 @@ public class Gateways extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables
 	}
 
 	/**
-	 * The column <code>sirius.gateways.GatewayID</code>. 
+	 * The column <code>rigel.gateways.GatewayID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.Integer> GATEWAYID = createField("GatewayID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.gateways.UUID</code>. 
+	 * The column <code>rigel.gateways.UUID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.String> UUID = createField("UUID", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateways.HWVersion</code>. 
+	 * The column <code>rigel.gateways.HWVersion</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.String> HWVERSION = createField("HWVersion", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateways.CurrFWVersion</code>. 
+	 * The column <code>rigel.gateways.CurrFWVersion</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.String> CURRFWVERSION = createField("CurrFWVersion", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateways.CurrConfVersion</code>. 
+	 * The column <code>rigel.gateways.CurrConfVersion</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.String> CURRCONFVERSION = createField("CurrConfVersion", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateways.FWProtected</code>. 
+	 * The column <code>rigel.gateways.FWProtected</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.Short> FWPROTECTED = createField("FWProtected", org.jooq.impl.SQLDataType.SMALLINT, this);
 
 	/**
-	 * The column <code>sirius.gateways.WantSupport</code>. 
+	 * The column <code>rigel.gateways.WantSupport</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.Short> WANTSUPPORT = createField("WantSupport", org.jooq.impl.SQLDataType.SMALLINT, this);
 
 	/**
-	 * The column <code>sirius.gateways.version</code>. 
+	 * The column <code>rigel.gateways.version</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.String> VERSION = createField("version", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateways.Channel</code>. 
+	 * The column <code>rigel.gateways.Channel</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.String> CHANNEL = createField("Channel", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateways.Cookie</code>. 
+	 * The column <code>rigel.gateways.Cookie</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.String> COOKIE = createField("Cookie", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.gateways.updated</code>. 
+	 * The column <code>rigel.gateways.updated</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.sql.Timestamp> UPDATED = createField("updated", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.gateways.GroupID</code>. 
+	 * The column <code>rigel.gateways.GroupID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.GatewaysRecord, java.lang.Integer> GROUPID = createField("GroupID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.gateways</code> table reference
+	 * Create a <code>rigel.gateways</code> table reference
 	 */
 	public Gateways() {
-		super("gateways", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("gateways", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.gateways</code> table reference
+	 * Create an aliased <code>rigel.gateways</code> table reference
 	 */
 	public Gateways(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.Gateways.GATEWAYS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.Gateways.GATEWAYS);
 	}
 
 	/**

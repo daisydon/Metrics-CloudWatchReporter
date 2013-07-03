@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class PlaceCountries extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.PlaceCountriesRecord> {
 
-	private static final long serialVersionUID = -140430175;
+	private static final long serialVersionUID = 1512581135;
 
 	/**
-	 * The singleton instance of <code>sirius.place_countries</code>
+	 * The singleton instance of <code>rigel.place_countries</code>
 	 */
 	public static final com.petpace.db.jooq.tables.PlaceCountries PLACE_COUNTRIES = new com.petpace.db.jooq.tables.PlaceCountries();
 
@@ -25,27 +25,27 @@ public class PlaceCountries extends org.jooq.impl.TableImpl<com.petpace.db.jooq.
 	}
 
 	/**
-	 * The column <code>sirius.place_countries.countryCode</code>. 
+	 * The column <code>rigel.place_countries.countryCode</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceCountriesRecord, java.lang.String> COUNTRYCODE = createField("countryCode", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.place_countries.countryName</code>. 
+	 * The column <code>rigel.place_countries.countryName</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.PlaceCountriesRecord, java.lang.String> COUNTRYNAME = createField("countryName", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * Create a <code>sirius.place_countries</code> table reference
+	 * Create a <code>rigel.place_countries</code> table reference
 	 */
 	public PlaceCountries() {
-		super("place_countries", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("place_countries", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.place_countries</code> table reference
+	 * Create an aliased <code>rigel.place_countries</code> table reference
 	 */
 	public PlaceCountries(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.PlaceCountries.PLACE_COUNTRIES);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.PlaceCountries.PLACE_COUNTRIES);
 	}
 
 	/**

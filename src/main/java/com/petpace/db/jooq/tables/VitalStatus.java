@@ -9,10 +9,10 @@ package com.petpace.db.jooq.tables;
 @java.lang.SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class VitalStatus extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tables.records.VitalStatusRecord> {
 
-	private static final long serialVersionUID = 1596510222;
+	private static final long serialVersionUID = 1577140588;
 
 	/**
-	 * The singleton instance of <code>sirius.vital_status</code>
+	 * The singleton instance of <code>rigel.vital_status</code>
 	 */
 	public static final com.petpace.db.jooq.tables.VitalStatus VITAL_STATUS = new com.petpace.db.jooq.tables.VitalStatus();
 
@@ -25,72 +25,72 @@ public class VitalStatus extends org.jooq.impl.TableImpl<com.petpace.db.jooq.tab
 	}
 
 	/**
-	 * The column <code>sirius.vital_status.id</code>. 
+	 * The column <code>rigel.vital_status.id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.Integer> ID = createField("id", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_status.collar_id</code>. 
+	 * The column <code>rigel.vital_status.collar_id</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.String> COLLAR_ID = createField("collar_id", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_status.battery</code>. 
+	 * The column <code>rigel.vital_status.battery</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.Integer> BATTERY = createField("battery", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * The column <code>sirius.vital_status.buckle</code>. 
+	 * The column <code>rigel.vital_status.buckle</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.String> BUCKLE = createField("buckle", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_status.charging</code>. 
+	 * The column <code>rigel.vital_status.charging</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.String> CHARGING = createField("charging", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_status.version</code>. 
+	 * The column <code>rigel.vital_status.version</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.String> VERSION = createField("version", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_status.time</code>. 
+	 * The column <code>rigel.vital_status.time</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.sql.Timestamp> TIME = createField("time", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_status.created</code>. 
+	 * The column <code>rigel.vital_status.created</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.sql.Timestamp> CREATED = createField("created", org.jooq.impl.SQLDataType.TIMESTAMP, this);
 
 	/**
-	 * The column <code>sirius.vital_status.Cookie</code>. 
+	 * The column <code>rigel.vital_status.Cookie</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.String> COOKIE = createField("Cookie", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_status.InputRef</code>. 
+	 * The column <code>rigel.vital_status.InputRef</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.String> INPUTREF = createField("InputRef", org.jooq.impl.SQLDataType.VARCHAR.length(255), this);
 
 	/**
-	 * The column <code>sirius.vital_status.GatewayID</code>. 
+	 * The column <code>rigel.vital_status.GatewayID</code>. 
 	 */
 	public final org.jooq.TableField<com.petpace.db.jooq.tables.records.VitalStatusRecord, java.lang.Integer> GATEWAYID = createField("GatewayID", org.jooq.impl.SQLDataType.INTEGER, this);
 
 	/**
-	 * Create a <code>sirius.vital_status</code> table reference
+	 * Create a <code>rigel.vital_status</code> table reference
 	 */
 	public VitalStatus() {
-		super("vital_status", com.petpace.db.jooq.Sirius.SIRIUS);
+		super("vital_status", com.petpace.db.jooq.Rigel.RIGEL);
 	}
 
 	/**
-	 * Create an aliased <code>sirius.vital_status</code> table reference
+	 * Create an aliased <code>rigel.vital_status</code> table reference
 	 */
 	public VitalStatus(java.lang.String alias) {
-		super(alias, com.petpace.db.jooq.Sirius.SIRIUS, com.petpace.db.jooq.tables.VitalStatus.VITAL_STATUS);
+		super(alias, com.petpace.db.jooq.Rigel.RIGEL, com.petpace.db.jooq.tables.VitalStatus.VITAL_STATUS);
 	}
 
 	/**
