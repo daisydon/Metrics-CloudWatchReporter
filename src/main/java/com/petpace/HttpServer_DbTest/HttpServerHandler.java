@@ -2,12 +2,13 @@ package com.petpace.HttpServer_DbTest;
 
 import static com.petpace.db.jooq.Tables.COLLARS;
 
-import java.io.CharArrayReader;
 import java.io.File;
 import java.io.IOException;
 import java.net.SocketAddress;
-import java.nio.charset.Charset;
 import java.sql.SQLException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -39,7 +40,6 @@ import org.jooq.DSLContext;
 import org.jooq.Record;
 import org.jooq.Result;
 import org.jooq.SQLDialect;
-import org.jooq.Table;
 import org.jooq.impl.DSL;
 
 import com.fasterxml.jackson.core.JsonEncoding;
@@ -104,32 +104,39 @@ public class HttpServerHandler extends SimpleChannelHandler {
 		QueryStringDecoder queryStringDecoder = new QueryStringDecoder(
 				request.getUri());
 		buf.append("<p>URI: ").append(request.getUri()).append("</p>");
-		buf.append("<p>PATH: ").append(queryStringDecoder.getPath())
+		buf.append("<p>PATH: ")
+				.append(queryStringDecoder.getPath().replaceFirst("/", ""))
 				.append("</p><p>");
-		StringBuilder tableName = new StringBuilder();
-		char[] chars = queryStringDecoder.getPath().toCharArray();
-	    int i = chars.length;
-		if (i>0){
-			for (int j = 1; j<i;j++ ){
-				tableName.append(chars[j]);
-			}
-		}
-		buf.append("<p>Table Name: ").append(tableName.toString())
-		.append("</p><p>");
 
+		/**
+		 * StringBuilder tableName = new StringBuilder(); char[] chars =
+		 * queryStringDecoder.getPath().toCharArray(); int i = chars.length; if
+		 * (i > 0) { for (int j = 1; j < i; j++) { tableName.append(chars[j]); }
+		 * } buf.append("
+		 * <p>
+		 * Table Name: ").append(tableName.toString()) .append("
+		 * </p>
+		 * <p>
+		 * ");
+		 */
+       
 		Map<String, List<String>> params = queryStringDecoder.getParameters();
+        String[] dateArray = new String[2];
+        int k = 0;
 		if (!params.isEmpty()) {
 			for (Entry<String, List<String>> p : params.entrySet()) {
 				String key = p.getKey();
 				List<String> vals = p.getValue();
 				for (String val : vals) {
-					//parse the query in URL
-					
-					//getCollarMessage(key, val);
+					// parse the query in URL
+
+                    dateArray[k] = val;
+                    k++;
 					buf.append("PARA: " + key + "VAL: " + val + "<br/>");
-					System.out.println("PARA: " + key + " VAL: " + val);
+                    System.out.println("PARA: " + key + " VAL: " + val);
 				}
 			}
+			dateDiff(dateArray[0],dateArray[1]);
 			buf.append("</p>");
 		}
 		/**
@@ -144,7 +151,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 					.append("</p>");
 		}
 
-		buf.append(getCollarMessage());
+		//buf.append(getCollarMessage());
 
 		response.setContent(ChannelBuffers.copiedBuffer(buf.toString(),
 				CharsetUtil.UTF_8));
@@ -152,22 +159,42 @@ public class HttpServerHandler extends SimpleChannelHandler {
 		e.getChannel().write(response);
 	}
 
+	public long dateDiff(String start, String end) {
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a");
+
+		Date d1 = null;
+		Date d2 = null;
+
+		try {
+			d1 = format.parse(start);
+			d2 = format.parse(end);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		long differ = Math.abs((d2.getTime() - d1.getTime()) / 1000 / 60 / 60);
+		System.out.println("The difference in hours:" + differ);
+		return differ;
+
+	}
+
 	public String getCollarMessage() throws SQLException {
 		DSLContext create = DSL.using(DatasourceConnection.getDatasource(),
 				SQLDialect.MYSQL);
 		Result<Record> result = create.select().from(COLLARS).fetch();
-		
+
 		String json = create.selectFrom(COLLARS).fetch().formatJSON();
-		
-		for(Record r: result){
-			
+
+		for (Record r : result) {
+
 			String id = r.getValue(COLLARS.ID);
-			 //int groupid = r.getValue(COLLARS.GROUPID);
+			// int groupid = r.getValue(COLLARS.GROUPID);
 
 			System.out.println("ID: " + id);
 		}
 		return json;
-//		}
+		// }
 	}
 
 	/**
