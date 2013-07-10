@@ -1,7 +1,7 @@
 package com.petpace.HttpServer_DbTest;
 
-import static com.petpace.db.jooq.Tables.COLLARS;
 import static com.petpace.db.jooq.Tables.VITAL_ACTIVITY;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.SocketAddress;
@@ -38,8 +38,6 @@ import org.jboss.netty.handler.codec.http.HttpVersion;
 import org.jboss.netty.handler.codec.http.QueryStringDecoder;
 import org.jboss.netty.util.CharsetUtil;
 import org.jooq.DSLContext;
-import org.jooq.Record;
-import org.jooq.Result;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DSL;
 
@@ -93,7 +91,6 @@ public class HttpServerHandler extends SimpleChannelHandler {
 	 */
 	public void writeResponse(MessageEvent e) throws Exception {
 		HttpRequest request = (HttpRequest) e.getMessage();
-		// boolean keepAlive = HttpHeaders.isKeepAlive(request);
 		HttpResponse response = new DefaultHttpResponse(HttpVersion.HTTP_1_1,
 				HttpResponseStatus.OK);
 		StringBuilder buf = new StringBuilder();
@@ -108,18 +105,6 @@ public class HttpServerHandler extends SimpleChannelHandler {
 		buf.append("<p>PATH: ")
 				.append(queryStringDecoder.getPath().substring(1))
 				.append("</p><p>");
-
-		/**
-		 * StringBuilder tableName = new StringBuilder(); char[] chars =
-		 * queryStringDecoder.getPath().toCharArray(); int i = chars.length; if
-		 * (i > 0) { for (int j = 1; j < i; j++) { tableName.append(chars[j]); }
-		 * } buf.append("
-		 * <p>
-		 * Table Name: ").append(tableName.toString()) .append("
-		 * </p>
-		 * <p>
-		 * ");
-		 */
 
 		Map<String, List<String>> params = queryStringDecoder.getParameters();
 		String[] dateArray = new String[2];
@@ -137,7 +122,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 					System.out.println("PARA: " + key + " VAL: " + val);
 				}
 			}
-			
+
 			buf.append("</p>");
 			buf.append("Query Result:"
 					+ checkActivity(dateArray[0], dateArray[1]));
@@ -154,41 +139,11 @@ public class HttpServerHandler extends SimpleChannelHandler {
 			buf.append(request.getContent().toString(CharsetUtil.UTF_8))
 					.append("</p>");
 		}
-
-		// buf.append(getCollarMessage());
-
 		response.setContent(ChannelBuffers.copiedBuffer(buf.toString(),
 				CharsetUtil.UTF_8));
 		setCookie(request, response);
 		e.getChannel().write(response);
 	}
-
-/*	*//**
-	 * Check the difference of start and end dates
-	 * 
-	 * @param start
-	 * @param end
-	 * @return
-	 *//*
-	public long dateDiff(String start, String end) {
-		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-		Date d1 = null;
-		Date d2 = null;
-
-		try {
-			d1 = format.parse(start);
-			d2 = format.parse(end);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		long differ = Math.abs((d2.getTime() - d1.getTime()) / 1000 / 60 / 60);
-		System.out.println("The difference in hours:" + differ);
-		return differ;
-
-	}*/
 
 	/**
 	 * activity?start=t1&end=t2 if (t2-t1) < 1 hour then select * from activity
@@ -240,14 +195,6 @@ public class HttpServerHandler extends SimpleChannelHandler {
 		}
 		System.out.println("The difference in hours:" + differ);
 		return resultJSON;
-	}
-
-	public String getCollarMessage() throws SQLException {
-		DSLContext create = DSL.using(DatasourceConnection.getDatasource(),
-				SQLDialect.MYSQL);
-		String json = create.selectFrom(COLLARS).fetch().formatJSON();
-		return json;
-		// }
 	}
 
 	/**
