@@ -41,6 +41,7 @@ import org.jooq.DSLContext;
 import org.jooq.SQLDialect;
 import org.jooq.impl.DSL;
 
+import com.codahale.metrics.Counter;
 import com.codahale.metrics.Timer;
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
@@ -57,6 +58,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 
 	private static final String NETTYSESSION_ID_COOKIE_NAME = "NettySessionId";
 	private static final Timer timer = metrics.timer("MessageReceived");
+	private static final Counter counter = metrics.counter("MessageRecievedCounter");
 
 	/**
 	 * Track open channel
@@ -81,11 +83,13 @@ public class HttpServerHandler extends SimpleChannelHandler {
 			throws Exception {
 		// Write the timer
 		Timer.Context context = timer.time();
+		counter.inc();
 
 		// write the initial line.
 		writeResponse(e);
 		e.getChannel().disconnect();
 		e.getChannel().close();
+
 		context.stop();
 	}
 

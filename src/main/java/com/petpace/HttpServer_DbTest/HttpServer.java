@@ -8,6 +8,9 @@ import java.util.concurrent.TimeUnit;
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
 
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.cloudwatch.AmazonCloudWatchClient;
 import com.codahale.metrics.ConsoleReporter;
 import com.codahale.metrics.MetricRegistry;
 import com.petpace.db.DatasourceConnection;
@@ -15,10 +18,7 @@ import com.petpace.db.DatasourceConnection;
 public class HttpServer {
 	private final int port;
 	public static final MetricRegistry metrics = new MetricRegistry();
-	private static final ConsoleReporter reporter = ConsoleReporter.forRegistry(metrics).convertRatesTo(TimeUnit.SECONDS)
-            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
-
-  
+    
 					
 
 	public HttpServer(int port) {
@@ -36,9 +36,22 @@ public class HttpServer {
 						prop.getProperty("database.username"),
 						prop.getProperty("database.password"));
 		//Send the metrics to console reporter
-				reporter.start(15, TimeUnit.SECONDS);
+		//reporter.start(15, TimeUnit.SECONDS);
 		//Send the metrics to cloudwatcher reporter
 				
+				AWSCredentials creds = new BasicAWSCredentials("AKIAJA5GAIEPJ52UC4QA","OTyTcE0tY3ENSD4/u2e94FcKlqZ2A6kFzK9EHOKz");
+				AmazonCloudWatchClient client = new AmazonCloudWatchClient(creds);
+				ConsoleReporter reporter = ConsoleReporter.forRegistry(metrics).convertRatesTo(TimeUnit.SECONDS)
+			            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
+				
+				CloudReporter report = CloudReporter.forRegistry(metrics,"petpace",client).convertRatesTo(TimeUnit.SECONDS)
+			            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
+				
+				report.report();
+				report.start(10, TimeUnit.SECONDS);
+			
+				
+				//reporter.start(10, TimeUnit.SECONDS);
 		// Configure the server.
 
 		ServerBootstrap bootstrap = new ServerBootstrap(
