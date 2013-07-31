@@ -1,21 +1,20 @@
 package com.petpace.HttpServer_DbTest;
 
-import java.io.PrintStream;
-import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
+import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
-import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import com.amazonaws.services.cloudwatch.AmazonCloudWatchClient;
+import com.amazonaws.services.cloudwatch.model.Dimension;
 import com.amazonaws.services.cloudwatch.model.MetricDatum;
 import com.amazonaws.services.cloudwatch.model.PutMetricDataRequest;
-import com.codahale.metrics.Clock;
+import com.amazonaws.services.cloudwatch.model.StandardUnit;
 import com.codahale.metrics.Counter;
 import com.codahale.metrics.Gauge;
 import com.codahale.metrics.Histogram;
@@ -27,34 +26,25 @@ import com.codahale.metrics.Timer;
 
 public class CloudReporter extends ScheduledReporter {
 
-	private static final Logger LOG = LoggerFactory
-			.getLogger(CloudReporter.class);
+	private static final Logger LOG = Logger
+			.getLogger(CloudReporter.class.getName());
 
 	public static class Builder {
-		private final MetricRegistry registry;
-		private final String namespace;
-		private PrintStream output;
-		private Locale locale;
-		private Clock clock;
-		private TimeZone timeZone;
+		private MetricRegistry registry;
+		private String namespace;
+		private String reportername;
 		private TimeUnit rateUnit;
 		private TimeUnit durationUnit;
-		private MetricFilter filter;
+		private MetricFilter filter = MetricFilter.ALL;
 		private AmazonCloudWatchClient client;
 
 		public Builder(MetricRegistry registry, String namespace,
 				AmazonCloudWatchClient client) {
 			this.registry = registry;
-			this.output = System.out;
-			this.locale = Locale.getDefault();
-			this.clock = Clock.defaultClock();
-			this.timeZone = TimeZone.getDefault();
 			this.rateUnit = TimeUnit.SECONDS;
 			this.durationUnit = TimeUnit.MILLISECONDS;
-			this.filter = MetricFilter.ALL;
 			this.client = client;
 			this.namespace = namespace;
-
 		}
 
 		public Builder convertRatesTo(TimeUnit rateUnit) {
@@ -68,35 +58,32 @@ public class CloudReporter extends ScheduledReporter {
 		}
 
 		public CloudReporter build() {
-			return new CloudReporter(registry, namespace, client, output,
-					locale, clock, timeZone, rateUnit, durationUnit, filter);
+			return new CloudReporter(registry,reportername,namespace, client, rateUnit,
+					durationUnit, filter);
 		}
+
+		public void enable() {
+			build().start(10, TimeUnit.SECONDS);
+            LOG.info("Start the report");
+		}
+		
 	}
 
-	private final PrintStream output;
-	private final Locale locale;
-	private final Clock clock;
-	private final DateFormat dateFormat;
 	private PutMetricDataRequest putReq;
 	private AmazonCloudWatchClient client;
-	private final String namespace;
+	private String namespace;
 
-	public static Builder forRegistry(MetricRegistry registry,
-			String namespace, AmazonCloudWatchClient client) {
-		return new Builder(registry, namespace, client);
+	public Builder withRegistry(MetricRegistry registry,String namespace,
+			AmazonCloudWatchClient client) {
+		return new Builder(registry, namespace,client);	
 	}
 
-	private CloudReporter(MetricRegistry registry, String namespace,
-			AmazonCloudWatchClient client, PrintStream output, Locale locale,
-			Clock clock, TimeZone timeZone, TimeUnit rateUnit,
+	private CloudReporter(MetricRegistry registry, String reportername, String namespace,
+			AmazonCloudWatchClient client, TimeUnit rateUnit,
 			TimeUnit durationUnit, MetricFilter filter) {
-		super(registry, "Cloud Reporter", filter, rateUnit, durationUnit);
-		this.output = output;
-		this.locale = locale;
-		this.clock = clock;
+		super(registry, "HttpSeverHandler_Counter", filter, rateUnit, durationUnit);
 		this.namespace = namespace;
-		this.dateFormat = DateFormat.getDateTimeInstance(DateFormat.SHORT,
-				DateFormat.MEDIUM, locale);
+		this.client = client;
 	}
 
 	/**
@@ -109,18 +96,17 @@ public class CloudReporter extends ScheduledReporter {
 	 */
 	public void sendToCloudwatch() {
 		try {
-			if (!putReq.getMetricData().isEmpty()) {
-				client.putMetricData(putReq);
-				LOG.info("Send to Cloud");
+			LOG.info("Check if putMetricData is empty! " + putReq.getMetricData().isEmpty());
+			
+			client.putMetricData(putReq);
+			LOG.info("Send to Cloud");
 
 			}
-		} catch (RuntimeException re) {
-			LOG.warn("Failed writing to CloudWatch: {}", putReq);
+		 catch (RuntimeException re) {
+			LOG.log(Level.SEVERE,"Failed writing to CloudWatch!",re);
 			throw re;
 		} finally {
-			// Be sure the putReq cleared; a failure indicates bad data, so we
-			// don't want to try again
-			putReq = new PutMetricDataRequest().withNamespace(namespace);
+		  putReq = new PutMetricDataRequest().withNamespace(namespace);
 		}
 	}
 
@@ -130,14 +116,19 @@ public class CloudReporter extends ScheduledReporter {
 	 * @param name
 	 * @param value
 	 */
-	public void sendValue(Date timestamp, String name, double value) {
+	
+	public void sendValue(Date timestamp, String name, double value, List<Dimension> dimensions) {
 		MetricDatum datum = new MetricDatum().withTimestamp(timestamp)
-				.withValue(value).withMetricName(name);
+				.withValue(value).withMetricName(name).withUnit(StandardUnit.Seconds).withDimensions(dimensions);
 
 		putReq.withMetricData(datum);
 
+		LOG.info("The size of putReq is " + putReq.getMetricData().size());
+		
+		// TODO: PLEASE TEST THIS:  AWS Error Message: The collection MetricData must not have a size greater than 20.
 		if (putReq.getMetricData().size() == 20) {
-			sendToCloudwatch();
+		LOG.info("Send To Cloud Watch");
+		sendToCloudwatch();
 		}
 	}
 
@@ -146,17 +137,43 @@ public class CloudReporter extends ScheduledReporter {
 			SortedMap<String, Counter> counters,
 			SortedMap<String, Histogram> histograms,
 			SortedMap<String, Meter> meters, SortedMap<String, Timer> timers) {
-		putReq = new PutMetricDataRequest().withNamespace(namespace);
-		for (Map.Entry<String, Counter> entry : counters.entrySet()) {
-			long counter = entry.getValue().getCount();
-			double value = Double.longBitsToDouble(counter);
-			Date timestamp = new Date();
-			sendValue(timestamp, "Counter", value);
-
+		List<Dimension> dimensions = new ArrayList<Dimension>();
+		dimensions.add((new Dimension()).withName("ServerID").withValue("Netty3.0"));
+		
+		for (Map.Entry<String, Timer> entry: timers.entrySet()){
+			double one =entry.getValue().getOneMinuteRate();
+			double mean = entry.getValue().getMeanRate();
+			double five = entry.getValue().getFiveMinuteRate();
+			double ten = entry.getValue().getFifteenMinuteRate();
+			
+			Date timestamp = new Date();		
+			sendValue(timestamp,entry.getKey(),mean,dimensions);		
+			sendValue(timestamp,entry.getKey(),one,dimensions);
+			sendValue(timestamp,entry.getKey(),five,dimensions);
+			sendValue(timestamp,entry.getKey(),ten,dimensions);	
 		}
-
-		// populate putReq
-		// send it to cloud
+		
+		
+		//LOG.info("Start to parse the counter");
+		for (Map.Entry<String, Counter> entry : counters.entrySet()) {
+			Counter cntr = entry.getValue();	
+			long counter = cntr.getCount();
+			double value = (double)counter;
+			
+			Date timestamp = new Date();
+			LOG.info("Counter "+ value + "");
+			sendValue(timestamp, entry.getKey(),value,dimensions); // TODO: Make sure, we get the name correctly
+														
+		}
 	}
-
+	
+	//Start send report to cloud watch
+	public void run(){
+		putReq = new PutMetricDataRequest().withNamespace(namespace);
+		try{
+			this.start(1, TimeUnit.HOURS);
+		}catch (Exception e) {
+			
+		}
+	}
 }

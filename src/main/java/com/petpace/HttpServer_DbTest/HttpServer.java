@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.jboss.netty.bootstrap.ServerBootstrap;
 import org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory;
+import java.util.logging.Logger;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.BasicAWSCredentials;
@@ -18,9 +19,9 @@ import com.petpace.db.DatasourceConnection;
 public class HttpServer {
 	private final int port;
 	public static final MetricRegistry metrics = new MetricRegistry();
-    
+	private static final Logger log = Logger
+			.getLogger(HttpServer.class.getName());
 					
-
 	public HttpServer(int port) {
 		this.port = port;
 	}
@@ -38,20 +39,19 @@ public class HttpServer {
 		//Send the metrics to console reporter
 		//reporter.start(15, TimeUnit.SECONDS);
 		//Send the metrics to cloudwatcher reporter
-				
+				log.info("Start to check AWS");
 				AWSCredentials creds = new BasicAWSCredentials("AKIAJA5GAIEPJ52UC4QA","OTyTcE0tY3ENSD4/u2e94FcKlqZ2A6kFzK9EHOKz");
 				AmazonCloudWatchClient client = new AmazonCloudWatchClient(creds);
+				
 				ConsoleReporter reporter = ConsoleReporter.forRegistry(metrics).convertRatesTo(TimeUnit.SECONDS)
 			            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
+				log.info("Start the report");
+			    CloudReporter.Builder builder = new CloudReporter.Builder(metrics,"Petpace",client);
 				
-				CloudReporter report = CloudReporter.forRegistry(metrics,"petpace",client).convertRatesTo(TimeUnit.SECONDS)
-			            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
+				//TODO: review (YOU DONT HAVE TO INVOKE THIS..HERE) 
+				//reporter.start(1, TimeUnit.MINUTES);
+				builder.build().run();
 				
-				report.report();
-				report.start(10, TimeUnit.SECONDS);
-			
-				
-				//reporter.start(10, TimeUnit.SECONDS);
 		// Configure the server.
 
 		ServerBootstrap bootstrap = new ServerBootstrap(

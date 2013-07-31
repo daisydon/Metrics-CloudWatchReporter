@@ -57,7 +57,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 			.getLogger(HttpServerHandler.class.getName());
 
 	private static final String NETTYSESSION_ID_COOKIE_NAME = "NettySessionId";
-	private static final Timer timer = metrics.timer("MessageReceived");
+	private static final Timer timer = metrics.timer("MessageReceivedTimer");
 	private static final Counter counter = metrics.counter("MessageRecievedCounter");
 
 	/**
@@ -70,8 +70,8 @@ public class HttpServerHandler extends SimpleChannelHandler {
 		Channel clientChannel = e.getChannel();
 		SocketAddress remoteaddress = clientChannel.getRemoteAddress();
 		if (remoteaddress != null) {
-			logger.info("ChannelOpen Event -Client connected:"
-					+ remoteaddress.toString());
+//			logger.info("ChannelOpen Event -Client connected:"
+//					+ remoteaddress.toString());
 		}
 	}
 
