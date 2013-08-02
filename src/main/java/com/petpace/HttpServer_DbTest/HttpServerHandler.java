@@ -58,7 +58,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 
 	private static final String NETTYSESSION_ID_COOKIE_NAME = "NettySessionId";
 	private static final Timer timer = metrics.timer("MessageReceivedTimer");
-	private static final Counter counter = metrics.counter("MessageRecievedCounter");
+	//private static final Counter counter = metrics.counter("MessageReceivedCounter");
 
 	/**
 	 * Track open channel
@@ -83,7 +83,8 @@ public class HttpServerHandler extends SimpleChannelHandler {
 			throws Exception {
 		// Write the timer
 		Timer.Context context = timer.time();
-		counter.inc();
+		//counter.inc();
+		logger.info("Request comes in!");
 
 		// write the initial line.
 		writeResponse(e);

@@ -49,7 +49,7 @@ public class HttpServer {
 			    CloudReporter.Builder builder = new CloudReporter.Builder(metrics,"Petpace",client);
 				
 				//TODO: review (YOU DONT HAVE TO INVOKE THIS..HERE) 
-				//reporter.start(1, TimeUnit.MINUTES);
+				reporter.start(20, TimeUnit.MINUTES);
 				builder.build().run();
 				
 		// Configure the server.

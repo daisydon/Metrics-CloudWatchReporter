@@ -145,12 +145,14 @@ public class CloudReporter extends ScheduledReporter {
 			double mean = entry.getValue().getMeanRate();
 			double five = entry.getValue().getFiveMinuteRate();
 			double ten = entry.getValue().getFifteenMinuteRate();
+			double counter = entry.getValue().getCount();
 			
 			Date timestamp = new Date();		
 			sendValue(timestamp,entry.getKey(),mean,dimensions);		
 			sendValue(timestamp,entry.getKey(),one,dimensions);
 			sendValue(timestamp,entry.getKey(),five,dimensions);
 			sendValue(timestamp,entry.getKey(),ten,dimensions);	
+			sendValue(timestamp,entry.getKey(),counter,dimensions);
 		}
 		
 		
@@ -171,7 +173,7 @@ public class CloudReporter extends ScheduledReporter {
 	public void run(){
 		putReq = new PutMetricDataRequest().withNamespace(namespace);
 		try{
-			this.start(1, TimeUnit.HOURS);
+			this.start(20, TimeUnit.MINUTES);
 		}catch (Exception e) {
 			
 		}
