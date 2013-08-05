@@ -18,7 +18,7 @@ import com.petpace.db.DatasourceConnection;
 
 public class HttpServer {
 	private final int port;
-	public static final MetricRegistry metrics = new MetricRegistry();
+	public static final MetricRegistry registry = new MetricRegistry();
 	private static final Logger log = Logger
 			.getLogger(HttpServer.class.getName());
 					
@@ -36,24 +36,19 @@ public class HttpServer {
 				DatasourceConnection.initDatasource(prop.getProperty("database.url"),
 						prop.getProperty("database.username"),
 						prop.getProperty("database.password"));
-		//Send the metrics to console reporter
-		//reporter.start(15, TimeUnit.SECONDS);
-		//Send the metrics to cloudwatcher reporter
+
 				log.info("Start to check AWS");
 				AWSCredentials creds = new BasicAWSCredentials("AKIAJA5GAIEPJ52UC4QA","OTyTcE0tY3ENSD4/u2e94FcKlqZ2A6kFzK9EHOKz");
 				AmazonCloudWatchClient client = new AmazonCloudWatchClient(creds);
-				
-				ConsoleReporter reporter = ConsoleReporter.forRegistry(metrics).convertRatesTo(TimeUnit.SECONDS)
-			            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
 				log.info("Start the report");
-			    CloudReporter.Builder builder = new CloudReporter.Builder(metrics,"Petpace",client);
+				ConsoleReporter reporter = ConsoleReporter.forRegistry(registry).convertRatesTo(TimeUnit.SECONDS)
+			            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
+			    CloudReporter.Builder builder = new CloudReporter.Builder(registry,"Petpace",client);
 				
-				//TODO: review (YOU DONT HAVE TO INVOKE THIS..HERE) 
 				reporter.start(20, TimeUnit.MINUTES);
 				builder.build().run();
 				
 		// Configure the server.
-
 		ServerBootstrap bootstrap = new ServerBootstrap(
 				new NioServerSocketChannelFactory(
 						Executors.newCachedThreadPool(),
@@ -78,7 +73,5 @@ public class HttpServer {
 			port = 8080;
 		}
 		new HttpServer(port).run();
-
 	}
-
 }

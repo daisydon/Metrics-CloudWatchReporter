@@ -23,6 +23,7 @@ import com.codahale.metrics.MetricFilter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.ScheduledReporter;
 import com.codahale.metrics.Timer;
+import com.petpace.HttpServer_DbTest.RateGauge;
 
 public class CloudReporter extends ScheduledReporter {
 
@@ -140,6 +141,7 @@ public class CloudReporter extends ScheduledReporter {
 		List<Dimension> dimensions = new ArrayList<Dimension>();
 		dimensions.add((new Dimension()).withName("ServerID").withValue("Netty3.0"));
 		
+		
 		for (Map.Entry<String, Timer> entry: timers.entrySet()){
 			double one =entry.getValue().getOneMinuteRate();
 			double mean = entry.getValue().getMeanRate();
@@ -164,8 +166,7 @@ public class CloudReporter extends ScheduledReporter {
 			
 			Date timestamp = new Date();
 			LOG.info("Counter "+ value + "");
-			sendValue(timestamp, entry.getKey(),value,dimensions); // TODO: Make sure, we get the name correctly
-														
+			sendValue(timestamp, entry.getKey(),value,dimensions); // TODO: Make sure, we get the name correctly													
 		}
 	}
 	
