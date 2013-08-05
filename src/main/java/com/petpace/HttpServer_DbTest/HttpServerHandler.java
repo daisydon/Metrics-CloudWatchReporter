@@ -60,7 +60,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 			.getLogger(HttpServerHandler.class.getName());
 
 	private static final String NETTYSESSION_ID_COOKIE_NAME = "NettySessionId";
-	//private static final Timer timer = registry.timer("MessageReceivedTimer");
+	private static final Timer timer = registry.timer("MessageReceivedTimer");
 	private static final Counter counter = registry.counter("MessageReceivedCounter");
 	private static final Clock clock = Clock.defaultClock();
 	private static final RateGauge gauge = registry.register("MessageRate", new RateGauge(counter,clock));
@@ -87,7 +87,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 	public void messageReceived(ChannelHandlerContext ctx, MessageEvent e)
 			throws Exception {
 		// Write the timer
-		Timer.Context context = timer.time();
+    	Timer.Context context = timer.time();
 		counter.inc();
 		gauge.getValue();
 		
