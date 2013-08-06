@@ -37,10 +37,10 @@ public class HttpServer {
 						prop.getProperty("database.username"),
 						prop.getProperty("database.password"));
 
-				log.info("Start to check AWS");
+				//log.info("Start to check AWS");
 				AWSCredentials creds = new BasicAWSCredentials("AKIAJA5GAIEPJ52UC4QA","OTyTcE0tY3ENSD4/u2e94FcKlqZ2A6kFzK9EHOKz");
 				AmazonCloudWatchClient client = new AmazonCloudWatchClient(creds);
-				log.info("Start the report");
+				//log.info("Start the report");
 				ConsoleReporter reporter = ConsoleReporter.forRegistry(registry).convertRatesTo(TimeUnit.SECONDS)
 			            .convertDurationsTo(TimeUnit.MILLISECONDS).build();
 			    CloudReporter.Builder builder = new CloudReporter.Builder(registry,"Petpace",client);

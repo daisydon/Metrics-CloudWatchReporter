@@ -24,7 +24,7 @@ public class RateGauge extends RatioGauge {
 	protected Ratio getRatio() {
 		// TODO Auto-generated method stub
 		final long elapsed = clock.getTick() - startTime;
-		LOG.info("Clock is: "+clock.getTick()+"The startTime is: "+startTime);
+		//LOG.info("Clock is: "+clock.getTick()+"The startTime is: "+startTime);
 		return Ratio.of(counter.getCount(), elapsed);	
 	}
 

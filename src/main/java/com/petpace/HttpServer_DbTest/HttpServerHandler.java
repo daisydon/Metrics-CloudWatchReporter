@@ -1,5 +1,6 @@
 package com.petpace.HttpServer_DbTest;
 
+import static com.petpace.HttpServer_DbTest.HttpServer.registry;
 import static com.petpace.db.jooq.Tables.VITAL_ACTIVITY;
 
 import java.io.File;
@@ -44,7 +45,6 @@ import org.jooq.impl.DSL;
 import com.codahale.metrics.Clock;
 import com.codahale.metrics.Counter;
 import com.codahale.metrics.Timer;
-import com.codahale.metrics.MetricRegistry;
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -52,8 +52,6 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 import com.petpace.db.DatasourceConnection;
-import static com.petpace.HttpServer_DbTest.HttpServer.registry;
-import com.petpace.HttpServer_DbTest.RateGauge;
 
 public class HttpServerHandler extends SimpleChannelHandler {
 	private static final Logger logger = Logger
@@ -63,7 +61,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 	private static final Timer timer = registry.timer("MessageReceivedTimer");
 	private static final Counter counter = registry.counter("MessageReceivedCounter");
 	private static final Clock clock = Clock.defaultClock();
-	private static final RateGauge gauge = registry.register("MessageRate", new RateGauge(counter,clock));
+	private static final RateGauge gauge = registry.register("MessageReceivedRate", new RateGauge(counter,clock));
 	
 	/*
 	 * Track open channel
@@ -91,13 +89,12 @@ public class HttpServerHandler extends SimpleChannelHandler {
 		counter.inc();
 		gauge.getValue();
 		
-		logger.info("Request comes in! The counter is: "+ counter.getCount() + " The Rate is: " + gauge.getValue());
+		//logger.info("Request comes in! The counter is: "+ counter.getCount() + " The Rate is: " + gauge.getValue());
 
 		// write the initial line.
 		writeResponse(e);
 		e.getChannel().disconnect();
-		e.getChannel().close();
-        
+		e.getChannel().close(); 
 		context.stop();
 	}
 

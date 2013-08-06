@@ -22,6 +22,7 @@ import com.codahale.metrics.Meter;
 import com.codahale.metrics.MetricFilter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.ScheduledReporter;
+import com.codahale.metrics.Snapshot;
 import com.codahale.metrics.Timer;
 import com.petpace.HttpServer_DbTest.RateGauge;
 
@@ -97,7 +98,7 @@ public class CloudReporter extends ScheduledReporter {
 	 */
 	public void sendToCloudwatch() {
 		try {
-			LOG.info("Check if putMetricData is empty! " + putReq.getMetricData().isEmpty());
+			//LOG.info("Check if putMetricData is empty! " + putReq.getMetricData().isEmpty());
 			
 			client.putMetricData(putReq);
 			LOG.info("Send to Cloud");
@@ -118,17 +119,17 @@ public class CloudReporter extends ScheduledReporter {
 	 * @param value
 	 */
 	
-	public void sendValue(Date timestamp, String name, double value, List<Dimension> dimensions) {
+	public void sendValue(Date timestamp, String name, double value, StandardUnit unit, List<Dimension> dimensions) {
 		MetricDatum datum = new MetricDatum().withTimestamp(timestamp)
-				.withValue(value).withMetricName(name).withUnit(StandardUnit.Seconds).withDimensions(dimensions);
+				.withValue(value).withMetricName(name).withUnit(unit).withDimensions(dimensions);
 
 		putReq.withMetricData(datum);
 
-		LOG.info("The size of putReq is " + putReq.getMetricData().size());
+		//LOG.info("The size of putReq is " + putReq.getMetricData().size());
 		
 		// TODO: PLEASE TEST THIS:  AWS Error Message: The collection MetricData must not have a size greater than 20.
 		if (putReq.getMetricData().size() == 20) {
-		LOG.info("Send To Cloud Watch");
+		
 		sendToCloudwatch();
 		}
 	}
@@ -141,20 +142,28 @@ public class CloudReporter extends ScheduledReporter {
 		List<Dimension> dimensions = new ArrayList<Dimension>();
 		dimensions.add((new Dimension()).withName("ServerID").withValue("Netty3.0"));
 		
+		for(Map.Entry<String, Gauge> entry: gauges.entrySet()){
+			Date timestamp = new Date();
+			double value = (Double) entry.getValue().getValue();
+			sendValue(timestamp,entry.getKey(),value,StandardUnit.CountSecond,dimensions);
+		}
 		
 		for (Map.Entry<String, Timer> entry: timers.entrySet()){
-			double one =entry.getValue().getOneMinuteRate();
+			
+			/*double one =entry.getValue().getOneMinuteRate();
 			double mean = entry.getValue().getMeanRate();
 			double five = entry.getValue().getFiveMinuteRate();
-			double ten = entry.getValue().getFifteenMinuteRate();
-			double counter = entry.getValue().getCount();
+			double ten = entry.getValue().getFifteenMinuteRate();*/
 			
-			Date timestamp = new Date();		
-			sendValue(timestamp,entry.getKey(),mean,dimensions);		
-			sendValue(timestamp,entry.getKey(),one,dimensions);
-			sendValue(timestamp,entry.getKey(),five,dimensions);
-			sendValue(timestamp,entry.getKey(),ten,dimensions);	
-			sendValue(timestamp,entry.getKey(),counter,dimensions);
+			final Snapshot snapshot = entry.getValue().getSnapshot();
+			Date timestamp = new Date();
+			
+			sendValue(timestamp,entry.getKey(),snapshot.getMin(),StandardUnit.Milliseconds,dimensions);
+			sendValue(timestamp,entry.getKey(),snapshot.getMax(),StandardUnit.Milliseconds,dimensions);
+			/*sendValue(timestamp,entry.getKey(),one,StandardUnit.CountSecond, dimensions);
+			sendValue(timestamp,entry.getKey(),five,StandardUnit.CountSecond,dimensions);
+			sendValue(timestamp,entry.getKey(),ten,StandardUnit.CountSecond,dimensions);	
+			sendValue(timestamp,entry.getKey(),ten,StandardUnit.CountSecond,dimensions);*/
 		}
 		
 		
@@ -165,8 +174,9 @@ public class CloudReporter extends ScheduledReporter {
 			double value = (double)counter;
 			
 			Date timestamp = new Date();
+			StandardUnit unit = StandardUnit.Count;
 			LOG.info("Counter "+ value + "");
-			sendValue(timestamp, entry.getKey(),value,dimensions); // TODO: Make sure, we get the name correctly													
+			sendValue(timestamp, entry.getKey(),value,unit,dimensions); // TODO: Make sure, we get the name correctly													
 		}
 	}
 	
