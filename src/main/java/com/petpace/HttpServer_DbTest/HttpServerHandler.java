@@ -60,7 +60,7 @@ public class HttpServerHandler extends SimpleChannelHandler {
 	private static final String NETTYSESSION_ID_COOKIE_NAME = "NettySessionId";
 	private static final Timer timer = registry.timer("MessageReceivedTimer");
 	private static final Counter counter = registry.counter("MessageReceivedCounter");
-	private static final Clock clock = Clock.defaultClock();
+	private static Clock clock = Clock.defaultClock();
 	private static final RateGauge gauge = registry.register("MessageReceivedRate", new RateGauge(counter,clock));
 	
 	/*
@@ -69,12 +69,12 @@ public class HttpServerHandler extends SimpleChannelHandler {
 
 	@Override
 	public void channelOpen(ChannelHandlerContext ctx, ChannelStateEvent e) {
-		// ctx.getPipeline();
+		ctx.getPipeline();
 		Channel clientChannel = e.getChannel();
 		SocketAddress remoteaddress = clientChannel.getRemoteAddress();
 		if (remoteaddress != null) {
-//			logger.info("ChannelOpen Event -Client connected:"
-//					+ remoteaddress.toString());
+			logger.info("ChannelOpen Event -Client connected:"
+					+ remoteaddress.toString());
 		}
 	}
 
@@ -88,8 +88,6 @@ public class HttpServerHandler extends SimpleChannelHandler {
     	Timer.Context context = timer.time();
 		counter.inc();
 		gauge.getValue();
-		
-		//logger.info("Request comes in! The counter is: "+ counter.getCount() + " The Rate is: " + gauge.getValue());
 
 		// write the initial line.
 		writeResponse(e);
