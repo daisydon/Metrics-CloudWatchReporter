@@ -80,12 +80,12 @@ public class CloudReporter extends ScheduledReporter {
 				durationUnit);
 		this.namespace = namespace;
 		this.client = client;
-	    putReq = new PutMetricDataRequest()
-		.withNamespace(namespace);
+		putReq = new PutMetricDataRequest().withNamespace(namespace);
 	}
 
 	public void sendToCloudwatch() {
 		try {
+
 			client.putMetricData(putReq);
 			LOG.info("Sent to Cloud");
 
@@ -94,26 +94,26 @@ public class CloudReporter extends ScheduledReporter {
 			throw re;
 		}
 	}
-/**
- * Put Metric data into MetricDatum (AWS CloudWatch Data Unit) 
- * @param timestamp
- * @param name
- * @param value
- * @param unit
- * @param dimensions
- */
-	public void sendValue(Date timestamp, String name, double value,
-			StandardUnit unit, List<Dimension> dimensions) {
-		MetricDatum datum = new MetricDatum().withTimestamp(timestamp)
-				.withValue(value).withMetricName(name).withUnit(unit)
-				.withDimensions(dimensions);
-		putReq.withMetricData(datum);
-		LOG.info("The size of putReq is " + putReq.getMetricData().size());
-		if (putReq.getMetricData().size() == 20) {
-			sendToCloudwatch();
-			putReq = new PutMetricDataRequest().withNamespace(namespace);
-		} else {
-			sendToCloudwatch();
+
+	/**
+	 * Put Metric data into MetricDatum (AWS CloudWatch Data Unit)
+	 * 
+	 * @param timestamp
+	 * @param name
+	 * @param value
+	 * @param unit
+	 * @param dimensions
+	 */
+	public void sendValue(List<MetricDatum> datums) {
+
+		for (MetricDatum datum : datums) {
+			putReq.withMetricData(datum);
+			if (putReq.getMetricData().size() == 20) {
+				sendToCloudwatch();
+				LOG.info("The size of puReq is "
+						+ putReq.getMetricData().size());
+				putReq = new PutMetricDataRequest().withNamespace(namespace);
+			}
 		}
 	}
 
@@ -122,24 +122,30 @@ public class CloudReporter extends ScheduledReporter {
 			SortedMap<String, Counter> counters,
 			SortedMap<String, Histogram> histograms,
 			SortedMap<String, Meter> meters, SortedMap<String, Timer> timers) {
+
 		List<Dimension> dimensions = new ArrayList<Dimension>();
 		dimensions.add((new Dimension()).withName("ServerID").withValue(
 				"Netty3.0"));
 		Date reportTimestamp = new Date();
+		List<MetricDatum> datums = new ArrayList<MetricDatum>();
 
 		// Parse the Gauge
 		for (Map.Entry<String, Gauge> entry : gauges.entrySet()) {
 			double value = (Double) entry.getValue().getValue();
 			LOG.info("The value is " + value);
-			sendValue(reportTimestamp, entry.getKey(), value,
-					StandardUnit.CountSecond, dimensions);
+			datums.add(new MetricDatum().withTimestamp(reportTimestamp)
+					.withValue(value).withMetricName(entry.getKey())
+					.withUnit(StandardUnit.CountSecond)
+					.withDimensions(dimensions));
 		}
 		// Parse the Timer
 		for (Map.Entry<String, Timer> entry : timers.entrySet()) {
 			final Snapshot snapshot = entry.getValue().getSnapshot();
-			sendValue(reportTimestamp, entry.getKey(), snapshot.getMin(),
-					StandardUnit.Milliseconds, dimensions);
-
+			datums.add(new MetricDatum().withTimestamp(reportTimestamp)
+					.withValue(snapshot.getMean())
+					.withMetricName(entry.getKey())
+					.withUnit(StandardUnit.Milliseconds)
+					.withDimensions(dimensions));
 		}
 
 		// Parse the Couner
@@ -149,8 +155,10 @@ public class CloudReporter extends ScheduledReporter {
 			double value = (double) counter;
 
 			StandardUnit unit = StandardUnit.Count;
-			sendValue(reportTimestamp, entry.getKey(), value, unit, dimensions);
-
+			datums.add(new MetricDatum().withTimestamp(reportTimestamp)
+					.withValue(value).withMetricName(entry.getKey())
+					.withUnit(unit).withDimensions(dimensions));
 		}
+		this.sendValue(datums);
 	}
 }

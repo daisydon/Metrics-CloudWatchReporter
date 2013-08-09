@@ -53,9 +53,9 @@ public class HttpServer {
 				"Petpace", client).convertDurationsTo(TimeUnit.MILLISECONDS).convertRatesTo(TimeUnit.SECONDS).build();
 		
 		// Start console reporter, send reporter every 5 minutes
-		reporter.start(5, TimeUnit.MINUTES);
+		reporter.start(1, TimeUnit.MINUTES);
 		// Start AWS CloudWatch reporter
-		cloudreporter.start(5, TimeUnit.MINUTES);
+		cloudreporter.start(1, TimeUnit.MINUTES);
 
 		// Configure the server.
 		ServerBootstrap bootstrap = new ServerBootstrap(
